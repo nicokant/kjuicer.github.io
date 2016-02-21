@@ -7,14 +7,6 @@ published: true
 status: publish
 categories: []
 tags: []
-meta:
-  _edit_last: '1'
-author:
-  login: frafra
-  email: fraph24@gmail.com
-  display_name: frafra
-  first_name: ''
-  last_name: ''
 ---
 Informazioni ex art. 12 Decreto-Legge convertito con modificazioni dalla
 L. 17 dicembre 2012, n. 221 (in S.O. n. 208, relativo alla G.U.
