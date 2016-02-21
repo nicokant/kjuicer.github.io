@@ -1,7 +1,17 @@
 <div class="container">
   <div class="row">
-    <div class="col-sm-8">
+    <div class="col-sm-6">
       {{ site.description }}
+    </div>
+    <div class="col-sm-1">
+      <p>Social</p>
+      <hr />
+        {% include icon-twitter.html username=site.twitter_username %}
+    </div>
+    <div class="col-sm-1">
+      <p>Code</p>
+      <hr />
+        {% include icon-github.html username=site.github_username %}
     </div>
     <div class="col-sm-2">
       <p>Pages</p>
