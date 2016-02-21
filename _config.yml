@@ -9,7 +9,7 @@
 title: KJuicer
 email: info@kjuicer.com
 description: > # this means to ignore newlines until "baseurl:"
-  The Knowledge Juicer
+  Reading gets super powers
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://kjuicer.com" # the base hostname & protocol for your site
 twitter_username: KnowledgeJuicer
