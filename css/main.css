@@ -12,3 +12,7 @@ body {
     padding: 1.5em;
     border-radius: 1em;
 }
+
+.post img {
+    max-width: 100%;
+}
