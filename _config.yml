@@ -7,7 +7,6 @@
 
 # Site settings
 title: KJuicer
-email: info@kjuicer.com
 description: > # this means to ignore newlines until "baseurl:"
   Reading gets super powers
 baseurl: "" # the subpath of your site, e.g. /blog
