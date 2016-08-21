@@ -1,48 +1,41 @@
-<div class="container">
-  <div class="row">
-    <div class="col-sm-2">
-      <img class="img-fluid kj-logo" src="{{ site.baseurl }}/img/kjuicer.png" />
+<footer class="page-footer grey darken-4">
+    <div class="container">
+      <div class="row">
+        <div class="col l4 s12">
+          <h5 class="white-text caps">Links</h5>
+          <ul>
+            <li><a href='/support' class="green-text">Support</a></li>
+            <li><a href='/legal' class="green-text">Legal</a></li>
+            <li><a href='/privacy-policy' class="green-text">Privacy Policy</a></li>
+            <li><a href='/cookie-policy' class="green-text">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div class="col l4 s12 offset-l4">
+          <h5 class='white-text center caps'>Keep in Touch</h5>
+          <div class="row ">
+            <div class='col s4 center'><a href=''><i class='zmdi zmdi-facebook-box green-text zmdi-hc-2x'></i></a></div>
+            <div class='col s4 center'><a href=''><i class='zmdi zmdi-twitter-box green-text zmdi-hc-2x'></i></a></div>
+            <div class='col s4 center'><a href=''><i class='zmdi zmdi-youtube-play green-text zmdi-hc-2x'></i></a></div>
+          </div>
+          <div class="row ">
+            <div class='col s4 center'><a href=''><i class='zmdi zmdi-github-box green-text zmdi-hc-2x'></i></a></div>
+            <div class='col s4 center'><a href=''><i class='zmdi zmdi-email green-text zmdi-hc-2x'></i></a></div>
+            <div class='col s4 center'><a href=''><i class='zmdi zmdi-rss green-text zmdi-hc-2x'></i></a></div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="col-sm-3">
-      <h3>{{ site.title }}</h3>
-      <p>{{ site.description }}</p>
+    <div class="footer-copyright black">
+      <div class="container">
+        <div class="row">
+          <div class='col s12 m4'>© 2016 KJuicer.com, All rights reserved.</div>
+        </div>
+      </div>
     </div>
-    <div class="col-sm-1">
-      <p>Social</p>
-      <hr />
-        <a href="https://twitter.com/KnowledgeJuicer"><i class="fa fa-twitter fa-2x"></i></a>
-        <a href="https://www.facebook.com/kjuicer/"><i class="fa fa-facebook fa-2x"></i></a>
-    </div>
-    <div class="col-sm-1">
-      <p>Video</p>
-      <hr />
-        <a href="https://www.youtube.com/channel/UCleRhrYoSl9DbeU6GZu_DTQ"><i class="fa fa-youtube fa-2x"></i></a>
-    </div>
-    <div class="col-sm-1">
-      <p>Code</p>
-      <hr />
-        <a href="https://github.com/kjuicer"><i class="fa fa-github fa-2x"></i></a>
-    </div>
-    <div class="col-sm-2">
-      <p>Pages</p>
-      <hr />
-      <ul>
-        {% for my_page in site.pages %}
-        {% if my_page.title %}
-          <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
-        {% endif %}
-        {% endfor %}
-      </ul>
-    </div>
-    <div class="col-sm-2">
-      <p>Extra</p>
-      <hr />
-      <ul>
-        <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
+  </footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.slim.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="{{"/js/materialize.min.js" | prepend: site.baseurl}}"></script>
+  <script src="{{"/js/init.js" | prepend: site.baseurl}}"></script>
