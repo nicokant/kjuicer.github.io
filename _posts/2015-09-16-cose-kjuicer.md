@@ -7,6 +7,8 @@ published: true
 status: publish
 categories: []
 tags: []
+image: levels.png
+summary: A brief explanation of what KJuicer is
 ---
 ## KJuicer è... un nuovo modo di fruire del testo
 **Non ti perderai più** tra miriadi di parole e informazioni, alla ricerca di ciò che ti serve, ma **potrai accedere ad ogni scritto in maniera non lineare** ed arrivare subito a quanto ti interessa, per poi approfondire, se lo vorrai, e condividere o tenere tutto per te.
