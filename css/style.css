@@ -1,0 +1,87 @@
+@import 'https://fonts.googleapis.com/css?family=Crimson+Text|Open+Sans:300,700|Roboto';
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+body > .container {
+  flex: 1 0 auto;
+}
+
+.long-content {
+  font-family: 'Crimson Text';
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.long-content img {
+  max-width: 100%;
+  margin: 1rem 0;
+}
+
+.caps {
+  font-variant: small-caps;
+  text-transform: lowercase;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans";
+  font-weight: 700;
+    font-variant: small-caps;
+  text-transform: lowercase;
+}
+
+.brand-logo img {
+  height: 50px;
+  vertical-align: middle;
+}
+
+p {
+  line-height: 2rem;
+}
+
+#main-navigation {
+  z-index: 9999;
+}
+
+.parallax {
+  left: -1px;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+
+img.adjust {
+  height: 120%;
+  padding: -10rem;
+}
+
+.parallax-container .section {
+  width: 100%;
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 0;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
