@@ -14,6 +14,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://blog.kjuicer.com" # the base hostname & protocol for your site
 twitter_username: KnowledgeJuicer
 github_username:  kjuicer
+youtube_channel: UCleRhrYoSl9DbeU6GZu_DTQ
+facebook_page: kjuicer
 assets: /post_assets/
 
 # Build settings
