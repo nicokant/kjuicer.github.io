@@ -7,6 +7,8 @@ published: true
 status: publish
 categories: []
 tags: []
+image: bocconi.png
+summary: A complete set of instructions on how to use KJuicer in depth
 ---
 # 1 Installation
 Since the KJuicer is not a program but a service rendered through the browser, a real installation is not necessary. But the first time you will have to go through a coupe of steps in order to use it.
