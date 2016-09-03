@@ -89,3 +89,7 @@ img.adjust {
 .pinned + div {
   margin-top: 64px;
 }
+
+img#logo-bg {
+  height: 400px;
+}
