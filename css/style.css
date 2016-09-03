@@ -85,3 +85,7 @@ img.adjust {
     top: 0;
   }
 }
+
+.pinned + div {
+  margin-top: 64px;
+}
