@@ -7,6 +7,8 @@ published: true
 status: publish
 categories: []
 tags: []
+image: "youtube.png"
+summary: "We just started to upload some video tutorials on Youtube about how to install and how to use KJuicer. Have a look!"
 ---
 We just started to upload some video tutorials on Youtube about how to install and how to use KJuicer. Have a look!
 
