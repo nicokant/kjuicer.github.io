@@ -85,3 +85,20 @@ img.adjust {
     top: 0;
   }
 }
+
+.pinned + div {
+  margin-top: 64px;
+}
+
+img#logo-bg {
+  height: 400px;
+}
+
+.card .card-image {
+  max-height: 200px !important;
+  overflow: hidden;
+}
+
+#bloglist .card .card-image {
+  max-width: 300px !important;
+}
