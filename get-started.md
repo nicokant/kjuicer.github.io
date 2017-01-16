@@ -4,26 +4,28 @@ title: Get Started
 ---
 
 ## 1. Create your account
-Creating a user makes sure that your documents will be saved under your wall, be it because you save them through the extension or if you upload them, as well as allow you to mark as preferred documents that you find on our wall and save them for later use.
-Click on the login button in the top right corner of any Kjuicer page (for example <a href="http://alpha.kjuicer.com/cache/484/show/#k:+yGIUFprUDnFUbP8S/2ewH5BM401tVdly/vLyxiCfn4=,l:4,c:on" target="_blank">Kjuicer</a>), choose Mozilla Persona and create your account if you do not already have one.  
-It is the classic standard procedure: it will ask you for your email and to create a password, then send a confirmation email with a link that needs to be clicked upon to activate the account. 
+Creating a user makes sure that your documents will be saved under your account. They will be displayed on your Personal Wall. You create a new document when you click on the extension (see point 2 below for getting the extension) to highlight a web page (see point 4 below for setting up a page for *kjuicing*) or you upload one. With a user you can also decide if a document should be publicly visible and appear on the Public Wall or not, if its highlights should be editable by anyone or not. A document without owner is by default public, and its highlights can be edited by anyone. The account also allows you to bookmark your favorites (among your documents or among others') from the info menu at the bottom right of every *kjuiced* page, by clicking on the star icon of the info window. Starred, or favorites, appear in your Favorites Wall.
+
+At present you can login only through Google. Former Mozilla Persona accounts can still use the login they created in the past, but since Persona has been deprecated they will have to reset their password. A blog post is dedicated to explain this simple procedure.
+
+To create or access your user through Google click on the login button in the top right corner of any Kjuicer page (for example <a href="http://alpha.kjuicer.com/cache/4549/show/#l:1,c:on" target="_blank">Kjuicer</a>), choose Google and allow Kjuicer permission to access your basic Google account credentials.  
 
 ## 2. Install the extension or...
 The extension allows you to cache a standard web page and turn it into a page that can be highlighted with the Kjuicer.
 
 The Kjuicer currently works best on Firefox or Chrome, and we have developed an extension for both browsers. 
-Install:
+To install, please choose your relevant link:
   - [Firefox extension][kj1]
   - [Chrome extension][kj2]
 
-As soon as you install the extension you will see a stylized juicer button on your browser's toolbar. When you find a web page that you would like to highlight with the Kjuicer click on it: you will be brought to a Kjuicer page ready for being highlighted. If you have an account and are logged in, the page will be automatically saved on your *Personal Wall*.
+As soon as you install the extension you will see a stylized juicer button on your browser's toolbar. When you find a web page that you would like to highlight with the Kjuicer, click on it: you will be brought to a page ready for highlighting. If you have an account and are logged in, the page will be automatically saved on your *Personal Wall*.
 
-In case you do not want to use either Firefox or Chrome you might still be able to use the Kjuicer on other browsers: reading a *kjuiced* document should be possible from any browser. You might also be able to *kjuice* documents if your browser supports bookmarks.
-You can find the Kjuicer bookmark on the [extensions shortcut page][kj3]. It's the red button at the bottom. You should click and drag the button to your favorites' toolbar, and any time you find a page that you would like to *kjuice*, simply click on the bookmark.
+In case you do not want to use either Firefox or Chrome you might still be able to use the Kjuicer on other browsers: reading a *kjuiced* document should be possible from any browser. You might also be able to *kjuice* documents if your browser supports *bookmarklets*. Bookmarklets are special bookmarks that execute small pieces of code.
+You can find the Kjuicer bookmarklet on the [extensions shortcut page][kj3]. It's the red button at the bottom. You should click and drag the button to your bookmarks toolbar, and any time you find a page that you would like to *kjuice*, simply click on the bookmarklet.
 
 ## 3. Read a *kjuiced* page
 If you have a page that has already been highlighted with the Kjuicer, you can read it by clicking on the colored dots at the bottom:
-> the **yellow** dot will bring you to the shortest summary, and will show only the most concentrated juice, or what has been higlighted in yellow;
+> the **yellow** dot will bring you to the shortest summary, or what has been higlighted in yellow;
 
 > the **light green** button will show you a larger summary, composed of the yellow and light green highlights, while 
 
@@ -46,7 +48,7 @@ As soon as you click on the Kjuicer extension or the bookmark, or you choose *Ed
 
 Once you have selected your color it will stay until you change your choice, and any text you select will be highlighted in the desired color. 
 
-You can change color by clicking on a different color, or also by using the keyboard shortcuts: 1 activates the yellow highlighter, 2 the light green one, 3 dark green, 4 activates the white one, which is the eraser.
+You can change color by clicking on a different one, or also by using the keyboard shortcuts: 1 activates the yellow highlighter, 2 the light green one, 3 dark green, 4 activates the white one, which is the eraser.
 
 In order for the summarizing mechanism to work properly and to allow it to create your prioritized notes and different sized summaries, you should highlight the text keeping in mind that:
 > the text you highlight should be re-readable all by itself, including necessary spaces and punctuation;
