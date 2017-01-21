@@ -8,12 +8,12 @@ Creating a user makes sure that your documents will be saved under your account.
 
 At present you can login only through Google. Former Mozilla Persona accounts can still use the login they created in the past, but since Persona has been deprecated they will have to reset their password. A blog post is dedicated to explain this simple procedure.
 
-To create or access your user through Google click on the login button in the top right corner of any Kjuicer page (for example <a href="http://alpha.kjuicer.com/cache/4549/show/#l:1,c:on" target="_blank">Kjuicer</a>), choose Google and allow Kjuicer permission to access your basic Google account credentials.  
+To create or access your user through Google click on the login button in the top right corner of any Kjuicer page (for example <a href="http://alpha.kjuicer.com/cache/4549/show/#l:1,c:on" target="_blank">Kjuicer</a>), choose Google and allow Kjuicer permission to access your basic Google account credentials.
 
 ## 2. Install the extension or...
 The extension allows you to cache a standard web page and turn it into a page that can be highlighted with the Kjuicer.
 
-The Kjuicer currently works best on Firefox or Chrome, and we have developed an extension for both browsers. 
+The Kjuicer currently works best on Firefox or Chrome, and we have developed an extension for both browsers.
 To install, please choose your relevant link:
   - [Firefox extension][kj1]
   - [Chrome extension][kj2]
@@ -27,7 +27,7 @@ You can find the Kjuicer bookmarklet on the [extensions shortcut page][kj3]. It'
 If you have a page that has already been highlighted with the Kjuicer, you can read it by clicking on the colored dots at the bottom:
 > the **yellow** dot will bring you to the shortest summary, or what has been higlighted in yellow;
 
-> the **light green** button will show you a larger summary, composed of the yellow and light green highlights, while 
+> the **light green** button will show you a larger summary, composed of the yellow and light green highlights, while
 
 > the **dark green** button will propose you with all the content that has been highlighted by the author, i.e. yellow + light green + dark green highlights, which is the longest summary of the original content.
 
@@ -35,18 +35,18 @@ If you have a page that has already been highlighted with the Kjuicer, you can r
 
 Clicking on any word or sentence in the summaries will instruct the Kjuicer to expand the content displayed at the next level of summary: a little bit like zooming in while browsing a map, it will show you more details. If you click back to a shorter summary color, the Kjuicer will get you back to the previously selected word or sentence.
 
-In case you want to modify the highlights, click on the button *Edit* at the bottom left corner. 
-> If you own the document, or it is open for changes, the background of the navigation bar will turn white 
+In case you want to modify the highlights, click on the button *Edit* at the bottom left corner.
+> If you own the document, or it is open for changes, the background of the navigation bar will turn white
 > and you will be able to select the desired highlighter.
 
-> In case you don't own the document and it is not open for change by others, you will be prompted if you 
-> want to **fork** it, i.e. copy it and create your own version, which will still have the highlights available 
+> In case you don't own the document and it is not open for change by others, you will be prompted if you
+> want to **fork** it, i.e. copy it and create your own version, which will still have the highlights available
 > for editing.
 
 ## 4. Highlight a *kjuiced* page
-As soon as you click on the Kjuicer extension or the bookmark, or you choose *Edit* on a *kjuiced* page, the background of the navigation bar will turn white and you will be able to select the desired highlighter. 
+As soon as you click on the Kjuicer extension or the bookmark, or you choose *Edit* on a *kjuiced* page, the background of the navigation bar will turn white and you will be able to select the desired highlighter.
 
-Once you have selected your color it will stay until you change your choice, and any text you select will be highlighted in the desired color. 
+Once you have selected your color it will stay until you change your choice, and any text you select will be highlighted in the desired color.
 
 You can change color by clicking on a different one, or also by using the keyboard shortcuts: 1 activates the yellow highlighter, 2 the light green one, 3 dark green, 4 activates the white one, which is the eraser.
 
