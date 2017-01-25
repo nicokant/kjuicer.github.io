@@ -9,6 +9,7 @@ categories: []
 tags: []
 image: mozilla_persona.png
 summary: How to access to your KJuicer account if you are still using Mozilla Persona as authentication method
+lang: en
 ---
 ## Persona will be shut down
 
