@@ -1,0 +1,93 @@
+---
+layout: default
+---
+<div id='initial' class="parallax-container">
+  <div class="section no-pad-bot">
+    <div class="container">
+      <br><br>
+      <h1 class="header center green-text text-lighten-2 caps">{{page.claim}}</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">{{page.underclaim}}</h5>
+      </div>
+      <div class="row center">
+        <a href="{{page.get_started_url}}" id="download-button" class="btn-large waves-effect waves-light green lighten-1">{{page.get_started_label}}</a>
+      </div>
+      <br><br>
+
+    </div>
+  </div>
+  <div class="parallax">
+    <img src='/assets/space.jpg'>
+  </div>
+</div>
+
+<div class="container">
+  <div class="section">
+
+    <div class="row">
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center green-text"><i class="animable animated fadeInLeft zmdi {{page.icon_feature[0]}}"></i></h2>
+          <h5 class="center green-text text-darken-4 caps">{{page.label_feature[0]}}</h5>
+          <p class="light"></p>
+        </div>
+      </div>
+
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center green-text"><i class="animable animated fadeInLeft zmdi {{page.icon_feature[1]}}"></i></h2>
+          <h5 class="center green-text text-darken-4 caps">{{page.label_feature[1]}}</h5>
+          <p class="light"></p>
+        </div>
+      </div>
+
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center green-text"><i class="animable zmdi animated fadeInLeft {{page.icon_feature[2]}}"></i></h2>
+          <h5 class="center green-text text-darken-4 caps">{{page.label_feature[2]}}</h5>
+          <p class="light"></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="parallax-container valign-wrapper">
+  <div class="section no-pad-bot">
+    <div class="container">
+      <div class="row center">
+        <h5 class="header col s12 light"></h5>
+      </div>
+    </div>
+  </div>
+  <div class="parallax"><img id='logo-bg' class='black adjust' src="/assets/logo.svg"></div>
+</div>
+
+<div class="container">
+  <div class="section">
+    <h4 class="green-text text-lighten-2 center caps">{{page.blog_title}}</h4>
+    <div class='row'>
+      {% assign posts = site.posts | where:"lang", page.lang %}
+      {% for post in posts limit:3%}
+      <div class='col m4 s12'>
+        <div class="card large">
+          <div class="card-image"><a href="{{ post.url | prepend: site.baseurl }}">
+            <img src="{{post.image | prepend: site.assets }}">
+          </a></div>
+          <div class="card-content">
+            <span class="card-title">{{post.title}}</span>
+            <p>{{post.summary}}</p>
+          </div>
+          <div class="card-action">
+            <a class="green-text" href="{{ post.url | prepend: site.baseurl }}">{{page.blog_read_post}}</a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="row center">
+      <a href="{{page.blog_url}}" id="download-button" class="btn-large waves-effect waves-light green lighten-1">{{page.blog_read_more}}</a>
+    </div>
+  </div>
+</div>
