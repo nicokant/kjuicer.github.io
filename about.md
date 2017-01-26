@@ -1,6 +1,8 @@
 ---
 layout: page
 title: "READING GETS SUPER POWERS"
+lang: en
+ref: about
 ---
 
 The Knowledge Juicer is a tool that leverages a simple, hierarchical underlining process, to extract multiple levels of summary out of digital texts, with corresponding levels of synthesis.

@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Get Started
+lang: en
+ref: get-started
 ---
 
 ## 1. Create your account
