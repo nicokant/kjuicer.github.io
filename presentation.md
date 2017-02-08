@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Presentation"
+title: "What is Kjuicer?"
 lang: en
 ref: presentation
 ---

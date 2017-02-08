@@ -11,4 +11,7 @@ image: chrome_firefox.png
 summary: È finalmente disponibile l'estensione per Chrome e Firefox
 lang: it
 ---
-E' ora disponibile l'estensione di KJuicer su [Chrome Web Store](https://chrome.google.com/webstore/detail/kjuicer/kgjcgankonbfhdgpfdbggfifpcabocno) e [Mozilla Marketplace](https://addons.mozilla.org/en-US/firefox/addon/kjuicer/).
+E' finalmente disponibile l'estensione di Kjuicer su [Chrome Web Store](https://chrome.google.com/webstore/detail/kjuicer/kgjcgankonbfhdgpfdbggfifpcabocno) e [Mozilla Marketplace](https://addons.mozilla.org/en-US/firefox/addon/kjuicer/).
+
+L'estensione serve a creare una copia di (quasi) qualunque pagina web e a renderla sottolineabile con Kjuicer.
+Ricorda che per salvare le pagine cui applichi l'estensione hai bisogno di avere un account Kjuicer base, che è gratuito, e di essere autenticato.

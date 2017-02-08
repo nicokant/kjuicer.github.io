@@ -1,64 +1,61 @@
 ---
 layout: page
-title: Get Started
+title: Guida rapida
 lang: it
 ref: get-started
 ---
 
-## 1. Create your account
-Creating a user makes sure that your documents will be saved under your account. They will be displayed on your Personal Wall. You create a new document when you click on the extension (see point 2 below for getting the extension) to highlight a web page (see point 4 below for setting up a page for *kjuicing*) or you upload one. With a user you can also decide if a document should be publicly visible and appear on the Public Wall or not, if its highlights should be editable by anyone or not. A document without owner is by default public, and its highlights can be edited by anyone. The account also allows you to bookmark your favorites (among your documents or among others') from the info menu at the bottom right of every *kjuiced* page, by clicking on the star icon of the info window. Starred, or favorites, appear in your Favorites Wall.
+## 1. Creare un account
+La creazione di un account permette di tenere traccia dei documenti e salvarli. Verranno visualizzati sul *Wall* personale, che è la propria collezione. Si crea un nuovo documento quando si fa clic sulla estensione per evidenziare una pagina web (vedi punto 2 qui di seguito per installarla, o il punto 4 più avanti per sottolineare) o se ne carica uno. L'account permette anche di decidere se rendere un documento visibile a tutti e lasciare che compaia sul *Wall* pubblico o meno, e se le sottolineature sono aperte alle modifiche da parte di altri utenti oppure no. Un documento senza proprietario è di default pubblico, e le sue sottolineature sono modificabili da chiunque. L'account permette anche di segnarsi i preferiti, che possono essere fra i propri documenti o quelli di altri: dal menu informazioni in basso a destra di ogni pagina analizzata con il Kjuicer si può includere una pagina tra i preferiti facendo clic sull'icona con la stella, che compare nella finestra delle informazioni. I documenti cui è stata attribuita una stella compaiono nel *Wall* dei Preferiti. Sempre dalla pagina *Info* si può scegliere se rendere il documento pubblico o meno, e se permettere le modifiche delle sottolineature o no.
 
-At present you can login only through Google. Former Mozilla Persona accounts can still use the login they created in the past, but since Persona has been deprecated they will have to reset their password. A blog post is dedicated to explain this simple procedure.
+Per ora si può creare un account Kjuicer solo autenticandosi attraverso un account Google. Gli account aperti con Mozilla Persona sono ancora utilizzabili ma, dal momento che il servizio Persona è stato disattivato da Mozilla e non è più disponibile, è necessario reimpostare la password. Un post sul blog è dedicato a spiegare questa semplice procedura.
 
-To create or access your user through Google click on the login button in the top right corner of any Kjuicer page (for example <a href="http://alpha.kjuicer.com/cache/4549/show/#l:1,c:on" target="_blank">Kjuicer</a>), choose Google and allow Kjuicer permission to access your basic Google account credentials.
+Per creare l'utente o accedere tramite Google: cliccare sul tasto di login in alto a destra di ogni pagina Kjuicer (ad esempio si può usare questa: <a href = "http://alpha.kjuicer.com/cache/4549/show/#l:1,c:on" target="_blank">Kjuicer</a>), poi scegliere Google e consentire a Kjuicer di accedere alle credenziali di base dell'account Google.
 
-## 2. Install the extension or...
-The extension allows you to cache a standard web page and turn it into a page that can be highlighted with the Kjuicer.
+## 2. Installare l'estensione oppure...
+L'estensione permette di salvare una "fotografia" di una pagina web standard e trasformarla in un documento che può essere evidenziato con Kjuicer.
 
-The Kjuicer currently works best on Firefox or Chrome, and we have developed an extension for both browsers.
-To install, please choose your relevant link:
-  - [Firefox extension][kj1]
-  - [Chrome extension][kj2]
+Kjuicer attualmente funziona al meglio su Firefox e Chrome, e abbiamo sviluppato un'estensione per entrambi i browser.
+Per installarla, si prega di fare riferimento al link appropriato a seconda del browser:
+  - [Estensione per Firefox][kj1]
+  - [Estensione per Chrome][kj2]
 
-As soon as you install the extension you will see a stylized juicer button on your browser's toolbar. When you find a web page that you would like to highlight with the Kjuicer, click on it: you will be brought to a page ready for highlighting. If you have an account and are logged in, the page will be automatically saved on your *Personal Wall*.
+Non appena si installa l'estensione, comparirà un pulsante con uno spremiagrumi stilizzato sulla barra degli strumenti del browser. Una volta scelta la pagina web che si desidera sottolineare, basta cliccare sulla estensione: verrà creata una versione Kjuicer di quella stessa pagina, pronta per essere evidenziata. Se si dispone di un account e si è effettuato il login, la pagina verrà salvata automaticamente sul vostro *Wall* personale.
 
-In case you do not want to use either Firefox or Chrome you might still be able to use the Kjuicer on other browsers: reading a *kjuiced* document should be possible from any browser. You might also be able to *kjuice* documents if your browser supports *bookmarklets*. Bookmarklets are special bookmarks that execute small pieces of code.
-You can find the Kjuicer bookmarklet on the [extensions shortcut page][kj3]. It's the red button at the bottom. You should click and drag the button to your bookmarks toolbar, and any time you find a page that you would like to *kjuice*, simply click on the bookmarklet.
+Nel caso in cui non si desiderasse utilizzare Firefox o Chrome, potrebbe comunque essere possibile utilizzare il Kjuicer. La lettura di un documento già sottolineato e strutturato dovrebbe essere accessibile da qualsiasi browser. Se il browser supporta i *bookmarklet*, inoltre, si può anche sottolineare e salvare le proprie pagine. I bookmarklet sono segnalibri speciali che --invece di rimandare a pagine internet come farebbe un segnalibro-- eseguono un piccolo programma.
+È possibile trovare il bookmarklet Kjuicer [a questo link][kj3]. È il pulsante rosso in basso. Per installarlo è necessario cliccare sul bookmarklet stesso e trascinarlo nella barra dei segnalibri alla posizione desiderata.  Ogni volta che si trova una pagina da evidenziare con Kjuicer è sufficiente cliccare sul bookmarklet, e la pagina apposita verrà creata come avviene usando l'estensione.
 
-## 3. Read a *kjuiced* page
-If you have a page that has already been highlighted with the Kjuicer, you can read it by clicking on the colored dots at the bottom:
-> the **yellow** dot will bring you to the shortest summary, or what has been higlighted in yellow;
+## 3. Leggere una pagina Kjuicer
+Se si desidera leggere una pagina già sottolineata con Kjuicer, è sufficiente cliccare sui pulsanti colorati in basso:
+> il **pulsante giallo** vi porterà alla sintesi più breve, che contiene tutto ciò che è stato evidenziato in giallo;
 
-> the **light green** button will show you a larger summary, composed of the yellow and light green highlights, while
+> il **pulsante verde** vi mostrerà un riepilogo più lungo, composto dalle evidenziature gialle e verde chiaro, mentre
 
-> the **dark green** button will propose you with all the content that has been highlighted by the author, i.e. yellow + light green + dark green highlights, which is the longest summary of the original content.
+> il **pulsante verde scuro** vi proporrà tutto il contenuto evidenziato, quindi giallo + verde chiaro + verde scuro, che dovrebbe essere la sintesi più estesa e completa del contenuto originale.
 
-> the **white button** will bring you to the original content.
+> il **pulsante bianco** invece vi mostrerà il contenuto originale.
 
-Clicking on any word or sentence in the summaries will instruct the Kjuicer to expand the content displayed at the next level of summary: a little bit like zooming in while browsing a map, it will show you more details. If you click back to a shorter summary color, the Kjuicer will get you back to the previously selected word or sentence.
+Un click su una qualsiasi parola o frase di un riassunto istruirà il Kjuicer di zoomare, e mostrare il contenuto al successivo livello di sintesi: un po come nella navigazione una mappa, vi mostrerà maggiori dettagli. Se si sceglie un colore cui corrisponde una sintesi più breve, il Kjuicer tornerà indietro alla parola o frase precedentemente selezionata, tendendo il segno della vostra navigazione.
 
-In case you want to modify the highlights, click on the button *Edit* at the bottom left corner.
-> If you own the document, or it is open for changes, the background of the navigation bar will turn white
-> and you will be able to select the desired highlighter.
+Nel caso in cui si desiderasse modificare le sottolineature, è sufficiente cliccare sul pulsante *Edit* nell'angolo in basso a sinistra.
+> Se avete creato il documento, o è modificabile, lo sfondo della barra di navigazione diventerà bianco e si potrà selezionare l'evidenziatore del colore desiderato e iniziare a sottolineare o modificare.
 
-> In case you don't own the document and it is not open for change by others, you will be prompted if you
-> want to **fork** it, i.e. copy it and create your own version, which will still have the highlights available
-> for editing.
+> Nel caso in cui il documento fosse stato creato da qualcun altro e non fosse modificabile, verrà richiesto se si desidera **clonarlo** (anche chiamato *fork*), cioè copiarlo e creare la propria versione, completa di sottolineature pronte per la modifica.
 
-## 4. Highlight a *kjuiced* page
-As soon as you click on the Kjuicer extension or the bookmark, or you choose *Edit* on a *kjuiced* page, the background of the navigation bar will turn white and you will be able to select the desired highlighter.
+## 4. Sottolineare con Kjuicer
+Non appena si clicca sulla estensione o sul bookmarklet, o si sceglie **Edit** su una pagina Kjuicer modificabile, lo sfondo della barra di navigazione diventerà bianco e si potrà selezionare l'evidenziatore desiderato. Se non è ancora modificabile leggete gli ultimi due paragrafi del punto 3.
 
-Once you have selected your color it will stay until you change your choice, and any text you select will be highlighted in the desired color.
+Dopo aver selezionato un evidenziatore questi rimarrà attivo finché non se ne sceglie un altro, o lo si disattiva cliccandoci sopra nuovamente (questo viene utile se si vuole selezionare senza evidenziare, ad esempio quando si desidera cercare una parola su internet), e qualsiasi testo selezionato verrà evidenziato nel colore desiderato.
 
-You can change color by clicking on a different one, or also by using the keyboard shortcuts: 1 activates the yellow highlighter, 2 the light green one, 3 dark green, 4 activates the white one, which is the eraser.
+È possibile cambiare il colore dell'evidenziatore scegliendone uno diverso, o anche utilizzando i tasti di scelta rapida: 1 attiva l'evidenziatore giallo, 2 quello verde chiaro, verde scuro 3, o 4 per attivare il bianco, che è il cancellino.
 
-In order for the summarizing mechanism to work properly and to allow it to create your prioritized notes and different sized summaries, you should highlight the text keeping in mind that:
-> the text you highlight should be re-readable all by itself, including necessary spaces and punctuation;
-> yellow should be used for the most important concepts, light green for supporting parts, dark green for >everything else that you want to make note of;
+Affinché il meccanismo di sintesi funzioni correttamente, creando note in ordine di priorità e riassunti di dimensioni diverse, si dovrebbe evidenziare tenendo in mente che:
+> Il testo evidenziato deve rimanere comprensibile alla rilettura, e vanno inclusi spazi e punteggiatura necessari allo scopo;
+> Il giallo deve essere utilizzato per i concetti più importanti, il verde chiaro per le parti di supporto, il verde scuro per tutto il resto che si desidera comunque tenere evidenziato;
 
-**When you are done highlighting**, or want to check the resulting summaries click on the **check** button at the bottom left corner.
+**Quando si è terminato di sottolineare**, o si desidera controllare i risultati, fare clic sul pulsante di **spunta** nell'angolo in basso a sinistra.
 
-**If you made a mistake** you can use the **undo** or **redo** buttons at the right of the bottom bar.
+**Se si è fatto un errore** è possibile utilizzare i pulsanti **undo** o **redo** nella parte destra della barra inferiore: undo cancella l'ultima sottolineatura, redo la rimette se se ne è eliminata una di troppo.
 
 
 [kj1]: https://addons.mozilla.org/en-US/firefox/addon/kjuicer/
