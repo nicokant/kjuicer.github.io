@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Contacts
+title: Contatti
 date: 2016-02-21 21:42:39.000000000 +01:00
 type: page
 published: true
 status: publish
 categories: []
 tags: []
-lang: en
+lang: it
 ref: contacts
 ---
-Write us at info [AT] kjuicer.com
+Scriveteci a info [AT] kjuicer.com

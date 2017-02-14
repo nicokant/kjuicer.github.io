@@ -7,6 +7,8 @@ published: true
 status: publish
 categories: []
 tags: []
+lang: en
+ref: legal
 ---
 Informazioni ex art. 12 Decreto-Legge convertito con modificazioni dalla
 L. 17 dicembre 2012, n. 221 (in S.O. n. 208, relativo alla G.U.

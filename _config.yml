@@ -19,3 +19,63 @@ assets: /post_assets/
 
 # Build settings
 markdown: kramdown
+home:
+  en: /
+  it: /it/
+t:
+  en:
+    copyright: "© 2016 KJuicer.com, All rights reserved."
+    keep_in_touch: "Keep in touch"
+    links: "Links"
+    published: "Published on"
+    switch: "Switch to English"
+  it:
+    copyright: "© 2016 KJuicer.com, Tutti i diritti sono riservati."
+    keep_in_touch: "Resta in contatto"
+    links: "Collegamenti"
+    published: "Pubblicato il"
+    switch: "Visualizza in Italiano"
+
+footer_menu:
+  en:
+  - label: Support 
+    href: /support
+  - label: Legal
+    href: /legal
+  - label: Privacy Policy
+    href: /privacy-policy
+  - label: Cookie Policy
+    href: /cookie-policy
+  it:
+  - label: Supporto 
+    href: /it/support
+  - label: Informazioni legali
+    href: /it/legal
+  - label: Privacy Policy
+    href: /it/privacy-policy
+  - label: Cookie Policy
+    href: /it/cookie-policy
+
+header_menu:
+  en:
+  - label: Blog
+    href: /blog
+  - label: Presentation
+    href: /presentation
+  - label: About
+    href: /about
+  it:
+  - label: Blog
+    href: /it/blog
+  - label: Presentazione
+    href: /it/presentation
+  - label: About
+    href: /it/about
+
+call_to_action:
+  en:
+    label: Try KJuicer
+    href: /get-started
+  it:
+    label: Prova KJuicer
+    href: /it/get-started

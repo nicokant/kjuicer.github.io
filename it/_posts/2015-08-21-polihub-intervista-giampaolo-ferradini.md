@@ -7,7 +7,8 @@ published: true
 status: publish
 categories: []
 tags: []
-summary: An interview to Giampaolo Ferradini, who explains what is the Knowledge Juicer.
+lang: it
+summary: Un intervista a Giampaolo Ferradini che spiega cosa sia il Kjuicer 
 image: giampaolo.jpg
 ---
 "**KJuicer** è lo strumento che sogno di realizzare da 25 anni", spiega il suo creatore **Giampaolo Ferradini.** È una piattaforma che migliora l’esperienza di lettura, evidenziando quello che è veramente importante ma dando anche la possibilità di approfondire a vari livelli, e permette poi di socializzarla e condividerla aumentata dalla propria esperienza personale

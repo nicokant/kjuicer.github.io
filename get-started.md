@@ -1,10 +1,12 @@
 ---
 layout: page
 title: Get Started
+lang: en
+ref: get-started
 ---
 
 ## 1. Create your account
-Creating a user makes sure that your documents will be saved under your account. They will be displayed on your Personal Wall. You create a new document when you click on the extension (see point 2 below for getting the extension) to highlight a web page (see point 4 below for setting up a page for *kjuicing*) or you upload one. With a user you can also decide if a document should be publicly visible and appear on the Public Wall or not, if its highlights should be editable by anyone or not. A document without owner is by default public, and its highlights can be edited by anyone. The account also allows you to bookmark your favorites (among your documents or among others') from the info menu at the bottom right of every *kjuiced* page, by clicking on the star icon of the info window. Starred, or favorites, appear in your Favorites Wall.
+Creating a user makes sure that your documents will be saved under your account. They will be displayed on your Personal Wall. You create a new document when you click on the extension (see point 2 below for installing the extension) to highlight a web page (see point 4 below for setting up a page for *kjuicing*) or you upload one. With a user you can also decide if a document should be publicly visible and appear on the Public Wall or not, if its highlights should be editable by anyone or not. A document without owner is by default public, and its highlights can be edited by anyone. The account also allows you to bookmark your favorites (among your documents or among others') from the info menu at the bottom right of every *kjuiced* page, by clicking on the star icon of the info window. Starred, or favorites, appear in your Favorites Wall.
 
 At present you can login only through Google. Former Mozilla Persona accounts can still use the login they created in the past, but since Persona has been deprecated they will have to reset their password. A blog post is dedicated to explain this simple procedure.
 
@@ -15,8 +17,8 @@ The extension allows you to cache a standard web page and turn it into a page th
 
 The Kjuicer currently works best on Firefox or Chrome, and we have developed an extension for both browsers.
 To install, please choose your relevant link:
-  - [Firefox extension][kj1]
-  - [Chrome extension][kj2]
+- [Firefox extension][kj1]
+- [Chrome extension][kj2]
 
 As soon as you install the extension you will see a stylized juicer button on your browser's toolbar. When you find a web page that you would like to highlight with the Kjuicer, click on it: you will be brought to a page ready for highlighting. If you have an account and are logged in, the page will be automatically saved on your *Personal Wall*.
 

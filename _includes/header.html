@@ -1,19 +1,40 @@
+{% if page.lang == 'it' %}
+  {% assign switch = 'en' %}
+  {% assign switch_icon = 'gb' %}
+{% elsif page.lang == 'en' %}
+  {% assign switch = 'it' %}
+  {% assign switch_icon = 'it' %}
+{% endif %}
+
+{% assign switch_temp = site.pages | where: "ref", page.ref %}
+{% assign switch_url = switch_temp | where: "lang", switch %}
+
 <nav id='main-navigation' class="black" role="navigation">
   <div class="nav-wrapper container">
-    <a id="logo-container" href="/" class="brand-logo"><img src='/assets/logo_juicer.svg'></a>
+    <a id="logo-container" href="{{site.home[page.lang]}}" class="brand-logo"><img src='/assets/logo_juicer.svg'></a>
     <ul class="right hide-on-med-and-down">
-      <li><a href="/blog">Blog</a></li>
-      <li><a href="/presentation">Presentation</a></li>
-      <li><a href="/about">About</a></li>
-      <li><a href="/get-started" class="waves-effect waves-light btn green">Try KJuicer</a></li>
+      {% for item in site.header_menu[page.lang] %}
+        <li><a href='{{item.href}}' class="green-text">{{item.label}}</a></li>
+      {% endfor %}
+      <li><a href="{{site.call_to_action[page.lang].href}}" class="waves-effect waves-light btn green">{{site.call_to_action[page.lang].label}}</a></li>
+      {% if switch_url[0] %}
+      <li>
+        <a href="{{ switch_url[0].url }}" class=""><span class="flag-icon flag-icon-{{switch_icon}}"></span></a>
+      </li>
+      {% endif %}
     </ul>
 
     <ul id="nav-mobile" class="side-nav">
-      <li><a href="/blog">Blog</a></li>
-      <li><a href="/presentation">Presentation</a></li>
-      <li><a href="/about">About</a></li>
-      <li><a class="waves-effect waves-light btn green darken-1">Try KJuicer</a></li>
+      {% for item in site.header_menu[page.lang] %}
+        <li><a href='{{item.href}}' class="green-text">{{item.label}}</a></li>
+      {% endfor %}
+      <li><a href="{{site.call_to_action[page.lang].href}}" class="waves-effect waves-light btn green">{{site.call_to_action[page.lang].label}}</a></li>
+      {% if switch_url[0] %}
+      <li>
+        <a href="{{ switch_url[0].url }}" class="green-text"><span class="flag-icon flag-icon-{{switch_icon}}"></span> {{site.t[switch].switch}}</a>
+      </li>
+      {% endif %}
     </ul>
-    <a href="/get-started" data-activates="nav-mobile" class="button-collapse green-text"><i class="zmdi zmdi-menu"></i></a>
+    <a href="#" data-activates="nav-mobile" class="button-collapse green-text"><i class="zmdi zmdi-menu"></i></a>
   </div>
 </nav>

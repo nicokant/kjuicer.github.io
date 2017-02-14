@@ -10,6 +10,15 @@ body > .container {
   flex: 1 0 auto;
 }
 
+.flag-icon {
+  transform: scale(2);
+  padding: 0 15px;
+}
+
+#nav-mobile .flag-icon {
+  margin-right: 10px;
+}
+
 .long-content {
   font-family: 'Crimson Text';
   font-size: 20px;
