@@ -22,9 +22,6 @@ To install, please choose your relevant link:
 
 As soon as you install the extension you will see a stylized juicer button on your browser's toolbar. When you find a web page that you would like to highlight with the Kjuicer, click on it: you will be brought to a page ready for highlighting. If you have an account and are logged in, the page will be automatically saved on your *Personal Wall*.
 
-In case you do not want to use either Firefox or Chrome you might still be able to use the Kjuicer on other browsers: reading a *kjuiced* document should be possible from any browser. You might also be able to *kjuice* documents if your browser supports *bookmarklets*. Bookmarklets are special bookmarks that execute small pieces of code.
-You can find the Kjuicer bookmarklet on the [extensions shortcut page][kj3]. It's the red button at the bottom. You should click and drag the button to your bookmarks toolbar, and any time you find a page that you would like to *kjuice*, simply click on the bookmarklet.
-
 ## 3. Read a *kjuiced* page
 If you have a page that has already been highlighted with the Kjuicer, you can read it by clicking on the colored dots at the bottom:
 > the **yellow** dot will bring you to the shortest summary, or what has been higlighted in yellow;
@@ -63,4 +60,3 @@ In order for the summarizing mechanism to work properly and to allow it to creat
 
 [kj1]: https://addons.mozilla.org/en-US/firefox/addon/kjuicer/
 [kj2]: https://chrome.google.com/webstore/detail/kjuicer/kgjcgankonbfhdgpfdbggfifpcabocno
-[kj3]: http://alpha.kjuicer.com/cache/extension/

@@ -22,9 +22,6 @@ Per installarla, si prega di fare riferimento al link appropriato a seconda del 
 
 Non appena si installa l'estensione, comparirà un pulsante con uno spremiagrumi stilizzato sulla barra degli strumenti del browser. Una volta scelta la pagina web che si desidera sottolineare, basta cliccare sulla estensione: verrà creata una versione Kjuicer di quella stessa pagina, pronta per essere evidenziata. Se si dispone di un account e si è effettuato il login, la pagina verrà salvata automaticamente sul vostro *Wall* personale.
 
-Nel caso in cui non si desiderasse utilizzare Firefox o Chrome, potrebbe comunque essere possibile utilizzare il Kjuicer. La lettura di un documento già sottolineato e strutturato dovrebbe essere accessibile da qualsiasi browser. Se il browser supporta i *bookmarklet*, inoltre, si può anche sottolineare e salvare le proprie pagine. I bookmarklet sono segnalibri speciali che --invece di rimandare a pagine internet come farebbe un segnalibro-- eseguono un piccolo programma.
-È possibile trovare il bookmarklet Kjuicer [a questo link][kj3]. È il pulsante rosso in basso. Per installarlo è necessario cliccare sul bookmarklet stesso e trascinarlo nella barra dei segnalibri alla posizione desiderata.  Ogni volta che si trova una pagina da evidenziare con Kjuicer è sufficiente cliccare sul bookmarklet, e la pagina apposita verrà creata come avviene usando l'estensione.
-
 ## 3. Leggere una pagina Kjuicer
 Se si desidera leggere una pagina già sottolineata con Kjuicer, è sufficiente cliccare sui pulsanti colorati in basso:
 > il **pulsante giallo** vi porterà alla sintesi più breve, che contiene tutto ciò che è stato evidenziato in giallo;
@@ -60,4 +57,3 @@ Affinché il meccanismo di sintesi funzioni correttamente, creando note in ordin
 
 [kj1]: https://addons.mozilla.org/en-US/firefox/addon/kjuicer/
 [kj2]: https://chrome.google.com/webstore/detail/kjuicer/kgjcgankonbfhdgpfdbggfifpcabocno
-[kj3]: http://alpha.kjuicer.com/cache/extension/
