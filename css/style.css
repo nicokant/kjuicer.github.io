@@ -111,3 +111,12 @@ img#logo-bg {
 #bloglist .card .card-image {
   max-width: 300px !important;
 }
+
+.center {
+  display: block;
+  margin: 0 auto;
+}
+
+.control-width {
+  width: 18rem;
+}
