@@ -1,5 +1,5 @@
 ---
-title: Utilizzare il Bookmarklet
+title: Il Bookmarklet
 date: 2017-05-12 16:41:00.000000000 +01:00
 layout: page
 type: page
@@ -9,34 +9,57 @@ categories: []
 tags: []
 lang: it
 ---
-In caso si desideri usare un browser diverso da Firefox o Chrome, è possibile usare il *bookmarklet*.
+<h4 class="center-align" style="margin: 6rem 0 3rem 0">Trascina il pulsante nella tua barra dei preferiti.</h4>
+[Kjuicer Bookmarklet](javascript:var%20s=document.createElement('script');document.body.appendChild(s);s.onload=function(){KjuicerBookmarklet()};s.src='//kjuicer.gitlab.io/bookmarklet/bookmarklet.js';void(0);){:.center.control-width.waves-effect.btn-large.waves-light.btn.green.accent-4}
+<div style="margin-top: 7rem"></div>
 
-Un bookmarklet è un link che, una volta inserito all'interno dei preferiti del proprio browser, quando viene cliccato esegue un microscopico programma.  Il *bookmarklet* di Kjuicer farà una nuova versione della pagina web nella quale vi trovate, completa di una interfaccia utente per sottolinearla. Inoltre, se avete un account Kjuicer e vi siete loggati di recente, la salverà nella vostra *bacheca personale*.
+#### Utilizzare il bookmarklet
 
-Il pulsante di seguito è il bookmarklet. **Non va premuto**: è necessario alternativamente *cliccare sul tasto destro* del vostro mouse e salvarlo nei preferiti, oppure può essere *trascinato* direttamente nella barra dei preferiti.
 
-[Kjuicer Bookmarklet ](javascript:var%20s=document.createElement('script');document.body.appendChild(s);s.onload=function(){KjuicerBookmarklet()};s.src='//kjuicer.gitlab.io/bookmarklet/bookmarklet.js';void(0);){:.center.control-width.waves-effect.btn-large.waves-light.btn.green.accent-4}
+1. Apri la pagina da sottolineare
+2. Premi il Bookmarklet
+3. Evidenzia!
+ 
+![](/assets/use-bookmarklet.gif){:.center.hoverable}
 
-Il vostro browser potrebbe avere delle istruzioni specifiche per installare un bookmarklet. Di seguito trovate quelle per Microsoft Internet Explorer 11, e per Edge.
+<div style="margin-top: 4rem"></div>
 
-## Internet Explorer 11
-Per abilitare le barre degli strumenti:
-> Fai clic con il pulsante destro sul titolo della barra degli strumenti di Internet Explorer e quindi abilita l'elemento desiderato scegliendo Barra dei comandi, Barra Preferiti e Barra di stato dal menu.
+#### Browsers Supportati
+Questi sono i browser attualmente supportati:
 
-oppure
-> In Internet Explorer, premi ALT+V per visualizzare il menu Visualizza, premi T per visualizzare il menu Barre degli strumenti e quindi premi:
-"C" per abilitare la barra dei comandi
-"F" per abilitare la barra Preferiti
-"S" per abilitare la barra di stato
+- [Chrome](https://chrome.google.com/webstore/detail/kjuicer/kgjcgankonbfhdgpfdbggfifpcabocno)
+- [Firefox](https://addons.mozilla.org/en-US/firefox/addon/kjuicer/)
+- [Internet Explorer](#internet-explorer)
+- [Safari](#safari)
+- [Edge](#microsoft-edge)
 
-[fonte](https://technet.microsoft.com/it-it/library/dn321455.aspx)
+<div style="margin-top: 4rem"></div>
 
-Una volta che la barra degli strumenti è visibile, è possibile trascinare dentro la stessa il *bookmarklet* con il mouse. Da quel momento in poi basterà andare sulla pagina web desiderata, e cliccare sul bookmarklet per poterla sottolineare con Kjuicer.
+#### Internet Explorer
+Abilita la barra dei preferiti:
 
-## Microsoft Edge
-Per installare un bookmarklet in Edge è invece necessario aggiungerlo all'*Elenco di lettura*. Questa procedura si fa cliccando con il tasto destro del mouse sul bookmarklet, e selezionando la voce *Aggiungi a Elenco di Lettura*.
-Una volta che il bookmarklet è stato aggiunto, e la pagina che ci interessa curare con Kjuicer è attiva, è sufficiente cliccare sul tasto con le tre linee orizzontali asimmetriche, che si trova in alto a destra nella barra degli strumenti (si veda la freccia rossa nell'immagine), scegliere il *tab* dell'*Elenco di Lettura*, rappresentato da una serie di righe anch'esse asimmetriche (si veda la freccia blu nell'immagine), e cliccare sul bookmarklet. A questo punto verrà creata la versione Kjuicer della pagina scelta.
+1. Fai clic con il pulsante destro sulla barra degli strumenti di Internet Explorer e quindi abilita la dei Barra Preferiti.
+2. Trascina il bookmarklet nella barra.
+3. Conferma l'aggiunta del bookmarklet.
 
-![](/assets/edge.jpg){:.center}
+![](/assets/ie-tutorial.gif){:.center.hoverable}
 
-[fonte](https://stackoverflow.com/questions/37986517/microsoft-edge-browser-does-not-support-javascript-bookmarklet-in-favorites)
+<div style="margin-top: 4rem"></div>
+
+#### Safari
+Abilita la barra dei preferiti:
+
+1. Scegli `Vista` > `Mostra barra dei preferiti`.
+2. Trascina il bookmarklet nella barra.
+
+![](/assets/safari-tutorial.gif){:.center.hoverable}
+
+<div style="margin-top: 4rem"></div>
+
+#### Microsoft Edge
+
+1. Fai click con il pulsante destro e premi `aggiungi all'elenco di lettura`.
+
+![](/assets/edge.gif){:.center.hoverable}
+
+
