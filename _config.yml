@@ -38,23 +38,23 @@ t:
 
 footer_menu:
   en:
-  - label: Support 
-    href: /support
+#  - label: Support
+#    href: /support
   - label: Legal
     href: /legal
   - label: Privacy Policy
     href: /privacy-policy
-  - label: Cookie Policy
-    href: /cookie-policy
+#  - label: Cookie Policy
+#    href: /cookie-policy
   it:
-  - label: Supporto 
-    href: /it/support
+#  - label: Supporto
+#    href: /it/support
   - label: Informazioni legali
     href: /it/legal
   - label: Privacy Policy
     href: /it/privacy-policy
-  - label: Cookie Policy
-    href: /it/cookie-policy
+#  - label: Cookie Policy
+#    href: /it/cookie-policy
 
 header_menu:
   en:
@@ -75,7 +75,7 @@ header_menu:
 call_to_action:
   en:
     label: Try KJuicer
-    href: /get-started
+    href: http://alpha.kjuicer.com/cache/484/demo/
   it:
     label: Prova KJuicer
-    href: /it/get-started
+    href: http://alpha.kjuicer.com/cache/4549/demo/

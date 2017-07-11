@@ -22,6 +22,8 @@ Per installarla, si prega di fare riferimento al link appropriato a seconda del 
 
 Non appena si installa l'estensione, comparirà un pulsante con uno spremiagrumi stilizzato sulla barra degli strumenti del browser. Una volta scelta la pagina web che si desidera sottolineare, basta cliccare sulla estensione: verrà creata una versione Kjuicer di quella stessa pagina, pronta per essere evidenziata. Se si dispone di un account e si è effettuato il login, la pagina verrà salvata automaticamente sul vostro *Wall* personale.
 
+Per tutti gli altri browser è disponibile un bookmarklet a cui è dedicata [un'intera pagina](bookmarklet.html)
+
 ## 3. Leggere una pagina Kjuicer
 Se si desidera leggere una pagina già sottolineata con Kjuicer, è sufficiente cliccare sui pulsanti colorati in basso:
 > il **pulsante giallo** vi porterà alla sintesi più breve, che contiene tutto ciò che è stato evidenziato in giallo;
