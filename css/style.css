@@ -19,15 +19,28 @@ body > .container {
   margin-right: 10px;
 }
 
+.blogpost .meta {
+  margin: 1rem !important;
+}
+
 .long-content {
   font-family: 'Crimson Text';
   font-size: 20px;
   letter-spacing: 1px;
+  margin: 1.5rem;
 }
 
 .long-content img {
   max-width: 100%;
   margin: 1rem 0;
+}
+
+.long-content p {
+  margin-bottom: 1rem !important;
+}
+
+.long-content strong, .long-content b {
+  font-weight: bold !important;
 }
 
 .caps {
