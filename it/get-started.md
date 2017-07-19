@@ -12,17 +12,19 @@ Per ora si può creare un account Kjuicer solo autenticandosi attraverso un acco
 
 Per creare l'utente o accedere tramite Google: cliccare sul tasto di login in alto a destra di ogni pagina Kjuicer (ad esempio si può usare questa: <a href = "http://alpha.kjuicer.com/cache/4549/show/#l:1,c:on" target="_blank">Kjuicer</a>), poi scegliere Google e consentire a Kjuicer di accedere alle credenziali di base dell'account Google.
 
-## 2. Installare l'estensione oppure...
-L'estensione permette di salvare una "fotografia" di una pagina web standard e trasformarla in un documento che può essere evidenziato con Kjuicer.
+## 2. Installare l'estensione o il bookmarklet
+L'estensione e il bookmarklet permettono entrambi di salvare una "fotografia" di una pagina web standard e trasformarla in un documento che può essere evidenziato con Kjuicer.
 
-Kjuicer attualmente funziona al meglio su Firefox e Chrome, e abbiamo sviluppato un'estensione per entrambi i browser.
+Per Firefox e Chrome abbiamo sviluppato un'estensione.
 Per installarla, si prega di fare riferimento al link appropriato a seconda del browser:
   - [Estensione per Firefox][kj1]
   - [Estensione per Chrome][kj2]
 
-Non appena si installa l'estensione, comparirà un pulsante con uno spremiagrumi stilizzato sulla barra degli strumenti del browser. Una volta scelta la pagina web che si desidera sottolineare, basta cliccare sulla estensione: verrà creata una versione Kjuicer di quella stessa pagina, pronta per essere evidenziata. Se si dispone di un account e si è effettuato il login, la pagina verrà salvata automaticamente sul vostro *Wall* personale.
+In caso preferiste usare altri browser c'è l'alternativa del [bookmarklet][bkmk].
 
-Per tutti gli altri browser è disponibile un bookmarklet a cui è dedicata [un'intera pagina](bookmarklet.html)
+Non appena si installa l'estensione, comparirà un pulsante con uno spremiagrumi stilizzato sulla barra degli strumenti del browser. Una volta scelta la pagina web che si desidera sottolineare, basta cliccare sulla estensione: verrà creata una versione Kjuicer di quella stessa pagina, pronta per essere evidenziata. Se si dispone di un account e si è effettuato il login, la pagina verrà salvata automaticamente sulla vostra *Bacheca personale*.
+
+Il bookmarklet funziona in modo assai simile: quando avete identificato la pagina di vostro interesse cliccate sul bookmarklet, e il risultato sarà come descritto appena sopra.
 
 ## 3. Leggere una pagina Kjuicer
 Se si desidera leggere una pagina già sottolineata con Kjuicer, è sufficiente cliccare sui pulsanti colorati in basso:
@@ -59,3 +61,4 @@ Affinché il meccanismo di sintesi funzioni correttamente, creando note in ordin
 
 [kj1]: https://addons.mozilla.org/en-US/firefox/addon/kjuicer/
 [kj2]: https://chrome.google.com/webstore/detail/kjuicer/kgjcgankonbfhdgpfdbggfifpcabocno
+[bkmk]: bookmarklet

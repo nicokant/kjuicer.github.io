@@ -1,5 +1,5 @@
 ---
-title: Il Bookmarklet
+title: The Bookmarklet
 date: 2017-05-12 16:41:00.000000000 +01:00
 layout: page
 type: page
@@ -7,29 +7,29 @@ published: true
 status: publish
 categories: []
 tags: []
-lang: it
+lang: en
 ref: bookmarklet
 ---
-<h4 class="center-align" style="margin: 6rem 0 3rem 0">Trascina il pulsante nella tua barra dei preferiti.</h4>
+<h4 class="center-align" style="margin: 6rem 0 3rem 0">Drag the button in your favourites bar</h4>
 [Kjuicer Bookmarklet](javascript:var%20s=document.createElement('script');document.body.appendChild(s);s.onload=function(){KjuicerBookmarklet()};s.src='//kjuicer.gitlab.io/bookmarklet/bookmarklet.js';void(0);){:.center.control-width.waves-effect.btn-large.waves-light.btn.green.accent-4}
 <div style="margin-top: 7rem"></div>
 
-#### Utilizzare il bookmarklet
+#### Use the bookmarklet
 
 
-1. Apri la pagina da sottolineare
-2. Premi il Bookmarklet
-3. Evidenzia!
- 
+1. Open the webpage you wish to highlight
+2. Click on the bookmarklet
+3. Highlight!
+
 ![](/assets/use-bookmarklet.gif){:.center.hoverable}
 
 <div style="margin-top: 4rem"></div>
 
-#### Browsers Supportati
-Questi sono i browser attualmente supportati:
+#### Supported browsers & installation
+These are the currently supported browsers:
 
-- [Chrome](https://chrome.google.com/webstore/detail/kjuicer/kgjcgankonbfhdgpfdbggfifpcabocno)
-- [Firefox](https://addons.mozilla.org/en-US/firefox/addon/kjuicer/)
+- [Chrome][kj2]
+- [Firefox][kj1]
 - [Internet Explorer](#internet-explorer)
 - [Safari](#safari)
 - [Edge](#microsoft-edge)
@@ -37,21 +37,21 @@ Questi sono i browser attualmente supportati:
 <div style="margin-top: 4rem"></div>
 
 #### Internet Explorer
-Abilita la barra dei preferiti:
+Enable the bookmarks bar:
 
-1. Fai clic con il pulsante destro sulla barra degli strumenti di Internet Explorer e quindi abilita la dei Barra Preferiti.
-2. Trascina il bookmarklet nella barra.
-3. Conferma l'aggiunta del bookmarklet.
+1. Right-clic on Internet Explorer's toolbar and enable the bookmarks bar
+2. Drag the green bookmarklet in the desired spot on the bar
+3. Confirm you want to add the bookmarklet.
 
 ![](/assets/ie-tutorial.gif){:.center.hoverable}
 
 <div style="margin-top: 4rem"></div>
 
 #### Safari
-Abilita la barra dei preferiti:
+Enable the bookmarks bar:
 
-1. Scegli `Vista` > `Mostra barra dei preferiti`.
-2. Trascina il bookmarklet nella barra.
+1. Choose `View` > `Show the bookmarks bar`
+2. Drag the green bookmarklet in the desired spot on the bar.
 
 ![](/assets/safari-tutorial.gif){:.center.hoverable}
 
@@ -59,8 +59,9 @@ Abilita la barra dei preferiti:
 
 #### Microsoft Edge
 
-1. Fai click con il pulsante destro e premi `aggiungi all'elenco di lettura`.
+1. Right click on any page and choose `Add to reading list`.
 
 ![](/assets/edge.gif){:.center.hoverable}
 
-
+[kj1]: https://addons.mozilla.org/en-US/firefox/addon/kjuicer/
+[kj2]: https://chrome.google.com/webstore/detail/kjuicer/kgjcgankonbfhdgpfdbggfifpcabocno

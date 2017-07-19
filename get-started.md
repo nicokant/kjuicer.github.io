@@ -10,17 +10,21 @@ Creating a user makes sure that your documents will be saved under your account.
 
 At present you can login only through Google. Former Mozilla Persona accounts can still use the login they created in the past, but since Persona has been deprecated they will have to reset their password. A blog post is dedicated to explain this simple procedure.
 
-To create or access your user through Google click on the login button in the top right corner of any Kjuicer page (for example <a href="http://alpha.kjuicer.com/cache/4549/show/#l:1,c:on" target="_blank">Kjuicer</a>), choose Google and allow Kjuicer permission to access your basic Google account credentials.
+To create or access your user through Google click on the login button in the top right corner of any Kjuicer page (<a href="http://alpha.kjuicer.com/cache/484/show/#l:1,c:on" target="_blank">for example you can use this Kjuicer description</a>), choose Google and allow Kjuicer permission to access your basic Google account credentials.
 
-## 2. Install the extension or...
-The extension allows you to cache a standard web page and turn it into a page that can be highlighted with the Kjuicer.
+## 2. Install the extension or the bookmarklet
+The extension and the bookmarklet both allow you to cache a standard web page and turn it into a page that can be highlighted with the Kjuicer.
 
-The Kjuicer currently works best on Firefox or Chrome, and we have developed an extension for both browsers.
+We developed an extension for Firefox and Chrome.
 To install, please choose your relevant link:
 - [Firefox extension][kj1]
 - [Chrome extension][kj2]
 
+In case you wanted to use other browsers, you still have the alternative of [using the bookmarklet][bkmk].
+
 As soon as you install the extension you will see a stylized juicer button on your browser's toolbar. When you find a web page that you would like to highlight with the Kjuicer, click on it: you will be brought to a page ready for highlighting. If you have an account and are logged in, the page will be automatically saved on your *Personal Wall*.
+
+The bookmarklet works in a similar way: when you are on the page you care to highlight click on it, and the results will be as described above for the extension.
 
 ## 3. Read a *kjuiced* page
 If you have a page that has already been highlighted with the Kjuicer, you can read it by clicking on the colored dots at the bottom:
@@ -60,3 +64,4 @@ In order for the summarizing mechanism to work properly and to allow it to creat
 
 [kj1]: https://addons.mozilla.org/en-US/firefox/addon/kjuicer/
 [kj2]: https://chrome.google.com/webstore/detail/kjuicer/kgjcgankonbfhdgpfdbggfifpcabocno
+[bkmk]: bookmarklet

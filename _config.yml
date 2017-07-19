@@ -53,8 +53,8 @@ footer_menu:
     href: /it/legal
   - label: Privacy Policy
     href: /it/privacy-policy
-#  - label: Cookie Policy
-#    href: /it/cookie-policy
+  - label: Cookie Policy
+    href: /it/cookie-policy
 
 header_menu:
   en:

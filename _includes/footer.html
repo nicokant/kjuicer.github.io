@@ -34,6 +34,12 @@
 
 
   <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="{{"/js/materialize.min.js" | prepend: site.baseurl}}"></script>
   <script src="{{"/js/init.js" | prepend: site.baseurl}}"></script>
+  {% if page.kj_viewer %}
+    <script src="https://kjuicer.gitlab.io/static/kjuicer-static-0.3.1.min.js"></script>
+    <script>
+      new KjuicerStatic.default('content', document.getElementById("content").innerHTML);
+    </script>
+  {% endif %}
