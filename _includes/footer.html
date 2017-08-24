@@ -36,7 +36,11 @@
   <!--  Scripts-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+  <script src="https://cdn.ravenjs.com/3.17.0/raven.min.js" crossorigin="anonymous"></script>
   <script>
+    if (Raven) {
+      Raven.config('https://fb5b596ad7d24f78ad1708125218cccd@sentry.io/207916').install();
+    }
     $('.button-collapse').sideNav();
     $('.parallax').parallax();
     $('#main-navigation').pushpin({ top: innerHeight });
