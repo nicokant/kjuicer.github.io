@@ -46,8 +46,8 @@
     $('#main-navigation').pushpin({ top: innerHeight });
   </script>
   {% if page.kj_viewer %}
-    <script src="https://kjuicer.gitlab.io/static/kjuicer-static-0.3.1.min.js"></script>
+    <script src="https://kjuicer.gitlab.io/static/0.4.1/kjuicer-static.min.js"></script>
     <script>
-      new KjuicerStatic.default('content', document.getElementById("content").innerHTML);
+      new KjuicerStatic('content');
     </script>
   {% endif %}

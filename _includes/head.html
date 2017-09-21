@@ -4,13 +4,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <link rel='shortcut icon' type='image/x-icon' href="{{ "/favicon.ico" | prepend: site.baseurl }}" />
-  
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
 
   <link rel="stylesheet" href="{{ "/css/animate.css" | prepend: site.baseurl }}">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"> 
-  <link href="{{ "/css/materialize.min.css" | prepend: site.baseurl }}" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+  <link rel="stylesheet" href="{{ "/css/materialize.min.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" href="{{ "/css/style.css" | prepend: site.baseurl }}" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/css/flag-icon.min.css">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
@@ -44,6 +43,6 @@
   <meta content="{{ site.url }}/assets/ogimage.png" property="og:image">
 {% endif %}
 {% if page.kj_viewer %}
-  <link href="https://kjuicer.gitlab.io/static/kjuicer-static-0.3.1.min.css" rel="stylesheet" />
+  <link href="https://kjuicer.gitlab.io/static/0.4.1/kjuicer-static.min.css" rel="stylesheet" />
 {% endif %}
 </head>
