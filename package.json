@@ -1,0 +1,17 @@
+{
+  "name": "kj-website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:nicokant/kjuicer.github.io.git",
+  "author": "nicokant <niccolocantu@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "gh-pages-deploy": "^0.4.2"
+  },
+  "scripts": {
+    "deploy": "gh-pages-deploy"
+  },
+  "gh-pages-deploy": {
+    "cname": ""
+  }
+}
