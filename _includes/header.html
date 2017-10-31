@@ -9,31 +9,76 @@
 {% assign switch_temp = site.pages | where: "ref", page.ref %}
 {% assign switch_url = switch_temp | where: "lang", switch %}
 
-<nav id='main-navigation' class="black" role="navigation">
-  <div class="nav-wrapper container">
-    <a id="logo-container" href="{{site.home[page.lang]}}" class="brand-logo"><img src='/assets/logo_juicer.svg'></a>
-    <ul class="right hide-on-med-and-down">
-      {% for item in site.header_menu[page.lang] %}
-        <li><a href='{{item.href}}' class="green-text">{{item.label}}</a></li>
-      {% endfor %}
-      <li><a href="{{site.call_to_action[page.lang].href}}" class="waves-effect waves-light btn green">{{site.call_to_action[page.lang].label}}</a></li>
-      {% if switch_url[0] %}
-      <li>
-        <a href="{{ switch_url[0].url }}" class=""><span class="flag-icon flag-icon-{{switch_icon}}"></span></a>
-      </li>
-      {% endif %}
-    </ul>
+<nav class="navbar navbar-expand-lg navbar-light white sticky-top">
+  <div class="container">
+    <a href="{{site.home[page.lang]}}" class="navbar-brand">
+      <strong>Kjuicer</strong>
+    </a>
+    <div class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav ml-auto mt-lg-0">
+        {% for item in site.header_menu[page.lang] %}
+        <!--li class="nav-item">
+          <a href='{{item.href}}' class="nav-link">{{item.label}}</a>
+        </li-->
+        {% endfor %}
+        {% if switch_url[0] %}
+        <!--li class="nav-item">
+          <a href="{{ switch_url[0].url }}" class="nav-link"><span class="flag-icon flag-icon-{{switch_icon}}"></span> {{switch}}</a>
+        </li-->
+        {% endif %}
+        <li class="nav-item mx-2">
+          <div class="dropdown">
+            <a id="menu-1" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Impariamo a imparare
+            </a>
+            <div class="dropdown-menu" aria-labelledby="menu-1">
+              <a class="dropdown-item">Andiamo al succo</a>
+            </div>
+          </div>
+        </li>
 
-    <ul id="nav-mobile" class="side-nav">
-      {% for item in site.header_menu[page.lang] %}
-        <li><a href='{{item.href}}' class="green-text">{{item.label}}</a></li>
-      {% endfor %}
-      <li><a href="{{site.call_to_action[page.lang].href}}" class="waves-effect waves-light btn green">{{site.call_to_action[page.lang].label}}</a></li>
-      {% if switch_url[0] %}
-      <li>
-        <a href="{{ switch_url[0].url }}" class="green-text"><span class="flag-icon flag-icon-{{switch_icon}}"></span> {{site.t[switch].switch}}</a>
-      </li>
-      {% endif %}
-    </ul>
+        <li class="nav-item mx-2">
+          <div class="dropdown">
+            <a id="menu-2" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              I superpoteri del lettore
+            </a>
+            <div class="dropdown-menu" aria-labelledby="menu-2">
+              <a class="dropdown-item">Livelli di lettura</a>
+              <a class="dropdown-item">Ordine nella conoscenza</a>
+              <a class="dropdown-item">Sintesi a domicilio</a>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item mx-2">
+          <div class="dropdown">
+            <a id="menu-3" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Studia, scopri e diffondi
+            </a>
+            <div class="dropdown-menu" aria-labelledby="menu-3">
+              <a class="dropdown-item">Guida all'uso</a>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item mx-2">
+          <a href="" class="nav-link">Costi</a>
+        </li>
+
+        <li class="nav-item mx-2">
+          <div class="dropdown">
+            <a id="menu-4" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Chi siamo
+            </a>
+            <div class="dropdown-menu" aria-labelledby="menu-4">
+              <a class="dropdown-item">Contatti</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item mx-2 active">
+          <a class="nav-link">TRY KJUICER</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>

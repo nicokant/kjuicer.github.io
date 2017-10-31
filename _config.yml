@@ -17,6 +17,10 @@ youtube_channel: UCleRhrYoSl9DbeU6GZu_DTQ
 facebook_page: kjuicer
 assets: /post_assets/
 
+sass:
+  sass_dir: _sass
+  style: compressed
+
 # Build settings
 markdown: kramdown
 home:
