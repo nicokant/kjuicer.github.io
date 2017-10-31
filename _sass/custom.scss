@@ -6,3 +6,15 @@
 nav.navbar {
   border-radius: 0 !important;
 }
+
+img.max-image {
+  max-height: 200px;
+}
+
+img.medium-image {
+  max-height: 150px;
+}
+
+img.small-image {
+  max-height: 100px;
+}
