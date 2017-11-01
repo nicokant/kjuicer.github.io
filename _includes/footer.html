@@ -1,36 +1,43 @@
-<footer class="page-footer grey darken-4">
-    <div class="container">
-      <div class="row">
-        <div class="col l4 s12">
-          <h5 class="white-text caps">{{site.t[page.lang].links}}</h5>
-          <ul>
-            {% for item in site.footer_menu[page.lang] %}
-              <li><a href='{{item.href}}' class="green-text">{{item.label}}</a></li>
-            {% endfor %}
-          </ul>
-        </div>
-        <div class="col l4 s12 offset-l4">
-          <h5 class='white-text center caps'>{{site.t[page.lang].keep_in_touch}}</h5>
-          <div class="row ">
-            <div class='col s4 center'><a href='https://facebook.com/{{ site.facebook_page }}'><i class='zmdi zmdi-facebook-box green-text zmdi-hc-2x'></i></a></div>
-            <div class='col s4 center'><a href='https://twitter.com/{{ site.twitter_username }}'><i class='zmdi zmdi-twitter-box green-text zmdi-hc-2x'></i></a></div>
-            <div class='col s4 center'><a href='https://youtube.com/channel/{{ site.youtube_channel }}'><i class='zmdi zmdi-youtube-play green-text zmdi-hc-2x'></i></a></div>
-          </div>
-          <div class="row ">
-            <div class='col s4 center'><a href='https://github.com/{{ site.github_username }}'><i class='zmdi zmdi-github-box green-text zmdi-hc-2x'></i></a></div>
-            <div class='col s4 center'><a href='/feed.xml'><i class='zmdi zmdi-rss green-text zmdi-hc-2x'></i></a></div>
-          </div>
-        </div>
+<footer class="page-footer black white-text">
+  <div class="container py-5">
+    <div class="d-flex justify-content-between pb-5">
+
+      <div>
+        <h2 class="font-weight-bold">Kjuicer</h2>
       </div>
-    </div>
-    <div class="footer-copyright black">
-      <div class="container">
-        <div class="row">
-          <div class='col s12'>{{site.t[page.lang].copyright}}</div>
-        </div>
+
+      <div>
+        <p>
+          <a class="font-weight-bold" href="#">Use cases</a><br/>
+          <a class="font-weight-bold" href="#">Blog</a><br/>
+          <a class="font-weight-bold" href="#">Pricing</a>
+        </p>
       </div>
+
+      <div>
+        <p>
+          <a class="font-weight-bold" href="#">Support</a><br/>
+          <a class="font-weight-bold" href="#">Contact us</a><br/>
+          <a class="font-weight-bold" href="#">About us</a>
+        </p>
+      </div>
+
+      <div class="d-flex w-25 justify-content-around">
+        <p><a href=""><i class="fa fa-facebook white-text"></i></a></p>
+        <p><a href=""><i class="fa fa-twitter white-text"></i></a></p>
+        <p><a href=""><i class="fa fa-google-plus white-text"></i></a></p>
+        <p><a href=""><i class="fa fa-instagram white-text"></i></a></p>
+        <p><a href=""><i class="fa fa-youtube-play white-text"></i></a></p>
+      </div>
+
     </div>
-  </footer>
+    <hr class="border-white mt-3" />
+    <div class="d-flex justify-content-between">
+      <p>2017 @ Kjuicer. <a href="#"><u>Terms of use</u></a> - <a href="#"><u>Privacy Policy</u></a></p>
+      <p><span class="flag-icon flag-icon-it"></span> Italia</p>
+    </div>
+  </div>
+</footer>
 
 
   <!--  Scripts-->
