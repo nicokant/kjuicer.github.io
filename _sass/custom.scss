@@ -15,6 +15,8 @@ img.max-image {
 
 img.medium-image {
   max-height: 150px;
+  display: block;
+  margin: auto;
 }
 
 img.small-image {
@@ -24,6 +26,7 @@ img.small-image {
 body {
   font-family: 'Roboto', sans-serif !important;
   color: #878f9a;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -36,4 +39,56 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif !important;
   font-weight: 300 !important;
   color: #878f9a;
+}
+
+.typed-cursor {
+    opacity: 1;
+    animation: typedjsBlink 0.7s infinite;
+    animation: typedjsBlink 0.7s infinite;
+    animation-name: typedjsBlink;
+    animation-duration: 0.7s;
+    animation-timing-function: initial;
+    animation-delay: initial;
+    animation-iteration-count: infinite;
+    animation-direction: initial;
+    animation-fill-mode: initial;
+    animation-play-state: initial;
+}
+
+ @keyframes typedjsBlink{
+    50% { opacity: 0.0; }
+}
+
+@-webkit-keyframes typedjsBlink{
+    0% { opacity: 1; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1; }
+}
+
+.index-row {
+  font-size: 1.4rem;
+}
+
+.slick-slider.slick-dotted {
+  margin: 0;
+
+  .slick-dots {
+    position: static;
+    bottom: 0;
+    display: flex;
+    width: auto;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+
+    li button:before {
+      font-size: 1rem;
+      color: #fff;
+    }
+
+    li.slick-active button:before {
+      font-size: 1.3rem;
+    }
+  }
 }
