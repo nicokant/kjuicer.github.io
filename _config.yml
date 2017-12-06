@@ -11,18 +11,25 @@ description: > # this means to ignore newlines until "baseurl:"
   Reading gets super powers
 baseurl: "/kjuicer.github.io" # the subpath of your site, e.g. /blog
 url: "http://nicokant.github.io" # the base hostname & protocol for your site
+markdown: kramdown
+
+plugins:
+  - jekyll-multiple-languages-plugin
+
+# Localization i18n
+languages: ["en", "it"]
+defaultLang: en
+languageNames:
+  en: English
+  it: Italiano
+exclude_from_localizations: ["assets", "css", "fonts", "img", "post_assets"]
+
+# Social settings
 twitter_username: KnowledgeJuicer
 github_username:  kjuicer
 youtube_channel: UCleRhrYoSl9DbeU6GZu_DTQ
 facebook_page: kjuicer
-assets: /post_assets/
 
-sass:
-  sass_dir: _sass
-  style: compressed
-
-# Build settings
-markdown: kramdown
 home:
   en: /
   it: /it/
