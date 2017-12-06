@@ -1,87 +1,32 @@
-{% if page.lang == 'it' %}
-  {% assign switch = 'en' %}
-  {% assign switch_icon = 'gb' %}
-{% elsif page.lang == 'en' %}
-  {% assign switch = 'it' %}
-  {% assign switch_icon = 'it' %}
-{% endif %}
-
-{% assign switch_temp = site.pages | where: "ref", page.ref %}
-{% assign switch_url = switch_temp | where: "lang", switch %}
-
 <nav class="navbar navbar-expand-lg navbar-light white sticky-top">
   <div class="container">
-    <a href="{{site.home[page.lang]}}" class="navbar-brand">
+    <a href="{{ site.baseurl }}" class="navbar-brand">
       <strong>Kjuicer</strong>
     </a>
     <div class="collapse navbar-collapse" id="navbarMenu">
       <ul class="navbar-nav ml-auto mt-lg-0">
-        {% for item in site.header_menu[page.lang] %}
-        <!--li class="nav-item">
-          <a href='{{item.href}}' class="nav-link">{{item.label}}</a>
-        </li-->
+        {% for item in site.translations[site.lang]["header"] %}
+          {% if item.active %}
+            <li class="nav-item mx-2 active">
+          {% else %}
+            <li class="nav-item mx-2">
+          {% endif %}
+          {% if item.sub %}
+            <div class="dropdown">
+              <a id="{{ item.id }}" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                {{ item.label }}
+              </a>
+              <div class="dropdown-menu" aria-labelledby="{{ item.id }}">
+                {% for subitem in item.sub %}
+                  <a class="dropdown-item">{{ subitem.label }}</a>
+                {% endfor %}
+              </div>
+            </div>
+          {% else %}
+            <a href='{{item.href}}' class="nav-link">{{item.label}}</a>
+          {% endif %}
+        </li>
         {% endfor %}
-        {% if switch_url[0] %}
-        <!--li class="nav-item">
-          <a href="{{ switch_url[0].url }}" class="nav-link"><span class="flag-icon flag-icon-{{switch_icon}}"></span> {{switch}}</a>
-        </li-->
-        {% endif %}
-        <li class="nav-item mx-2">
-          <div class="dropdown">
-            <a id="menu-1" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Vai al succo
-            </a>
-            <div class="dropdown-menu" aria-labelledby="menu-1">
-              <a class="dropdown-item">Riassunti</a>
-              <a class="dropdown-item">Raccolte</a>
-            </div>
-          </div>
-        </li>
-
-        <!--li class="nav-item mx-2">
-          <div class="dropdown">
-            <a id="menu-2" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              I superpoteri del lettore
-            </a>
-            <div class="dropdown-menu" aria-labelledby="menu-2">
-              <a class="dropdown-item">Livelli di lettura</a>
-              <a class="dropdown-item">Ordine nella conoscenza</a>
-              <a class="dropdown-item">Sintesi a domicilio</a>
-            </div>
-          </div>
-        </li>
-
-        <li class="nav-item mx-2">
-          <div class="dropdown">
-            <a id="menu-3" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Studia, scopri e diffondi
-            </a>
-            <div class="dropdown-menu" aria-labelledby="menu-3">
-              <a class="dropdown-item">Guida all'uso</a>
-            </div>
-          </div>
-        </li-->
-
-        <li class="nav-item mx-2">
-          <a href="pricing" class="nav-link">Costi</a>
-        </li>
-
-        <!--li class="nav-item mx-2">
-          <div class="dropdown">
-            <a id="menu-4" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Chi siamo
-            </a>
-            <div class="dropdown-menu" aria-labelledby="menu-4">
-              <a class="dropdown-item">Contatti</a>
-            </div>
-          </div>
-        </li-->
-        <li class="nav-item mx-2">
-          <a class="nav-link">Accedi</a>
-        </li>
-        <li class="nav-item mx-2 active">
-          <a class="nav-link">REGISTRATI</a>
-        </li>
       </ul>
     </div>
   </div>
