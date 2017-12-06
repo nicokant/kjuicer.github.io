@@ -1,0 +1,37 @@
+site:
+  title: Kjuicer
+  description: get ready for a knowledge juice
+
+home:
+  block_landing:
+    display_title: with superpowers
+    display_subtitle: get ready for a knowledge juice
+    call_to_action: Sign Up
+    subtext: It's free
+
+  block_extensions:
+    firefox: Get the Firefox Addon
+    chrome: Get the Chrome Extension
+
+  blocks:
+    - title: Prendi il controllo dei tuoi testi
+      text: Trattieni le informazioni rilevanti, lascia fuori il superfluo.
+    - title: Metti ordine nei contenuti
+      text: Struttura più livelli di rilettura, diversi per lunghezza e approfondimento.
+    - title: Organizza ciò che scrivi
+      text: Assegna un grado d'importanza ai contenuti mentre li scrivi, per te e per chi ti legge.
+    - title: Condividi il tuo lavoro
+      text: In privato con amici e colleghi, sul tuo sito o con il resto del mondo.
+
+  block_call:
+    title: Diventa anche tu un super eroe della lettura!
+    cite: Kjuicer is a great contribution to the world
+    by: Alex, Olanda
+    action: Registrati
+
+  block_us:
+    title: Chi siamo
+    text: Kjuicer è una startup innovativa con sede a Milano. È stata fondata da Giampaolo Ferradini e Francesco Frassinelli nel 2015, con lo scopo di migliorare il modo di apprendere e gestire informazioni degli esseri umani.
+
+
+
