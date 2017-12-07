@@ -2,7 +2,7 @@
 title: KJuicer
 description: > # this means to ignore newlines until "baseurl:"
   Reading gets super powers
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/kjuicer.github.io" # the subpath of your site, e.g. /blog
 url: "http://nicokant.github.io" # the base hostname & protocol for your site
 markdown: kramdown
 
@@ -10,6 +10,7 @@ plugins:
   - jekyll-multiple-languages-plugin
 
 exclude:
+  - _assets
   - package.json
   - yarn.lock
   - Gemfile
@@ -39,4 +40,5 @@ facebook_page: kjuicer
 
 # Global
 post_assets: /post_assets/
-assets: img
+assets: assets/img
+js_url: assets/js
