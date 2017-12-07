@@ -19,6 +19,7 @@ home:
     display_subtitle: Preparati a una spremuta di conoscenza!
     action: Registrati
     subtext: È gratis
+    fallback: Leggi
     display_texts:
       - Leggi
       - Impara

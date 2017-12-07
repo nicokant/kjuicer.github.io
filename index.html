@@ -3,7 +3,11 @@ layout: default
 ---
 <div class="container-flex">
   <div class="d-flex flex-column align-items-center py-5">
-    <h1 class="display-4"><span class="green accent-2 typed-rewrite"></span>{% t home.block_landing.display_title %}</h1>
+    <h1 class="display-4">
+      <span class="green accent-2 typed-rewrite">
+        {% t home.block_landing.fallback %}
+      </span>
+      {% t home.block_landing.display_title %}</h1>
     <h2 class="my-3 text-center w-50 subtitle">{% t home.block_landing.display_subtitle %}</h2>
     <img class="my-3 max-image" src="{% load_asset evidenziatore.svg %}" />
     <a class="btn deep-purple lighten-1 my-4"><h4 class="text-white">{% t home.block_landing.action %}</h4></a>
@@ -128,20 +132,11 @@ layout: default
 
 
 {% assign typed = site.translations[site.lang]["home"].block_landing.display_texts %}
-<script type="text/javascript" src="https://unpkg.com/typed.js@2.0.6/lib/typed.min.js"></script>
+<script src="{% load_js typed %}" async></script>
 <script>
-  var options = {
-    strings: [
-      {% for string in typed %}
-      '{{ string }}',
-      {% endfor %}
-    ],
-    typeSpeed: 120,
-    backDelay: 1200,
-    backSpeed: 80,
-    loop: true,
-    //showCursor: false,
-  }
-
-  new Typed('.typed-rewrite', options)
+  window.typedStrings = [
+  {% for string in typed %}
+    '{{ string }}',
+  {% endfor %}
+  ];
 </script>

@@ -19,6 +19,7 @@ home:
     display_subtitle: Get ready for a knowledge juice
     action: Sign Up
     subtext: It's free
+    fallback: Read
     display_texts:
       - Read
       - Learn
