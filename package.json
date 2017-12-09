@@ -38,6 +38,7 @@
     "jquery": "^3.2.1",
     "popper.js": "^1.12.9",
     "raven-js": "^3.20.1",
+    "slick-carousel": "^1.8.1",
     "typed.js": "^2.0.6"
   }
 }
