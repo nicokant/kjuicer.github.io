@@ -40,6 +40,7 @@ facebook_page: kjuicer
 
 # Global
 post_assets: /post_assets/
+assets_base_url: /kjuicer.github.io
 assets_dir: assets
 js_dir: js
 img_dir: img
