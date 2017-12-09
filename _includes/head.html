@@ -6,15 +6,7 @@
   <link rel='shortcut icon' type='image/x-icon' href="{{ "/favicon.ico" | prepend: site.baseurl }}" />
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/css/flag-icon.min.css" defer>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" defer>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/css/mdb.min.css" />
 
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
-
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
   <meta content="{{ site.title }}" property="og:site_name">
@@ -48,5 +40,17 @@
 {% if page.kj_viewer %}
   <link href="https://kjuicer.gitlab.io/static/0.4.1/kjuicer-static.min.css" rel="stylesheet" />
 {% endif %}
-  <script src="{% load_js bootstrap %}" async></script>
+  <link rel="preload" href="/assets/styles/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="http://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="http://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+  <script>
+    {% include loadCss.js %}
+
+    loadCSS("/assets/styles/main.css");
+    loadCSS("http://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css");
+    loadCSS("http://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css");
+    loadCSS("https://fonts.googleapis.com/css?family=Roboto+Mono:700|Roboto:300,400");
+  </script>
+  <script src="{% load_js bootstrap %}" async defer></script>
 </head>
