@@ -40,5 +40,7 @@ facebook_page: kjuicer
 
 # Global
 post_assets: /post_assets/
-assets: assets/img
-js_url: assets/js
+assets_dir: assets
+js_dir: js
+img_dir: img
+css_dir: styles

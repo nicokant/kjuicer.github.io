@@ -7,9 +7,9 @@ module Jekyll
         end
 
         def render(context)
-            "#{context.registers[:site].config['assets_url']}#{@img}"
+            "/#{context.registers[:site].config['assets_dir']}/#{context.registers[:site].config['img_dir']}/#{@img}"
         end
     end
 end
 
-Liquid::Template.register_tag('load_asset', Jekyll::LoadAsset)
+Liquid::Template.register_tag('load_img', Jekyll::LoadAsset)
