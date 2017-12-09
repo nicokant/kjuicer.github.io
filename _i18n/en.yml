@@ -3,7 +3,7 @@ site:
   description: get ready for a knowledge juice
 
 header:
-  - label: Vai al succo
+  - label: Reading juice
     id: vai-al-succo
     sub:
       - label: Highlights
@@ -16,9 +16,9 @@ header:
 home:
   block_landing:
     display_title: with superpowers
-    display_subtitle: Get ready for a knowledge juice
+    display_subtitle: Get ready for a knowledge juice!
     action: Sign Up
-    subtext: It's free
+    subtext:
     fallback: Read
     display_texts:
       - Read
@@ -26,7 +26,7 @@ home:
       - Summarise
       - Research
       - Study
-      - Outline
+      - Schematise
 
   block_extensions:
     firefox: Get the Firefox Addon
@@ -34,37 +34,51 @@ home:
 
   blocks:
     - title: Take control of your texts
-      text: Keep relevant informations, exclude the useless.
-    - title: Organize the content
-      text: Structure them for a better reading.
+      text: Keep relevant informations, let go of the redudancies.
+    - title: Give order to your contents
+      text: Organize various re-reading levels, different in lenght and depth.
     - title: Organize what you write
-      text: Add a priority to the text you write, for you and your readers.
+      text: Assign a priority to content while you write it, for you and your readers.
     - title: Share your work
-      text: In private with friends and collegues, on your website or with rest of the world.
+      text: In private with friends and coworkers, on your website or with the rest of the world.
 
   block_call:
-    title: Become a Super Hero of reading!
+    title: Become a reading Super Hero!
     cite: Kjuicer is a great contribution to the world
-    by: Alex, Holland
+    by: Alex, The Netherlands
     action: Sign Up
 
   block_us:
     title: About us
-    text: Kjuicer is an innovative startup based in Milan. It was founded by Giampaolo Ferradini and Francesco Frassinelli in 2015, with the mission of improve the way we learn and organize knowledge of humanity.
+    subtitle: Kjuicer is for everyone who believes that learning should be easier.
+    text: Kjuicer is an innovative startup based in Milan. It was founded by Giampaolo Ferradini (@giampaolo44) and Francesco Frassinelli in 2015, with the mission of improving the way humans learn and handle information. If you want to know more about how to conquer more knowledge like a super hero follow us on our blog (or on Medium) and on our social networks.
 
   block_slider:
-    title: Change how you read
-    subtitle: "Kjuicer is for:"
+    title: Change your reading method!
+    subtitle: "Kjuicer is made for:"
     slides:
-      - title: Who study, teach or research
-        text: Students, teachers and life-long learner
+      - title: Who studies, teaches or researches
+        text: Students, teachers and who has never quitted learning
       - title: Who works with complex texts
-        text: Attorney, programmers, public administration
+        text: Lawyers, programmers, public administration employees
       - title: Who filters informations for others
-        text: Journalists,
-      - title: Who wants to ease the spread of a text
-        text: Blogger, social media managers, editor
-      - title: Who create contents
-        text: blogpost writers, agreements or disclosures
-      - title: Company and
-        text: Manuals, projects, information manage and share
+        text: Journalists, press officers, news agencies
+      - title: Who wants to encourage the circulation of a text
+        text: Social media managers, publishers, editors
+      - title: Who creates content
+        text: Bloggers, agreements or divulgation writers
+      - title: Companies and businesses
+        text: Manuals, projects, information management and sharing
+
+footer:
+  block_1:
+    - title: Blog
+      href: #
+    - title: Use cases
+      href: #
+
+  block_2:
+    - title: Contact us
+      href: #
+    - title: Pricing
+      href: #

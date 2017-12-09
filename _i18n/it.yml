@@ -18,7 +18,7 @@ home:
     display_title: con i superpoteri
     display_subtitle: Preparati a una spremuta di conoscenza!
     action: Registrati
-    subtext: È gratis
+    subtext:
     fallback: Leggi
     display_texts:
       - Leggi
@@ -38,19 +38,20 @@ home:
     - title: Metti ordine nei contenuti
       text: Struttura più livelli di rilettura, diversi per lunghezza e approfondimento.
     - title: Organizza ciò che scrivi
-      text: Assegna un grado d'importanza ai contenuti mentre li scrivi, per te e per chi ti legge.
+      text: Assegna un livello d'importanza ai contenuti mentre li scrivi, per te e per chi ti legge.
     - title: Condividi il tuo lavoro
       text: In privato con amici e colleghi, sul tuo sito o con il resto del mondo.
 
   block_call:
-    title: Diventa anche tu un super eroe della lettura!
+    title: Diventa anche tu un supereroe della lettura!
     cite: Kjuicer è un grande contributo al mondo
     by: Alex, Olanda
     action: Registrati
 
   block_us:
     title: Chi siamo
-    text: Kjuicer è una startup innovativa con sede a Milano. È stata fondata da Giampaolo Ferradini e Francesco Frassinelli nel 2015, con lo scopo di migliorare il modo di apprendere e gestire informazioni degli esseri umani.
+    subtitle: Kjuicer è per coloro che credono che imparare dovrebbe essere più semplice.
+    text: Kjuicer è una startup innovativa con sede a Milano. È stata fondata da Giampaolo Ferradini (@giampaolo44) e Francesco Frassinelli nel 2015, con lo scopo di migliorare il modo di apprendere e gestire informazioni degli esseri umani. Se vuoi saperne di più su come conquistare conoscenza come un supereroe seguici sul nostro blog (o su Medium) e sui nostri social.
 
 
   block_slider:
@@ -60,12 +61,25 @@ home:
       - title: Chi studia, insegna o ricerca
         text: Studenti, insegnanti e chi non smette di imparare
       - title: Chi lavora con testi complessi
-        text: Avvocati, programmatori, pubblica amministrazione
+        text: Avvocati, programmatori, impegati nella pubblica amministrazione
       - title: Chi filtra informazioni per altri
-        text: Giornalisti, addetti stampa,
+        text: Giornalisti, addetti stampa, agenzie giornalistiche
       - title: Chi vuole favorire la diffusione di un testo
-        text: Blogger, social media managers, editor
+        text: Social media managers editori, curatori di testi
       - title: Chi crea contenuti
         text: Scrittori di blogpost, contratti o divulgazione
       - title: Aziende e imprese
         text: Manualistica, progettazione, gestione e condivisione delle informazioni
+
+footer:
+  block_1:
+    - title: Blog
+      href: #
+    - title: Casi di utilizzo
+      href: #
+
+  block_2:
+    - title: Contattaci
+      href: #
+    - title: Costi
+      href: #
