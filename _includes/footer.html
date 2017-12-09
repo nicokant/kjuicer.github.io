@@ -7,19 +7,15 @@
       </div>
 
       <div>
-        <p>
-          <a class="font-weight-bold text-light" href="#">Blog</a><br/>
-          <a class="font-weight-bold text-light" href="#">Casi di utilizzo</a>
-        </p>
+        {% for link in site.translations[site.lang].footer.block_1 %}
+          <a class="font-weight-bold text-light d-block" href="{{ link.href }}">{{ link.title }}</a>
+        {% endfor %}
       </div>
 
       <div>
-        <p>
-          <!--a class="font-weight-bold" href="#">Support</a><br/-->
-          <a class="font-weight-bold text-light" href="#">Contattaci</a><br/>
-          <a class="font-weight-bold text-light" href="pricing">Costi</a>
-          <!--a class="font-weight-bold" href="#">About us</a-->
-        </p>
+        {% for link in site.translations[site.lang].footer.block_2 %}
+          <a class="font-weight-bold text-light d-block" href="{{ link.href }}">{{ link.title }}</a>
+        {% endfor %}
       </div>
 
       <div class="d-flex w-25 justify-content-around">
