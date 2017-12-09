@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:700|Roboto:300,400');
 
+.navbar-nav .nav-link.btn.btn-primary {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .navbar-brand img {
   max-height: 3rem;
   max-width: 3rem;
