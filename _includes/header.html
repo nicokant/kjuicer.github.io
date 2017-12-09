@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light white sticky-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
   <div class="container">
     <a href="{{ site.baseurl }}" class="navbar-brand">
       <strong>Kjuicer</strong>
@@ -6,11 +6,7 @@
     <div class="collapse navbar-collapse" id="navbarMenu">
       <ul class="navbar-nav ml-auto mt-lg-0">
         {% for item in site.translations[site.lang]["header"] %}
-          {% if item.active %}
-            <li class="nav-item mx-2 active">
-          {% else %}
-            <li class="nav-item mx-2">
-          {% endif %}
+          <li class="nav-item mx-2">
           {% if item.sub %}
             <div class="dropdown">
               <a id="{{ item.id }}" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -23,7 +19,11 @@
               </div>
             </div>
           {% else %}
-            <a href='{{item.href}}' class="nav-link">{{item.label}}</a>
+            {% if item.active %}
+              <a href='{{item.href}}' class="nav-link btn btn-primary text-white">{{item.label}}</a>
+            {% else %}
+              <a href='{{item.href}}' class="nav-link">{{item.label}}</a>
+            {% endif %}
           {% endif %}
         </li>
         {% endfor %}
