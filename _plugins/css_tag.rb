@@ -7,7 +7,7 @@ module Jekyll
         end
 
         def render(context)
-            "#{context.registers[:site].config['assets_base_url']}/#{context.registers[:site].config['assets_dir']}/#{context.registers[:site].config['css_dir']}/#{@css}.css"
+            "#{context.registers[:site].config['assets_base_url']}/#{context.registers[:site].config['assets_dir']}/#{context.registers[:site].config['css_dir']}/#{@css.strip!}.css"
         end
     end
 end
