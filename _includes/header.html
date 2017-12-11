@@ -1,32 +1,35 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
   <div class="container">
-    <a href="{{ site.baseurl }}" class="navbar-brand">
+    <a href="{% tl home %}" class="navbar-brand">
       <strong>Kjuicer</strong>
     </a>
     <div class="collapse navbar-collapse" id="navbarMenu">
       <ul class="navbar-nav ml-auto mt-lg-0">
-        {% for item in site.translations[site.lang]["header"] %}
-          <li class="nav-item mx-2">
-          {% if item.sub %}
-            <div class="dropdown">
-              <a id="{{ item.id }}" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                {{ item.label }}
-              </a>
-              <div class="dropdown-menu" aria-labelledby="{{ item.id }}">
-                {% for subitem in item.sub %}
-                  <a class="dropdown-item">{{ subitem.label }}</a>
-                {% endfor %}
-              </div>
+        {% assign header = site.translations[site.lang]["header"] %}
+
+        <li class="nav-item mx-2">
+          <div class="dropdown">
+            <a id="{{ header[0].id }}" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              {{ header[0].label }}
+            </a>
+            <div class="dropdown-menu" aria-labelledby="{{ header[0].id }}">
+              <a href="http://alpha.kjuicer.com/cache/wall/public/featured/" class="dropdown-item">{{ header[0].sub[0].label }}</a>
+              <a href="http://alpha.kjuicer.com/cache/curations/public/" class="dropdown-item">{{ header[0].sub[1].label }}</a>
             </div>
-          {% else %}
-            {% if item.active %}
-              <a href='{{item.href}}' class="nav-link btn btn-primary text-white">{{item.label}}</a>
-            {% else %}
-              <a href='{{item.href}}' class="nav-link">{{item.label}}</a>
-            {% endif %}
-          {% endif %}
+          </div>
         </li>
-        {% endfor %}
+
+        <li class="nav-item mx-2">
+          <a href='{% tl pricing %}' class="nav-link">{{header[1].label}}</a>
+        </li>
+
+        <li class="nav-item mx-2">
+          <a href='http://alpha.kjuicer.com/cache/login/' class="nav-link">{{header[2].label}}</a>
+        </li>
+
+        <li class="nav-item mx-2">
+          <a href='#' class="nav-link btn btn-primary text-white">{{header[3].label}}</a>
+        </li>
       </ul>
     </div>
   </div>
