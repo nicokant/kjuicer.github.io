@@ -40,6 +40,7 @@
 {% if page.kj_viewer %}
   <link href="https://kjuicer.gitlab.io/static/0.4.1/kjuicer-static.min.css" rel="stylesheet" />
 {% endif %}
+  <style>{% include critical.css %}</style>
   <link rel="preload" href="{% load_css main %}" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="http://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="http://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
