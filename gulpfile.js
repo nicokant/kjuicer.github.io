@@ -166,6 +166,8 @@ gulp.task('serve', ['build:local'], function() {
     // Watch data files.
     gulp.watch('_data/**.*+(yml|yaml|csv|json)', ['build:jekyll:watch']);
 
+    gulp.watch('_i18n/**.*+(yml|yaml|csv|json)', ['build:jekyll:watch']);
+
     // Watch favicon.png.
     gulp.watch('favicon.png', ['build:jekyll:watch']);
 });
