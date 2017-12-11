@@ -9,7 +9,7 @@
 
         <li class="nav-item mx-2">
           <div class="dropdown">
-            <a id="{{ header[0].id }}" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a id="{{ header[0].id }}" class="nav-link dropdown-toggle pointable" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               {{ header[0].label }}
             </a>
             <div class="dropdown-menu" aria-labelledby="{{ header[0].id }}">
@@ -28,7 +28,7 @@
         </li>
 
         <li class="nav-item mx-2">
-          <a href='#' class="nav-link btn btn-primary text-white">{{header[3].label}}</a>
+          <a href='#' class="nav-link btn btn-primary"><span class="text-white">{{header[3].label}}</span></a>
         </li>
       </ul>
     </div>
