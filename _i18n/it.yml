@@ -73,13 +73,9 @@ home:
 
 footer:
   block_1:
-    - title: Blog
-      href: #
-    - title: Casi di utilizzo
-      href: #
+    - Blog
+    - Casi di utilizzo
 
   block_2:
-    - title: Contattaci
-      href: #
-    - title: Costi
-      href: #
+    - Contattaci
+    - Costi

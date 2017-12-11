@@ -72,13 +72,9 @@ home:
 
 footer:
   block_1:
-    - title: Blog
-      href: #
-    - title: Use cases
-      href: #
+    - Blog
+    - Use cases
 
   block_2:
-    - title: Contact us
-      href: #
-    - title: Pricing
-      href: #
+    - Contact us
+    - Pricing
