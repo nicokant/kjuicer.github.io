@@ -130,7 +130,6 @@ layout: default
 
 
 {% assign typed = site.translations[site.lang]["home"].block_landing.display_texts %}
-<script src="{% load_js typed %}" async></script>
 <script>
   window.typedStrings = [
   {% for string in typed %}
@@ -138,3 +137,4 @@ layout: default
   {% endfor %}
   ];
 </script>
+<script src="{% load_js typed %}" async></script>
