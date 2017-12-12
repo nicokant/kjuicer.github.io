@@ -5,74 +5,80 @@ permalink: "/"
 ---
 <div class="container-flex">
   <div class="d-flex flex-column align-items-center py-5">
-    <h1 class="display-4">
-      <span class="bg-secondary typed-rewrite">
+    <h1 class="display-4 text-dark">
+      <mark class="text-dark typed-rewrite">
         {% t home.block_landing.fallback %}
-      </span>{% t home.block_landing.display_title %}</h1>
+      </mark>{% t home.block_landing.display_title %}</h1>
     <h2 class="my-3 text-center w-50 subtitle">{% t home.block_landing.display_subtitle %}</h2>
     <img class="my-3 max-image" src="{% load_img evidenziatore.svg %}" />
-    <a href='http://alpha.kjuicer.com/cache/login/' class="btn btn-primary"><h4 class="text-white">{% t home.block_landing.action %}</h4></a>
+    <a href='http://alpha.kjuicer.com/cache/login/' class="btn btn-primary btn-lg text-white">{% t home.block_landing.action %}</a>
     <!--p class="text-muted lead">{ t home.block_landing.subtext }</p-->
   </div>
 
-  <div class="d-flex flex-column flex-md-row align-items-center justify-content-center py-5">
-    <a href="#" class="px-4 py-3 white-text mx-4 d-flex w-25 justify-content-center align-items-center font-weight-bold">
-      <i class="fa fa-firefox fa-3x"></i>
-      <h5 class="mx-3 white-text">{% t home.block_extensions.firefox %}</h5>
+  <div class="container d-flex flex-column flex-md-row align-items-center justify-content-center py-5">
+    <a href="#" class="mx-3">
+      <img class="download" src="{% load_img download_firefox.png %}" />
     </a>
-    <a href="#" class="px-4 py-3 white-text mx-4 d-flex w-25 justify-content-center align-items-center font-weight-bold">
-      <i class="fa fa-chrome fa-3x"></i>
-      <h5 class="mx-3 white-text">{% t home.block_extensions.chrome %}</h5>
+    <a href="#" class="mx-3">
+      <img class="download" src="{% load_img download_chrome.png %}" />
+    </a>
+    <a href="{% tl bookmarklet %}" class="mx-3">
+      <img class="download" src="{% load_img download_safari.png %}" />
     </a>
   </div>
 
 
   {% assign blocklist = site.translations[site.lang]["home"].blocks %}
 
-  <div class="d-flex index-row">
-    <div class="col-md-2 py-5 bg-dark"></div>
-    <div class="col-md-4 py-5 bg-dark">
-      <img class="medium-image mb-3" src="{% load_img spremiagrumi.svg %}" />
+  <div class="d-flex index-row align-items-center pt-2 pb-1">
+    <div class="col-md-2"></div>
+    <div class="col-md-4">
+      <img class="medium-image" src="{% load_img step1.png %}" />
     </div>
-    <div class="col-md-4 bg-dark py-5 text-light px-5 text-center">
-      <h2 class="text-light mb-3 pb-2">{{ blocklist[0].title}}</h2>
-      <p>{{ blocklist[0].text}}</p>
+    <div class="col-md-4 px-5 text-left">
+      <h2 class="mb-3 text-dark">{{ blocklist[0].title}}</h2>
+      <p class="subtitle">{{ blocklist[0].text}}</p>
     </div>
 
-    <div class="col-md-2 bg-secondary py-5"></div>
+    <div class="col-md-2"></div>
   </div>
 
 
 
 
 
-  <div class="d-flex index-row">
-    <div class="col-md-2 bg-dark py-5"></div>
-    <div class="col-md-4 bg-dark py-5">
-      <img class="medium-image mb-3" src="{% load_img spremiagrumi.svg %}" />
-    </div>
-    <div class="col-md-4 bg-dark py-5 text-light px-5 text-center">
-      <h2 class="text-light mb-3 pb-2">{{ blocklist[1].title}}</h2>
-      <p>{{ blocklist[1].text}}</p>
+  <div class="d-flex index-row align-items-center pt-1 pb-2">
+    <div class="col-md-2"></div>
+
+    <div class="col-md-4 px-5 text-right">
+      <h2 class="text-dark pb-2">{{ blocklist[1].title}}</h2>
+      <p class="subtitle">{{ blocklist[1].text}}</p>
     </div>
 
-    <div class="col-md-2 bg-secondary py-5"></div>
+    <div class="col-md-4">
+      <img class="medium-image" src="{% load_img step2.png %}" />
+    </div>
+
+    <div class="col-md-2"></div>
   </div>
 
-  <div class="bg-primary py-5 text-center">
+
+
+
+  <div class="bg-dark pt-5 pb-2 text-center">
     <h2 class="text-light">{% t home.block_slider.title %}</h2>
     <h4 class="subtitle text-light">{% t home.block_slider.subtitle %}</h4>
   </div>
-  <div id="carousel" class="py-2 bg-primary">
+  <div id="carousel" class="pb-4 bg-dark">
     {% for slide in site.translations[site.lang]["home"].block_slider.slides %}
-    <div class="d-flex flex-column flex-md-row justify-content-center py-5">
-      <div class="w-50">
-        <img class="medium-image mb-3 float-right" src="{% load_img spremiagrumi.svg %}" />
+    <div class="d-flex flex-column flex-md-row justify-content-center py-5 align-items-center">
+      <div class="mx-3 w-50">
+        <img class="large-image float-right" src="{% load_img persona.png %}" />
       </div>
-      <div class="mx-5 w-50">
-        <h5 class="text-light">{{ slide.title }}</h5>
+      <div class="mx-3 w-50">
+        <p class="text-light lead">{{ slide.title }}</p>
         <div class="border border-white w-25 my-4"></div>
-        <h3 class="text-light">{{ slide.text }}</h3>
+        <h3 class="text-light w-75">{{ slide.text }}</h3>
       </div>
     </div>
     {% endfor %}
@@ -82,50 +88,53 @@ permalink: "/"
 
 
 
-  <div class="d-flex index-row">
-    <div class="col-md-2 bg-dark py-5"></div>
-    <div class="col-md-4 bg-dark py-5">
-      <img class="medium-image mb-3" src="{% load_img spremiagrumi.svg %}" />
+<div class="d-flex index-row align-items-center pt-2 pb-1">
+    <div class="col-md-2"></div>
+    <div class="col-md-4">
+      <img class="medium-image" src="{% load_img step3.png %}" />
     </div>
-    <div class="col-md-4 bg-dark py-5 text-light px-5 text-center">
-      <h2 class="text-light mb-3 pb-2">{{ blocklist[2].title}}</h2>
-      <p>{{ blocklist[2].text}}</p>
+    <div class="col-md-4 py-5 text-left">
+      <h2 class="text-dark">{{ blocklist[2].title}}</h2>
+      <p class="subtitle">{{ blocklist[2].text}}</p>
     </div>
 
-    <div class="col-md-2 bg-secondary py-5"></div>
+    <div class="col-md-2"></div>
   </div>
 
 
 
 
-  <div class="d-flex index-row">
-    <div class="col-md-2 bg-dark py-5"></div>
-    <div class="col-md-4 bg-dark py-5">
-      <img class="medium-image mb-3" src="{% load_img spremiagrumi.svg %}" />
-    </div>
-    <div class="col-md-4 bg-dark py-5 text-light px-5 text-center">
-      <h2 class="text-light mb-3 pb-2">{{ blocklist[3].title}}</h2>
-      <p>{{ blocklist[3].text}}</p>
+
+  <div class="d-flex index-row align-items-center pt-1">
+    <div class="col-md-2"></div>
+
+    <div class="col-md-4 px-5 text-right">
+      <h2 class="text-dark pb-2">{{ blocklist[3].title}}</h2>
+      <p class="subtitle">{{ blocklist[3].text}}</p>
     </div>
 
-    <div class="col-md-2 bg-secondary py-5"></div>
+    <div class="col-md-4">
+      <img class="medium-image" src="{% load_img step4.png %}" />
+    </div>
+
+    <div class="col-md-2"></div>
   </div>
 
   <div class="d-flex flex-column align-items-center py-5 bg-secondary text-center">
-    <h1>{% t home.block_call.title%}</h1>
+    <h1 class="text-dark">{% t home.block_call.title%}</h1>
 
     <div class="font-italic lead my-3">
-      <p><sup><i class="fa fa-quote-left"></i></sup> <big>{% t home.block_call.cite %}</big> <sup><i class="fa fa-quote-right"></i></sup></p>
-      <p>{% t home.block_call.by %}</p>
+      <p class="text-dark"><sup><i class="fa fa-quote-left"></i></sup> <big>{% t home.block_call.cite %}</big> <sup><i class="fa fa-quote-right"></i></sup></p>
+      <p class="text-dark">{% t home.block_call.by %}</p>
     </div>
 
-    <p class="my-5 font-weight-bold"><a href='http://alpha.kjuicer.com/cache/login/' class="btn btn-primary btn-lg"><span class="text-white">{% t home.block_call.action %}</span></a></p>
+    <p class="mt-3 mb-0 font-weight-bold"><a href='http://alpha.kjuicer.com/cache/login/' class="btn btn-primary btn-lg text-white">{% t home.block_call.action %}</a></p>
   </div>
 
-  <div class="container my-5 index-row">
-    <h2 class="text-center">{% t home.block_us.title %}</h2>
-    <h4 class="text-center text-muted my-3">{% t home.block_us.subtitle%}</h4>
-    <p class="text-center">{% t home.block_us.text %}</p>
+  <div class="container my-5">
+    <h2 class="text-center text-dark pb-2">{% t home.block_us.title %}</h2>
+    <p class="text-center subtitle index-row">{% t home.block_us.subtitle%}</p>
+    <p class="text-center font-size-lower">{% t home.block_us.text %}</p>
   </div>
 </div>
 

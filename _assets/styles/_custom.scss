@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:700|Roboto:300,400');
 
+html, body {
+  overflow-x: hidden;
+}
+
 .navbar-nav .nav-link.btn.btn-primary {
   padding-left: 2rem;
   padding-right: 2rem;
 }
 
 .navbar-brand img, img.brand-logo {
-  max-height: 5rem;
-  max-width: 5rem;
+  max-height: 3rem;
+  /*max-width: 5rem;*/
 }
 
 nav.navbar {
@@ -19,9 +23,13 @@ img.max-image {
 }
 
 img.medium-image {
-  max-height: 150px;
+  max-width: 80%;
   display: block;
   margin: auto;
+}
+
+img.large-image {
+  max-width: 50%;
 }
 
 img.small-image {
@@ -62,6 +70,10 @@ img.small-image {
   font-size: 1.4rem;
 }
 
+.font-size-lower {
+  font-size: 1.1rem;
+}
+
 .slick-slider.slick-dotted {
   margin: 0;
 
@@ -88,4 +100,26 @@ img.small-image {
 
 a.pointable {
   cursor: pointer;
+}
+
+.small-font {
+  font-size: 0.8rem !important;
+}
+
+img.download {
+  width: 136px;
+  height: 42px;
+}
+
+.btn-primary:hover {
+  background-color: map-get($theme-colors, 'dark');
+  border-color: map-get($theme-colors, 'dark');
+}
+
+a.btn-primary.text-white:hover {
+  color: map-get($theme-colors, 'white') !important;
+}
+
+footer {
+  font-size: 0.8rem;
 }
