@@ -2,16 +2,16 @@
   <div class="container py-5">
     <div class="d-flex justify-content-between pb-5">
 
-      <div>
-        <h2 class="font-weight-bold text-light">Kjuicer</h2>
+      <div class="d-flex justify-content-center w-25">
+        <img class="brand-logo" src="{% load_img logo-footer.svg %}" />
       </div>
 
-      <div>
+      <div class="w-25">
         <a class="font-weight-bold text-light d-block" href="">{{ site.translations[site.lang].footer.block_1[0] }}</a>
         <a class="font-weight-bold text-light d-block" href="">{{ site.translations[site.lang].footer.block_1[1] }}</a>
       </div>
 
-      <div>
+      <div class="w-25">
         <a class="font-weight-bold text-light d-block" href="">{{ site.translations[site.lang].footer.block_2[0] }}</a>
         <a class="font-weight-bold text-light d-block" href="{% tl pricing %}">{{ site.translations[site.lang].footer.block_2[1] }}</a>
       </div>
@@ -30,6 +30,7 @@
     <div class="d-flex justify-content-between">
       <p>2017 @ Kjuicer. <a href="#" class="text-light"><u>Terms of use</u></a> - <a class="text-light"
        href="{% tl privacy-policy %}"><u>Privacy Policy</u></a></p>
+
       <p><span class="flag-icon flag-icon-it"></span> Italia</p>
     </div>
   </div>
