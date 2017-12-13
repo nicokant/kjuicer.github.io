@@ -71,9 +71,10 @@ permalink: "/"
   </div>
   <div id="carousel" class="pb-4 bg-dark">
     {% for slide in site.translations[site.lang]["home"].block_slider.slides %}
+    {% capture image_link %}slider{{ forloop.index }}.png{% endcapture %}
     <div class="d-flex flex-column flex-md-row justify-content-center py-5 align-items-center">
       <div class="mx-3 w-50">
-        <img class="large-image float-right" src="{% load_img persona.png %}" />
+        <img class="large-image float-right" src="{{ site.assets_base_url }}/{{ site.assets_dir }}/{{site.img_dir}}/{{ image_link }}" />
       </div>
       <div class="mx-3 w-50">
         <p class="text-light lead">{{ slide.title }}</p>
