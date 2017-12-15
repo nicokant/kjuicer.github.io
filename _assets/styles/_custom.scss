@@ -106,9 +106,14 @@ a.pointable {
   font-size: 0.8rem !important;
 }
 
-img.download {
-  width: 136px;
-  height: 42px;
+.download {
+  width: 12rem;
+  border: 2px solid map-get($theme-colors, "primary");
+  border-radius: 10px;
+
+  &:hover, &:active {
+    border-color: map-get($theme-colors, "dark");
+  }
 }
 
 .btn-primary:hover {
