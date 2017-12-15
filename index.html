@@ -5,12 +5,12 @@ permalink: "/"
 ---
 <div class="container-flex">
   <div class="d-flex flex-column align-items-center py-5 bg-grey-light">
-    <h1 class="display-4 text-dark">
+    <h1 class="display-4 text-dark text-center">
       <mark class="text-dark typed-rewrite">
         {% t home.block_landing.fallback %}
-      </mark>{% t home.block_landing.display_title %}</h1>
-    <h2 class="my-3 text-center w-50 subtitle">{% t home.block_landing.display_subtitle %}</h2>
-    <img src="{% load_img illustrazione-visual.png %}" class="pull-up w-50" />
+      </mark><br class="d-md-none"/>{% t home.block_landing.display_title %}</h1>
+    <h2 class="my-3 text-center w-75 w-md-50 subtitle">{% t home.block_landing.display_subtitle %}</h2>
+    <img src="{% load_img illustrazione-visual.png %}" class="pull-up mw-100 w-md-50 " />
     <a href='http://alpha.kjuicer.com/cache/login/' class="btn btn-primary btn-lg text-white pull-up-small">{% t home.block_landing.action %}</a>
     <!--p class="text-muted lead">{ t home.block_landing.subtext }</p-->
   </div>
