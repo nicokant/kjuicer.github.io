@@ -33,7 +33,7 @@ home:
     chrome: Scarica l'estensione per Chrome
 
   blocks:
-    - title: Prendi il controllo dei tuoi testi
+    - title: Estrai conoscenza dai tuoi testi
       text: Trattieni le informazioni rilevanti, lascia fuori il superfluo.
     - title: Metti ordine nei contenuti
       text: Struttura più livelli di rilettura, diversi per lunghezza e approfondimento.
@@ -59,7 +59,7 @@ home:
     subtitle: Kjuicer è pensato per
     slides:
       - title: Chi studia, insegna o ricerca
-        text: Studenti, insegnanti e chi non smette di imparare
+        text: Studenti, insegnanti e chi non smette mai di imparare
       - title: Chi lavora con testi complessi
         text: Avvocati, programmatori, impegati nella pubblica amministrazione
       - title: Chi filtra informazioni per altri

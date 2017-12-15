@@ -33,9 +33,9 @@ home:
     chrome: Get the Chrome Extension
 
   blocks:
-    - title: Take control of your texts
-      text: Keep relevant informations, let go of the redudancies.
-    - title: Give order to your contents
+    - title: Extract knowledge from your text
+      text: Keep relevant informations, let go of redudancies.
+    - title: Give an order to contents
       text: Organize various re-reading levels, different in lenght and depth.
     - title: Organize what you write
       text: Assign a priority to content while you write it, for you and your readers.
@@ -43,7 +43,7 @@ home:
       text: In private with friends and coworkers, on your website or with the rest of the world.
 
   block_call:
-    title: Become a reading Super Hero!
+    title: Become a Super Hero of reading!
     cite: Kjuicer is a great contribution to the world
     by: Alex, The Netherlands
     action: Sign Up
@@ -58,7 +58,7 @@ home:
     subtitle: "Kjuicer is made for:"
     slides:
       - title: Who studies, teaches or researches
-        text: Students, teachers and who has never quitted learning
+        text: Students, teachers and who has never quit learning
       - title: Who works with complex texts
         text: Lawyers, programmers, public administration employees
       - title: Who filters informations for others
