@@ -4,107 +4,73 @@ namespace: pricing
 permalink: /pricing/
 permalink_it: /costi/
 ---
-<h1 class="text-center">PIANI</h1>
+<div class="container">
+  <h1 class="mt-5 text-dark">Pricing</h1>
 
-<div class="d-flex flex-column flex-md-row justify-content-center align-items-start flex-wrap">
-  <div class="m-2 d-flex flex-md-row w-100 justify-content-center">
-    <ul class="list-group font-weight-bold">
-      <li class="list-group-item">Piano</li>
-      <li class="list-group-item">Nessuna pubblicità</li>
-      <li class="list-group-item">Salva documenti illimitati</li>
-      <li class="list-group-item">Riassunti illimitati</li>
-      <li class="list-group-item">Curation di documenti illimitate</li>
-      <li class="list-group-item">Plug in</li>
-      <li class="list-group-item">Estensione di Chrome</li>
-      <li class="list-group-item">Add-on di Firefox</li>
-      <li class="list-group-item">Condividi via link</li>
-      <li class="list-group-item">Permalink</li>
-      <li class="list-group-item">upload in HTML</li>
-      <li class="list-group-item">Supporto</li>
-      <li class="list-group-item">Palette di colori</li>
-      <li class="list-group-item">Pagine private</li>
-      <li class="list-group-item">Crittografia abilitata</li>
-      <li class="list-group-item">upload in docx, gdocs</li>
-      <li class="list-group-item">Costo</li>
-    </ul>
-    <ul class="list-group text-center">
-      <li class="list-group-item font-weight-bold">Basic</li>
-      <li class="list-group-item"><i class="fa fa-check"></i></li>
-      <li class="list-group-item"><i class="fa fa-check"></i></li>
-      <li class="list-group-item"><i class="fa fa-check"></i></li>
-      <li class="list-group-item"><i class="fa fa-check"></i></li>
-      <li class="list-group-item">fino a 2000 visualizzazioni</i></li>
-      <li class="list-group-item"><i class="fa fa-check"></i></li>
-      <li class="list-group-item"><i class="fa fa-check"></i></li>
-      <li class="list-group-item"><i class="fa fa-check"></i></li>
-      <li class="list-group-item"><i class="fa fa-check"></i></li>
-      <li class="list-group-item"><i class="fa fa-check"></i></li>
-      <li class="list-group-item">Entro 3 giorni lavorativi</i></li>
-      <li class="list-group-item">Standard</li>
-      <li class="list-group-item"><i class="fa fa-check invisible"></i></li>
-      <li class="list-group-item"><i class="fa fa-check invisible"></i></li>
-      <li class="list-group-item"><i class="fa fa-check invisible"></i></li>
-      <li class="list-group-item">Gratis</li>
-      <li class="list-group-item"><a class="btn btn-info">Registrati</a></li>
-    </ul>
-    <ul class="list-group text-center">
-      <li class="list-group-item font-weight-bold">Pro Suite</li>
-      <li class="list-group-item"><i class="fa fa-check"></i></li>
-      <li class="list-group-item"><i class="fa fa-check"></i></li>
-      <li class="list-group-item"><i class="fa fa-check"></i></li>
-      <li class="list-group-item"><i class="fa fa-check"></i></li>
-      <li class="list-group-item"><i class="fa fa-check"></i></li>
-      <li class="list-group-item"><i class="fa fa-check"></i></li>
-      <li class="list-group-item"><i class="fa fa-check"></i></li>
-      <li class="list-group-item"><i class="fa fa-check"></i></li>
-      <li class="list-group-item"><i class="fa fa-check"></i></li>
-      <li class="list-group-item"><i class="fa fa-check"></i></li>
-      <li class="list-group-item">Prioritario</i></li>
-      <li class="list-group-item">Personalizzabili</li>
-      <li class="list-group-item"><i class="fa fa-check"></i></li>
-      <li class="list-group-item"><i class="fa fa-check"></i></li>
-      <li class="list-group-item"><i class="fa fa-check"></i></li>
-      <li class="list-group-item">Coming soon...</li>
-      <li class="list-group-item"><a class="btn btn-info">Rimani aggiornato</a></li>
-    </ul>
+  <div class="">
+    {% assign features = site.translations[site.lang].pricing.features %}
+    <div class="d-flex justify-content-start align-items-center py-3">
+      <div class="col-6"></div>
+      {% for plan in site.translations[site.lang].pricing.plans %}
+        <div class="col-3 text-center text-uppercase text-dark"><h5>{{ plan }}</h5></div>
+      {% endfor %}
+    </div>
+    {% for feature in features %}
+    <div class="d-flex justify-content-start align-items-center pt-1 pb-2">
+      <div class="col-6 pl-0"><strong>{{ feature.label }}</strong></div>
+      <div class="col-3 text-center">{% if feature.base %}<i class="fa fa-check fa-2x text-secondary"></i>{% else %} <i class="fa fa-times fa-2x text-info"></i>{% endif %}</div>
+      <div class="col-3 text-center">{% if feature.pro %}<i class="fa fa-check fa-2x text-secondary"></i>{% endif %}</div>
+    </div>
+    {% endfor %}
+    {% assign price = site.translations[site.lang].pricing.price %}
+    <div class="d-flex justify-content-start align-items-center pt-1 pb-2">
+      <div class="col-6 pl-0"><strong>{{ price.label }}</strong></div>
+      <div class="col-3 text-center"><h5 class="text-primary">{{ price.base }}</h5></div>
+      <div class="col-3 text-center"><h5 class="text-primary">9,90€ al mese</h5></div>
+    </div>
+    {% assign actions = site.translations[site.lang].pricing.actions %}
+    <div class="d-flex justify-content-start align-items-center p-3">
+      <div class="col-6"></div>
+      {% for action in actions %}
+        <div class="col-3 text-center"><a href="{{ action.href }}" class="btn btn-primary text-white">{{ action.label }}</a></div>
+      {% endfor %}
+    </div>
   </div>
 
-  <div class="border p-2 w-25 m-4">
-    <header class="text-center">
-      <h2>Web editor</h2>
-    </header>
-    <h4>Giornaliero</h4>
-    <p>1,99€</p>
-    <h4>Settimanale</h4>
-    <p>4,99€</p>
-    <h4>Mensile</h4>
-    <p>9,90€</p>
-    <h4>Annuale</h4>
-    <p>99,00€</p>
-    <footer class="text-center">
-      <button class="btn btn-info">SCEGLI IL PIANO!</button>
-    </footer>
+  <div class="d-flex flex-column flex-sm-row pt-5">
+    <div class="col-sm-6 px-0 pr-sm-3">
+      <div class="px-3 py-5 text-center bg-grey-light">
+        <h2 class="text-dark mb-4">Web editor</h2>
+        <h4 class="font-serif">Giornaliero</h4>
+        <h5 class="text-primary mb-3">1,99€</h5>
+        <h4 class="font-serif">Settimanale</h4>
+        <h5 class="text-primary mb-3">4,99€</h5>
+        <h4 class="font-serif">Mensile</h4>
+        <h5 class="text-primary mb-3">9,90€</h5>
+        <h4 class="font-serif">Annuale</h4>
+        <h5 class="text-primary">99,00€</h5>
+        <button class="btn btn-primary text-white mt-4">SCEGLI IL PIANO</button>
+      </div>
+    </div>
+    <div class="col-sm-6 px-0 mt-3 mt-sm-0 pl-sm-3">
+      <div class="px-3 py-5 text-center bg-grey-light">
+        <h2 class="text-dark mb-4">Plugin</h2>
+        <h4 class="font-serif">Fino a 2 000 visualizzazioni</h4>
+        <h5 class="text-primary mb-3">Gratis</h5>
+        <h4 class="font-serif">Fino a 20 000 visualizzazioni</h4>
+        <h5 class="text-primary mb-3">9,90€</h5>
+        <h4 class="font-serif">Fino a 200 000 visualizzazioni</h4>
+        <h5 class="text-primary mb-3">44,90€</h5>
+        <h4 class="font-serif">Più di 200 000?</h4>
+        <h5 class="text-primary">Contattaci!</h5>
+        <button class="btn btn-primary text-white mt-4">SCEGLI IL PIANO</button>
+      </div>
+    </div>
   </div>
 
-  <div class="border p-2 w-25 m-4">
-    <header class="text-center">
-      <h2>Plugin</h2>
-    </header>
-    <h4>Fino a 2 000 visualizzazioni</h4>
-    <p>Gratis</p>
-    <h4>Fino a 20 000 visualizzazioni</h4>
-    <p>9,90€</p>
-    <h4>Fino a 200 000 visualizzazioni</h4>
-    <p>44,90€</p>
-    <h4>Più di 200 000?</h4>
-    <p>Contattaci!</p>
-    <footer class="text-center">
-      <button class="btn btn-info">SCEGLI IL PIANO!</button>
-    </footer>
-  </div>
 </div>
 
-<div class="border lead text-center p-5">
-  <h4>Hai domande?</h4>
-  <a href="#" class="btn btn-info">Contattaci!</a>
+<div class="bg-secondary lead text-center py-5 mt-5">
+  <h2 class="text-dark mb-4">Hai domande?</h2>
+  <a href="#" class="btn btn-primary text-white">Contattaci</a>
 </div>

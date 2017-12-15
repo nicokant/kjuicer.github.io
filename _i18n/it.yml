@@ -6,7 +6,7 @@ header:
   - label: Vai al succo
     id: vai-al-succo
     sub:
-      - label: Riassunti
+      - label: Super Riassunti
       - label: Raccolte
   - label: Costi
   - label: Accedi
@@ -79,3 +79,54 @@ footer:
   block_2:
     - Contattaci
     - Costi
+
+pricing:
+  plans:
+    - Base
+    - Suite Avanzata
+  features:
+    - label: Nessuna pubblicità
+      base: true
+      pro: true
+    - label: Salva documenti illimitati
+      base: true
+      pro: true
+    - label: Riassunti illimitati
+      base: true
+      pro: true
+    - label: Raccolte di documenti illimitate
+      base: true
+      pro: true
+    - label: Estensioni
+      base: true
+      pro: true
+    - label: Condivisione via link
+      base: true
+      pro: true
+    - label: Upload HTML
+      base: true
+      pro: true
+    - label: Supporto Prioritario
+      base: false
+      pro: true
+    - label: Evidenziatori personalizzabili
+      base: false
+      pro: true
+    - label: Documenti Privati
+      base: false
+      pro: true
+    - label: Crittografia Abilitata
+      base: false
+      pro: true
+    - label: Upload Docx e Google Docs
+      base: false
+      pro: true
+  price:
+    label: Costo
+    base: Gratis
+    pro: Presto Disponibile
+  actions:
+    - label: Registrati
+      href: #
+    - label: Rimani Aggiornato
+      href: #
