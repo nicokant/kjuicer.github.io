@@ -10,30 +10,14 @@ permalink: "/"
         {% t home.block_landing.fallback %}
       </mark><br class="d-lg-none"/>{% t home.block_landing.display_title %}</h1>
     <h2 class="my-3 text-center w-75 w-md-50 subtitle">{% t home.block_landing.display_subtitle %}</h2>
-    <img src="{% load_img illustrazione-visual.png %}" class="pull-up mw-100 w-md-50 " />
+    <img src="{% load_img illustrazione-visual.png %}" class="pull-up visual" />
     <a href='http://alpha.kjuicer.com/cache/login/' class="btn btn-primary btn-lg text-white pull-up-small">{% t home.block_landing.action %}</a>
     <!--p class="text-muted lead">{ t home.block_landing.subtext }</p-->
   </div>
 
-  <div class="container d-flex flex-column flex-md-row align-items-center justify-content-center py-5">
-    <a href="#" class="mx-3 my-2 download d-flex align-items-center justify-content-center">
-      <i class="fa fa-chrome fa-2x mx-2"></i>
-      <div>download <strong>Kjuicer for Chrome</strong></div>
-    </a>
-    <a href="#" class="mx-3 my-2 download d-flex align-items-center justify-content-center">
-      <i class="fa fa-firefox fa-2x mx-2"></i>
-      <div>download <strong>Kjuicer for Firefox</strong></div>
-    </a>
-    <a href="{% tl bookmarklet %}" class="mx-3 my-2 download d-flex align-items-center justify-content-center">
-      <i class="fa fa-bookmark fa-2x mx-2"></i>
-      <div>download the <strong>Bookmarklet</strong></div>
-    </a>
-  </div>
-
-
   {% assign blocklist = site.translations[site.lang]["home"].blocks %}
 
-  <div class="d-flex flex-column flex-sm-row index-row align-items-center pt-2 pb-1">
+  <div class="d-flex flex-column flex-sm-row index-row align-items-center pt-5 mt-2 pb-1">
     <div class="col-md-4 col-sm-6 offset-md-2 order-1">
       <img class="medium-image" src="{% load_img step1.png %}" />
     </div>
@@ -47,7 +31,7 @@ permalink: "/"
 
 
 
-  <div class="d-flex flex-column flex-sm-row index-row align-items-center pt-1 pb-2">
+  <div class="d-flex flex-column flex-sm-row index-row align-items-center pt-1 pb-5 mb-2">
 
     <div class="col-md-4 col-sm-6 offset-md-2 px-5 text-sm-right text-center order-2 order-sm-1">
       <h2 class="text-dark pb-2">{{ blocklist[1].title}}</h2>
@@ -71,13 +55,13 @@ permalink: "/"
     {% for slide in site.translations[site.lang]["home"].block_slider.slides %}
     {% capture image_link %}slider{{ forloop.index }}.png{% endcapture %}
     <div class="d-flex flex-column flex-sm-row justify-content-center py-5 align-items-center">
-      <div class="mx-3 w-sm-50 d-flex justify-content-center justify-content-sm-end">
+      <div class="col-sm-4 offset-sm-2">
         <img class="large-image" src="{{ site.assets_base_url }}/{{ site.assets_dir }}/{{site.img_dir}}/{{ image_link }}" />
       </div>
-      <div class="mx-3 w-sm-50 text-center text-sm-left d-flex flex-column">
-        <p class="text-light lead order-2 order-sm-1">{{ slide.title }}</p>
-        <div class="border border-white w-25 my-4 d-none d-sm-block order-sm-2"></div>
-        <h3 class="text-light w-sm-75 order-1 order-sm-3">{{ slide.text }}</h3>
+      <div class="col-sm-4 text-center text-sm-left d-flex flex-column align-items-center d-sm-block">
+        <p class="text-light lead mb-0">{{ slide.title }}</p>
+        <div class="border border-secondary w-25 my-4"></div>
+        <h3 class="text-light w-sm-75">{{ slide.text }}</h3>
       </div>
     </div>
     {% endfor %}
@@ -87,11 +71,11 @@ permalink: "/"
 
 
 
-  <div class="d-flex flex-column flex-sm-row index-row align-items-center pt-2 pb-1">
+  <div class="d-flex flex-column flex-sm-row index-row align-items-center pt-5 mt-2 pb-1">
     <div class="col-md-4 offset-md-2 col-sm-6 order-1">
       <img class="medium-image" src="{% load_img step3.png %}" />
     </div>
-    <div class="col-md-4 col-sm-6 py-5 text-sm-left text-center order-2">
+    <div class="col-md-4 col-sm-6 text-sm-left text-center order-2">
       <h2 class="text-dark">{{ blocklist[2].title}}</h2>
       <p class="subtitle">{{ blocklist[2].text}}</p>
     </div>
@@ -124,7 +108,24 @@ permalink: "/"
     <p class="mt-3 mb-0 font-weight-bold"><a href='http://alpha.kjuicer.com/cache/login/' class="btn btn-primary btn-lg text-white">{% t home.block_call.action %}</a></p>
   </div>
 
-  <div class="container my-5">
+  <div class="container d-flex flex-column flex-md-row align-items-center justify-content-center py-5">
+    <a href="#" class="mx-4 my-2 download d-flex align-items-center justify-content-center">
+      <i class="fa fa-chrome fa-2x mr-3"></i>
+      <div>Download <strong>Kjuicer for Chrome</strong></div>
+    </a>
+    <a href="#" class="mx-4 my-2 download d-flex align-items-center justify-content-center">
+      <i class="fa fa-firefox fa-2x mr-3"></i>
+      <div>Download <strong>Kjuicer for Firefox</strong></div>
+    </a>
+    <a href="{% tl bookmarklet %}" class="mx-4 my-2 download d-flex align-items-center justify-content-center">
+      <i class="fa fa-bookmark fa-2x mr-3"></i>
+      <div>Download the <strong>Bookmarklet</strong></div>
+    </a>
+  </div>
+</div>
+
+<div class="bg-grey-light py-5">
+  <div class="container">
     <h2 class="text-center text-dark pb-2">{% t home.block_us.title %}</h2>
     <p class="text-center subtitle index-row">{% t home.block_us.subtitle%}</p>
     <p class="text-center font-size-lower">{% t home.block_us.text %}</p>

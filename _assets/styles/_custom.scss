@@ -14,6 +14,12 @@ html, body {
   /*max-width: 5rem;*/
 }
 
+footer img.brand-logo {
+  @include media-breakpoint-down(sm) {
+    max-height: 5rem;
+  }
+}
+
 nav.navbar {
   border-radius: 0 !important;
 }
@@ -23,7 +29,7 @@ img.max-image {
 }
 
 img.medium-image {
-  max-width: 80%;
+  max-width: 90%;
   display: block;
   margin: auto;
 
@@ -41,6 +47,14 @@ img.large-image {
 
 img.small-image {
   max-height: 100px;
+}
+
+img.visual {
+  max-width: 50%;
+
+  @include media-breakpoint-down(sm) {
+    max-width: 80%;
+  }
 }
 
 .subtitle {
@@ -101,6 +115,7 @@ img.small-image {
 
     li.slick-active button:before {
       font-size: 1.3rem;
+      color: map-get($theme-colors, "secondary");
     }
   }
 }
@@ -114,9 +129,11 @@ a.pointable {
 }
 
 .download {
-  width: 12rem;
+  width: 13rem;
   border: 2px solid map-get($theme-colors, "primary");
   border-radius: 10px;
+  padding: .5rem 1rem;
+  line-height: 1.2rem;
 
   &:hover, &:active {
     border-color: map-get($theme-colors, "dark");
@@ -134,14 +151,58 @@ a.btn-primary.text-white:hover {
 
 footer {
   font-size: 0.8rem;
+
+  @include media-breakpoint-down(sm) {
+    font-size: $font-size-base;
+  }
 }
 
 .pull-up {
   position: relative;
   margin-top: -4rem;
+
+  @include media-breakpoint-down(sm) {
+    margin-top: -2rem;
+  }
 }
 
 .pull-up-small {
   position: relative;
   margin-top: -3rem;
+
+  @include media-breakpoint-down(sm) {
+    margin-top: -1rem;
+  }
+}
+
+#social-row {
+  font-size: $font-size-base;
+
+  @include media-breakpoint-down(sm) {
+    font-size: $font-size-base + 0.5rem;
+  }
+}
+
+.flag-icon {
+  vertical-align: text-top;
+}
+
+.dropdown-toggle::after {
+  color: map-get($theme-colors, "secondary");
+}
+
+.mw-75 {
+  max-width: 75%;
+}
+
+.mw-50 {
+  max-width: 50%;
+}
+
+.mw-25 {
+  max-width: 25%;
+}
+
+.mw-10 {
+  max-width: 10rem;
 }

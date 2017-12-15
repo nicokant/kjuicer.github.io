@@ -11,6 +11,7 @@ $theme-colors: (
     "white": #fff,
     "grey": #878f9a,
     "grey-light": #f7f7f7,
+    "grey-darker": #808080,
 );
 
 $input-btn-padding-y:         .75rem !default;
@@ -35,4 +36,6 @@ $link-decoration:           none;
 $link-hover-color:          map-get($theme-colors, "dark");
 $link-hover-decoration:     none;
 
-$mark-bg: map-get($theme-colors, "secondary")
+$mark-bg: map-get($theme-colors, "secondary");
+
+$dropdown-border-color: map-get($theme-colors, "secondary");
