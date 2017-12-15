@@ -1,10 +1,14 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+<nav class="navbar navbar-expand-md navbar-light bg-white sticky-top">
   <div class="container">
     <a href="{% tl home %}" class="navbar-brand">
       <img class="brand-logo" src="{% load_img logo-header.svg %}" />
     </a>
+    <a class="d-md-none" href="#" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa fa-2x fa-bars text-secondary"></i>
+    </a>
+
     <div class="collapse navbar-collapse" id="navbarMenu">
-      <ul class="navbar-nav ml-auto mt-lg-0">
+      <ul class="navbar-nav ml-auto mt-lg-0 text-center text-md-left mb-4 mb-sm-0">
         {% assign header = site.translations[site.lang]["header"] %}
 
         <li class="nav-item mx-2">
@@ -12,7 +16,7 @@
             <a id="{{ header[0].id }}" class="nav-link dropdown-toggle pointable" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               {{ header[0].label }}
             </a>
-            <div class="dropdown-menu" aria-labelledby="{{ header[0].id }}">
+            <div class="dropdown-menu text-center text-md-left" aria-labelledby="{{ header[0].id }}">
               <a href="http://alpha.kjuicer.com/cache/wall/public/featured/" target="_blank" class="dropdown-item">{{ header[0].sub[0].label }}</a>
               <a href="http://alpha.kjuicer.com/cache/curations/public/" target="_blank" class="dropdown-item">{{ header[0].sub[1].label }}</a>
             </div>
@@ -28,7 +32,7 @@
         </li>
 
         <li class="nav-item mx-2">
-          <a href='#' class="nav-link btn btn-primary"><span class="text-white">{{header[3].label}}</span></a>
+          <a href='#' class="nav-link btn btn-primary mw-10 d-block mx-auto"><span class="text-white">{{header[3].label}}</span></a>
         </li>
       </ul>
     </div>
