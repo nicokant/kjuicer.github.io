@@ -3,8 +3,8 @@ import Typed from 'typed.js';
   var options = {
     strings: typedStrings,
     typeSpeed: 120,
-    backDelay: 1200,
-    backSpeed: 80,
+    backDelay: 800,
+    backSpeed: 60,
     loop: true,
   }
 
