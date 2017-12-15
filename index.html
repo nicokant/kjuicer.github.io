@@ -56,12 +56,12 @@ permalink: "/"
     {% capture image_link %}slider{{ forloop.index }}.png{% endcapture %}
     <div class="d-flex flex-column flex-sm-row justify-content-center py-5 align-items-center">
       <div class="col-sm-4 offset-sm-2">
-        <img class="large-image" src="{{ site.assets_base_url }}/{{ site.assets_dir }}/{{site.img_dir}}/{{ image_link }}" />
+        <img class="large-image d-block mx-auto mr-sm-0 ml-sm-auto" src="{{ site.assets_base_url }}/{{ site.assets_dir }}/{{site.img_dir}}/{{ image_link }}" />
       </div>
-      <div class="col-sm-4 text-center text-sm-left d-flex flex-column align-items-center d-sm-block">
+      <div class="col-sm-6 text-center text-sm-left d-flex flex-column align-items-center d-sm-block">
         <p class="text-light lead mb-0">{{ slide.title }}</p>
         <div class="border border-secondary w-25 my-4"></div>
-        <h3 class="text-light w-sm-75">{{ slide.text }}</h3>
+        <h3 class="text-light w-75">{{ slide.text }}</h3>
       </div>
     </div>
     {% endfor %}
