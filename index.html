@@ -8,7 +8,7 @@ permalink: "/"
     <h1 class="display-4 text-dark text-center">
       <mark class="text-dark typed-rewrite">
         {% t home.block_landing.fallback %}
-      </mark><br class="d-md-none"/>{% t home.block_landing.display_title %}</h1>
+      </mark><br class="d-lg-none"/>{% t home.block_landing.display_title %}</h1>
     <h2 class="my-3 text-center w-75 w-md-50 subtitle">{% t home.block_landing.display_subtitle %}</h2>
     <img src="{% load_img illustrazione-visual.png %}" class="pull-up mw-100 w-md-50 " />
     <a href='http://alpha.kjuicer.com/cache/login/' class="btn btn-primary btn-lg text-white pull-up-small">{% t home.block_landing.action %}</a>
@@ -33,11 +33,11 @@ permalink: "/"
 
   {% assign blocklist = site.translations[site.lang]["home"].blocks %}
 
-  <div class="d-flex flex-column flex-md-row index-row align-items-center pt-2 pb-1">
-    <div class="col-md-4 offset-md-2 order-1">
+  <div class="d-flex flex-column flex-sm-row index-row align-items-center pt-2 pb-1">
+    <div class="col-md-4 col-sm-6 offset-md-2 order-1">
       <img class="medium-image" src="{% load_img step1.png %}" />
     </div>
-    <div class="col-md-4 px-5 text-md-left text-center order-2">
+    <div class="col-md-4 col-sm-6 px-5 text-sm-left text-center order-2">
       <h2 class="mb-3 text-dark">{{ blocklist[0].title}}</h2>
       <p class="subtitle">{{ blocklist[0].text}}</p>
     </div>
@@ -47,14 +47,14 @@ permalink: "/"
 
 
 
-  <div class="d-flex flex-column flex-md-row index-row align-items-center pt-1 pb-2">
+  <div class="d-flex flex-column flex-sm-row index-row align-items-center pt-1 pb-2">
 
-    <div class="col-md-4 offset-md-2 px-5 text-md-right text-center order-2 order-md-1">
+    <div class="col-md-4 col-sm-6 offset-md-2 px-5 text-sm-right text-center order-2 order-sm-1">
       <h2 class="text-dark pb-2">{{ blocklist[1].title}}</h2>
       <p class="subtitle">{{ blocklist[1].text}}</p>
     </div>
 
-    <div class="col-md-4 order-1 order-md-2">
+    <div class="col-md-4 col-sm-6 order-1 order-sm-2">
       <img class="medium-image" src="{% load_img step2.png %}" />
     </div>
 
@@ -71,8 +71,8 @@ permalink: "/"
     {% for slide in site.translations[site.lang]["home"].block_slider.slides %}
     {% capture image_link %}slider{{ forloop.index }}.png{% endcapture %}
     <div class="d-flex flex-column flex-md-row justify-content-center py-5 align-items-center">
-      <div class="mx-3 w-50">
-        <img class="large-image float-right" src="{{ site.assets_base_url }}/{{ site.assets_dir }}/{{site.img_dir}}/{{ image_link }}" />
+      <div class="mx-3 w-50 d-flex justify-content-center justify-content-md-end">
+        <img class="large-image" src="{{ site.assets_base_url }}/{{ site.assets_dir }}/{{site.img_dir}}/{{ image_link }}" />
       </div>
       <div class="mx-3 w-50">
         <p class="text-light lead">{{ slide.title }}</p>
@@ -87,11 +87,11 @@ permalink: "/"
 
 
 
-  <div class="d-flex flex-column flex-md-row index-row align-items-center pt-2 pb-1">
-    <div class="col-md-4 offset-md-2 order-1">
+  <div class="d-flex flex-column flex-sm-row index-row align-items-center pt-2 pb-1">
+    <div class="col-md-4 offset-md-2 col-sm-6 order-1">
       <img class="medium-image" src="{% load_img step3.png %}" />
     </div>
-    <div class="col-md-4 py-5 text-md-left text-center order-2">
+    <div class="col-md-4 col-sm-6 py-5 text-sm-left text-center order-2">
       <h2 class="text-dark">{{ blocklist[2].title}}</h2>
       <p class="subtitle">{{ blocklist[2].text}}</p>
     </div>
@@ -101,13 +101,13 @@ permalink: "/"
 
 
 
-  <div class="d-flex flex-column flex-md-row index-row align-items-center pt-1">
-    <div class="col-md-4 px-5 text-md-right text-center order-md-1 order-2 offset-md-2">
+  <div class="d-flex flex-column flex-sm-row index-row align-items-center pt-1">
+    <div class="col-md-4 col-sm-6 px-5 text-sm-right text-center order-sm-1 order-2 offset-md-2">
       <h2 class="text-dark pb-2">{{ blocklist[3].title}}</h2>
       <p class="subtitle">{{ blocklist[3].text}}</p>
     </div>
 
-    <div class="col-md-4 order-1 order-md-2">
+    <div class="col-md-4 col-sm-6 order-1 order-sm-2">
       <img class="medium-image" src="{% load_img step4.png %}" />
     </div>
 
