@@ -31,7 +31,21 @@
       <p><small>2017 @ Kjuicer. <a href="#" class="text-light"><u>Terms of use</u></a> - <a class="text-light"
        href="{% tl privacy-policy %}"><u>Privacy Policy</u></a></small></p>
 
-      <p><small><span class="flag-icon flag-icon-it"></span> Italia</small> </p>
+      <p><small>
+        {% for lang in site.languageNames %}
+          {% if lang[0] == site.lang %} {% continue %} {% endif %}
+            {% if lang[0] == 'en' %}
+              {% assign icon = 'gb' %}
+            {% else %}
+              {% assign icon = lang[0] %}
+            {% endif %}
+            {% if page.namespace %}
+              <a href="{% tl {{ page.namespace }} {{ lang[0] }} %}" class="text-white"><span class="flag-icon flag-icon-{{ icon }}"></span> {{ lang[1] }}</a>
+            {% else %}
+              <a href="{% tl home {{ icon }} %}" class="text-white"><span class="flag-icon flag-icon-{{ lang[0] }}"></span> {{ lang[1] }}</a>
+          {% endif %}
+        {% endfor %}
+      </small></p>
     </div>
   </div>
 </footer>
