@@ -9,6 +9,10 @@ html, body {
   padding-right: 2rem;
 }
 
+nav.navbar {
+  border-bottom: 1px solid map-get($theme-colors, "grey-light");
+}
+
 .navbar-brand img, img.brand-logo {
   max-height: 3rem;
   /*max-width: 5rem;*/
