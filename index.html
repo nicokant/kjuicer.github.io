@@ -30,36 +30,31 @@ permalink: "/"
 
   {% assign blocklist = site.translations[site.lang]["home"].blocks %}
 
-  <div class="d-flex index-row align-items-center pt-2 pb-1">
-    <div class="col-md-2"></div>
-    <div class="col-md-4">
+  <div class="d-flex flex-column flex-md-row index-row align-items-center pt-2 pb-1">
+    <div class="col-md-4 offset-md-2 order-1">
       <img class="medium-image" src="{% load_img step1.png %}" />
     </div>
-    <div class="col-md-4 px-5 text-left">
+    <div class="col-md-4 px-5 text-md-left text-center order-2">
       <h2 class="mb-3 text-dark">{{ blocklist[0].title}}</h2>
       <p class="subtitle">{{ blocklist[0].text}}</p>
     </div>
-
-    <div class="col-md-2"></div>
   </div>
 
 
 
 
 
-  <div class="d-flex index-row align-items-center pt-1 pb-2">
-    <div class="col-md-2"></div>
+  <div class="d-flex flex-column flex-md-row index-row align-items-center pt-1 pb-2">
 
-    <div class="col-md-4 px-5 text-right">
+    <div class="col-md-4 offset-md-2 px-5 text-md-right text-center order-2 order-md-1">
       <h2 class="text-dark pb-2">{{ blocklist[1].title}}</h2>
       <p class="subtitle">{{ blocklist[1].text}}</p>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-4 order-1 order-md-2">
       <img class="medium-image" src="{% load_img step2.png %}" />
     </div>
 
-    <div class="col-md-2"></div>
   </div>
 
 
@@ -89,36 +84,30 @@ permalink: "/"
 
 
 
-<div class="d-flex index-row align-items-center pt-2 pb-1">
-    <div class="col-md-2"></div>
-    <div class="col-md-4">
+  <div class="d-flex flex-column flex-md-row index-row align-items-center pt-2 pb-1">
+    <div class="col-md-4 offset-md-2 order-1">
       <img class="medium-image" src="{% load_img step3.png %}" />
     </div>
-    <div class="col-md-4 py-5 text-left">
+    <div class="col-md-4 py-5 text-md-left text-center order-2">
       <h2 class="text-dark">{{ blocklist[2].title}}</h2>
       <p class="subtitle">{{ blocklist[2].text}}</p>
     </div>
-
-    <div class="col-md-2"></div>
   </div>
 
 
 
 
 
-  <div class="d-flex index-row align-items-center pt-1">
-    <div class="col-md-2"></div>
-
-    <div class="col-md-4 px-5 text-right">
+  <div class="d-flex flex-column flex-md-row index-row align-items-center pt-1">
+    <div class="col-md-4 px-5 text-md-right text-center order-md-1 order-2 offset-md-2">
       <h2 class="text-dark pb-2">{{ blocklist[3].title}}</h2>
       <p class="subtitle">{{ blocklist[3].text}}</p>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-4 order-1 order-md-2">
       <img class="medium-image" src="{% load_img step4.png %}" />
     </div>
 
-    <div class="col-md-2"></div>
   </div>
 
   <div class="d-flex flex-column align-items-center py-5 bg-secondary text-center">
