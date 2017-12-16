@@ -215,45 +215,10 @@ footer {
   font-family: $font-family-sans-serif;
 }
 
-.card.horizontal {
-  flex-direction: row;
-  justify-content: between;
+.mh-350 {
+  max-height: 250px;
 }
 
-.card.horizontal .card-image {
-  align-self: center;
-  width: 50%;
-
-  img {
-    max-width: 100%;
-    object-fit: contain;
-  }
-}
-
-.card.horizontal .card-body {
-  width: 50%;
-  width: 8rem;
-}
-
-.card.horizontal {
-
-  &:nth-child(2n) {
-    .card-body {
-      order: 1;
-      }
-
-    .card-image {
-      order: 2;
-    }
-  }
-
-  &:nth-child(2n+1) {
-    .card-body {
-      order: 2;
-    }
-
-    .card-image {
-      order: 1;
-    }
-  }
+.container-text {
+  max-width: 45rem;
 }
