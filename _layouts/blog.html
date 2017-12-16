@@ -1,24 +1,31 @@
 ---
 layout: default
 ---
+<div class="py-5 bg-secondary">
+  <div class="container py-3">
+    <h1 class="text-dark display-4">{% t blog %}Blog</h1>
+  </div>
+</div>
 <div id='bloglist' class='container'>
-  <h1 class="green-text darken-1 center caps">{{page.title}}</h1>
-    {% assign posts = site.posts | where:"lang", page.lang %}
-    {% for post in posts %}
-        <div class="card horizontal">
-          <div class="card-image"><a href="{{ post.url | prepend: site.baseurl }}">
-            <img src="{{ post.image | prepend: site.assets }}"></a>
+  <div class="d-flex my-5">
+    <div class="w-100">
+      {% assign posts = site.posts %}
+      {% for post in posts %}
+        <div class="card horizontal mb-4 border-dark rounded-left">
+          <div class="card-image">
+            <img src="{{ post.image | prepend: site.post_assets }}">
           </div>
-          <div class="card-stacked">
-            <div class="card-content">
-              <span class="card-title">{{post.title}}</span>
-              <p>{{post.summary}}</p>
-            </div>
-            <div class="card-action">
-              <a class="green-text" href="{{ post.url | prepend: site.baseurl }}">{{page.blog_read_post}}</a>
-            </div>
+          <div class="card-body bg-dark p-5">
+            <h4 class="card-title text-white">{{post.title}}</h4>
+            <div class="border border-secondary w-25 my-4"></div>
+            <p class="card-text text-grey-light">{{post.summary}}</p>
+            <a class="mt-3 btn btn-outline-white text-white" href="{{ post.url | prepend: site.baseurl }}">{% t actions.read %}</a>
+            <!--div class="card-action">
+              <a class="green-text"
+            </div-->
           </div>
         </div>
       {% endfor %}
+    </div>
   </div>
 </div>

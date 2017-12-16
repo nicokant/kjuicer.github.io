@@ -2,6 +2,10 @@ site:
   title: Kjuicer
   description: Preparati a una spremuta di conoscenza
 
+
+actions:
+  read: Leggi
+
 header:
   - label: Vai al succo
     id: vai-al-succo
