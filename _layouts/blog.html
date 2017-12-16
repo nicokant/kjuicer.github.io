@@ -2,29 +2,39 @@
 layout: default
 ---
 <div class="py-5 bg-secondary">
-  <div class="container py-3">
-    <h1 class="text-dark display-4">{% t blog %}Blog</h1>
+  <div class="container py-3 text-center">
+    <h1 class="text-dark display-4">Highlights</h1>
+    <div class="border border-white w-25 my-4 mx-auto"></div>
+    <h4 class="text-dark">Stories from Kjuicer</h4>
   </div>
 </div>
 <div id='bloglist' class='container'>
-  <div class="d-flex my-5">
-    <div class="w-100">
+  <div class="d-flex my-5 justify-content-center">
+    <div class="container-text mt-3">
       {% assign posts = site.posts %}
       {% for post in posts %}
-        <div class="card horizontal mb-4 border-dark rounded-left">
-          <div class="card-image">
-            <img src="{{ post.image | prepend: site.post_assets }}">
-          </div>
-          <div class="card-body bg-dark p-5">
-            <h4 class="card-title text-white">{{post.title}}</h4>
-            <div class="border border-secondary w-25 my-4"></div>
-            <p class="card-text text-grey-light">{{post.summary}}</p>
-            <a class="mt-3 btn btn-outline-white text-white" href="{{ post.url | prepend: site.baseurl }}">{% t actions.read %}</a>
-            <!--div class="card-action">
-              <a class="green-text"
-            </div-->
+        <div class="card mb-4 border-0">
+          <div class="card-body p-3">
+            <a href="{{ post.url | prepend: site.baseurl }}"><h2 class="card-title text-center mb-5 text-dark">{{post.title}}</h2></a>
+            <div class="d-flex justify-content-between">
+              <p class="subtitle">
+                {% t site.published %} <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time>
+              </p>
+              <div class="d-inline-flex">
+                {% capture full_url %}{{ site.url }}{{ site.baseurl }}{{ post.url }}{% endcapture %}
+                {% capture title %}{{post.title | xml_escape }}{% endcapture %}
+                <a onclick="window.open('http://www.facebook.com/sharer.php?t={{ title }}&u={{ full_url }}','sharer','toolbar=0,status=0,width=580,height=325')" href="javascript:void(0)" class="text-grey mx-2"><i class="fa fa-facebook"></i></a>
+                <a onclick="window.open('http://twitter.com/share?text={{ title }}&url={{ full_url }}','sharer','toolbar=0,status=0,width=580,height=325')" href="javascript:void(0)" class="text-grey mx-2"><i class="fa fa-twitter"></i></a>
+              </div>
+            </div>
+            <a href="{{ post.url | prepend: site.baseurl }}"><img src="/post_assets/{{ post.image }}" class="d-block mh-350 mw-100 mb-5 mx-auto" /></a>
+            <div>
+              {{ post.summary }}
+            </div>
+            <a class="mt-3 btn btn-primary text-white" href="{{ post.url | prepend: site.baseurl }}">{% t actions.read %}</a>
           </div>
         </div>
+        <hr />
       {% endfor %}
     </div>
   </div>
