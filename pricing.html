@@ -26,7 +26,7 @@ permalink_it: /costi/
     <div class="d-flex justify-content-start align-items-center pt-1 pb-2">
       <div class="col-6 pl-0"><strong>{{ price.label }}</strong></div>
       <div class="col-3 text-center"><h5 class="text-primary">{{ price.base }}</h5></div>
-      <div class="col-3 text-center"><h5 class="text-primary">9,90€ al mese</h5></div>
+      <div class="col-3 text-center"><h5 class="text-primary">{{ price.pro }}</h5></div>
     </div>
     {% assign actions = site.translations[site.lang].pricing.actions %}
     <div class="d-flex justify-content-start align-items-center p-3">
@@ -40,30 +40,24 @@ permalink_it: /costi/
   <div class="d-flex flex-column flex-sm-row pt-5">
     <div class="col-sm-6 px-0 pr-sm-3">
       <div class="px-3 py-5 text-center bg-grey-light">
+        {% assign web_editor = site.translations[site.lang].pricing.web_editor %}
         <h2 class="text-dark mb-4">Web editor</h2>
-        <h4 class="font-serif">Giornaliero</h4>
-        <h5 class="text-primary mb-3">1,99€</h5>
-        <h4 class="font-serif">Settimanale</h4>
-        <h5 class="text-primary mb-3">4,99€</h5>
-        <h4 class="font-serif">Mensile</h4>
-        <h5 class="text-primary mb-3">9,90€</h5>
-        <h4 class="font-serif">Annuale</h4>
-        <h5 class="text-primary">99,00€</h5>
-        <button class="btn btn-primary text-white mt-4">SCEGLI IL PIANO</button>
+        {% for pricing in web_editor %}
+          <h4 class="font-serif">{{ pricing.label }}</h4>
+          <h5 class="text-primary mb-3">{{ pricing.price }}</h5>
+        {% endfor %}
+        <button class="btn btn-primary text-white mt-4">{{ site.translations[site.lang].pricing.web_editor_action }}</button>
       </div>
     </div>
     <div class="col-sm-6 px-0 mt-3 mt-sm-0 pl-sm-3">
       <div class="px-3 py-5 text-center bg-grey-light">
+        {% assign plugin = site.translations[site.lang].pricing.plugin %}
         <h2 class="text-dark mb-4">Plugin</h2>
-        <h4 class="font-serif">Fino a 2 000 visualizzazioni</h4>
-        <h5 class="text-primary mb-3">Gratis</h5>
-        <h4 class="font-serif">Fino a 20 000 visualizzazioni</h4>
-        <h5 class="text-primary mb-3">9,90€</h5>
-        <h4 class="font-serif">Fino a 200 000 visualizzazioni</h4>
-        <h5 class="text-primary mb-3">44,90€</h5>
-        <h4 class="font-serif">Più di 200 000?</h4>
-        <h5 class="text-primary">Contattaci!</h5>
-        <button class="btn btn-primary text-white mt-4">SCEGLI IL PIANO</button>
+        {% for pricing in plugin %}
+          <h4 class="font-serif">{{ pricing.label }}</h4>
+          <h5 class="text-primary mb-3">{{ pricing.price }}</h5>
+        {% endfor %}
+        <button class="btn btn-primary text-white mt-4">{{ site.translations[site.lang].pricing.plugin_action }}</button>
       </div>
     </div>
   </div>

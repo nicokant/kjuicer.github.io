@@ -1,6 +1,10 @@
 site:
   title: Kjuicer
   description: get ready for a knowledge juice
+  published: "Published on "
+
+actions:
+  read: Read more
 
 header:
   - label: Reading juice
@@ -51,7 +55,7 @@ home:
   block_us:
     title: About us
     subtitle: Kjuicer is for everyone who believes that learning should be easier.
-    text: Kjuicer is an innovative startup based in Milan. It was founded by Giampaolo Ferradini (@giampaolo44) and Francesco Frassinelli in 2015, with the mission of improving the way humans learn and handle information. If you want to know more about how to conquer more knowledge like a super hero follow us on our blog (or on Medium) and on our social networks.
+    text: Kjuicer is an innovative startup based in Milan. It was founded by Giampaolo Ferradini and Francesco Frassinelli in 2015, with the mission of improving the way humans learn and handle information. If you want to know more about how to conquer more knowledge like a super hero follow us on our blog (or on Medium) and on our social networks.
 
   block_slider:
     title: Change your reading method!
@@ -81,51 +85,76 @@ footer:
 
 pricing:
   plans:
-    - Base
-    - Suite Avanzata
+    - Basic
+    - Premium
   features:
-    - label: Nessuna pubblicità
+    - label: No ads
       base: true
       pro: true
-    - label: Salva documenti illimitati
+    - label: Save unlimited Web pages
       base: true
       pro: true
-    - label: Riassunti illimitati
+    - label: Highlight and summarize unlimited pages
       base: true
       pro: true
-    - label: Raccolte di documenti illimitate
+    - label: Create unlimited curations
       base: true
       pro: true
-    - label: Estensioni
+    - label: Extensions for every browser
       base: true
       pro: true
-    - label: Condivisione via link
+    - label: HTML upload
       base: true
       pro: true
-    - label: Upload HTML
+    - label: Share through link
       base: true
       pro: true
-    - label: Supporto Prioritario
+    - label: Customer support
       base: false
       pro: true
-    - label: Evidenziatori personalizzabili
+    - label: Priority support
       base: false
       pro: true
-    - label: Documenti Privati
+    - label: Customize highlighters colours
       base: false
       pro: true
-    - label: Crittografia Abilitata
+    - label: Private highlights and summaries
       base: false
       pro: true
-    - label: Upload Docx e Google Docs
+    - label: Encryption
+      base: false
+      pro: true
+    - label: Docx and Google Docs upload
       base: false
       pro: true
   price:
-    label: Costo
-    base: Gratis
-    pro: Presto Disponibile
+    label: Price
+    base: Free
+    pro: Soon Available
   actions:
-    - label: Registrati
+    - label: Sign Up
+      href: http://localhost:3000/pricing/#
+    - label: Receive updates
       href: #
-    - label: Presto Disponibile
-      href: #
+
+  web_editor:
+    - label: Daily
+      price: 1.99€
+    - label: Weekly
+      price: 4.99€
+    - label: Monthly
+      price: 9.90€
+    - label: Yearly
+      price: 99.00€
+  web_editor_action: Choose your plan
+
+  plugin:
+    - label: 2,000 credits
+      price: Free
+    - label: 20,000 credits
+      price: 9.90€
+    - label: 200,000 credits
+      price: 44.90€
+    - label: More than 200,000?
+      price: Contact us!
+  plugin_action: Choose your plan

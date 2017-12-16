@@ -1,7 +1,7 @@
 site:
   title: Kjuicer
   description: Preparati a una spremuta di conoscenza
-
+  published: "Pubblicato il "
 
 actions:
   read: Leggi
@@ -25,6 +25,7 @@ home:
     subtext:
     fallback: Leggi
     display_texts:
+      - ""
       - Leggi
       - Impara
       - Riassumi
@@ -55,7 +56,7 @@ home:
   block_us:
     title: Chi siamo
     subtitle: Kjuicer è per coloro che credono che imparare dovrebbe essere più semplice.
-    text: Kjuicer è una startup innovativa con sede a Milano. È stata fondata da Giampaolo Ferradini (@giampaolo44) e Francesco Frassinelli nel 2015, con lo scopo di migliorare il modo di apprendere e gestire informazioni degli esseri umani. Se vuoi saperne di più su come conquistare conoscenza come un supereroe seguici sul nostro blog (o su Medium) e sui nostri social.
+    text: Kjuicer è una startup innovativa con sede a Milano. È stata fondata da Giampaolo Ferradini e Francesco Frassinelli nel 2015, con lo scopo di migliorare il modo di apprendere e gestire informazioni degli esseri umani. Se vuoi saperne di più su come conquistare conoscenza come un supereroe seguici sul nostro blog (o su Medium) e sui nostri social.
 
 
   block_slider:
@@ -87,50 +88,75 @@ footer:
 pricing:
   plans:
     - Base
-    - Suite Avanzata
+    - Pro Suite
   features:
     - label: Nessuna pubblicità
       base: true
       pro: true
-    - label: Salva documenti illimitati
+    - label: Salva illimitate pagine Web
       base: true
       pro: true
-    - label: Riassunti illimitati
+    - label: Evidenzia e riassumi pagine illimitate
       base: true
       pro: true
-    - label: Raccolte di documenti illimitate
+    - label: Crea raccolte illimitate
       base: true
       pro: true
-    - label: Estensioni
+    - label: Estensioni per ogni browser
+      base: true
+      pro: true
+    - label: Caricamento file in HTML
       base: true
       pro: true
     - label: Condivisione via link
       base: true
       pro: true
-    - label: Upload HTML
+    - label: Supporto clienti
       base: true
       pro: true
-    - label: Supporto Prioritario
+    - label: Supporto prioritario
       base: false
       pro: true
-    - label: Evidenziatori personalizzabili
+    - label: Colori degli evidenziatori personalizzabili
       base: false
       pro: true
-    - label: Documenti Privati
+    - label: Evidenziazioni e riassunti privati
       base: false
       pro: true
-    - label: Crittografia Abilitata
+    - label: Crittografia
       base: false
       pro: true
-    - label: Upload Docx e Google Docs
+    - label: Caricamento file .docx e documenti Google
       base: false
       pro: true
   price:
     label: Costo
     base: Gratis
-    pro: Presto Disponibile
+    pro: Presto disponibile
   actions:
     - label: Registrati
       href: #
-    - label: Rimani Aggiornato
+    - label: Rimani aggiornato
       href: #
+
+  web_editor:
+    - label: Giornaliero
+      price: 1,99€
+    - label: Settimanale
+      price: 4,99€
+    - label: Mensile
+      price: 9,90€
+    - label: Annuale
+      price: 99,00€
+  web_editor_action: Scegli il piano
+
+  plugin:
+    - label: 2 000 crediti
+      price: Gratis
+    - label: 20 000 crediti
+      price: 9,90€
+    - label: 200 000 crediti
+      price: 44.90€
+    - label: Più di 200 000?
+      price: Contattaci!
+  plugin_action: Scegli il piano
