@@ -32,7 +32,7 @@ permalink: "/"
 
   <div class="d-flex flex-column flex-sm-row index-row align-items-center pt-5 mt-2 pb-1">
     <div class="col-md-4 col-sm-6 offset-md-2 order-1">
-      <img class="medium-image" data-src="{% load_img step1.png %}" />
+      <img class="medium-image" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{% load_img step1.png %}" />
     </div>
     <div class="col-md-4 col-sm-6 px-5 text-sm-left text-center order-2">
       <h2 class="mb-3 text-dark">{{ blocklist[0].title}}</h2>
@@ -52,7 +52,7 @@ permalink: "/"
     </div>
 
     <div class="col-md-4 col-sm-6 order-1 order-sm-2">
-      <img class="medium-image" data-src="{% load_img step2.png %}" />
+      <img class="medium-image" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{% load_img step2.png %}" />
     </div>
 
   </div>
@@ -69,7 +69,7 @@ permalink: "/"
     {% capture image_link %}slider{{ forloop.index }}.png{% endcapture %}
     <div class="d-flex flex-column flex-sm-row justify-content-center py-5 align-items-center">
       <div class="col-sm-4 offset-sm-2">
-        <img class="large-image d-block mx-auto mr-sm-0 ml-sm-auto" data-src="{{ site.assets_base_url }}/{{ site.assets_dir }}/{{site.img_dir}}/{{ image_link }}" />
+        <img class="large-image d-block mx-auto mr-sm-0 ml-sm-auto" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="  data-src="{{ site.assets_base_url }}/{{ site.assets_dir }}/{{site.img_dir}}/{{ image_link }}" />
       </div>
       <div class="col-sm-6 text-center text-sm-left d-flex flex-column align-items-center d-sm-block">
         <p class="text-light lead mb-0">{{ slide.title }}</p>
@@ -86,7 +86,7 @@ permalink: "/"
 
   <div class="d-flex flex-column flex-sm-row index-row align-items-center pt-5 mt-2 pb-1">
     <div class="col-md-4 offset-md-2 col-sm-6 order-1">
-      <img class="medium-image" data-src="{% load_img step3.png %}" />
+      <img class="medium-image" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{% load_img step3.png %}" />
     </div>
     <div class="col-md-4 col-sm-6 text-sm-left text-center order-2">
       <h2 class="text-dark">{{ blocklist[2].title}}</h2>
@@ -105,7 +105,7 @@ permalink: "/"
     </div>
 
     <div class="col-md-4 col-sm-6 order-1 order-sm-2">
-      <img class="medium-image" data-src="{% load_img step4.png %}" />
+      <img class="medium-image" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="  data-src="{% load_img step4.png %}" />
     </div>
 
   </div>
