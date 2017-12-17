@@ -17,6 +17,12 @@ header:
   - label: Registrati
     active: true
 
+download:
+  download: Scarica
+  firefox: Kjuicer per Firefox
+  chrome: Kjuicer per Chrome
+  bookmarklet: il Bookmarklet
+
 home:
   block_landing:
     display_title: con i superpoteri

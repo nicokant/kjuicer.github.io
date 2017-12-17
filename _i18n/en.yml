@@ -17,6 +17,12 @@ header:
   - label : Sign Up
     active: true
 
+download:
+  download: Download
+  firefox: Kjuicer for Firefox
+  chrome: Kjuicer for Chrome
+  bookmarklet: the Bookmarklet
+
 home:
   block_landing:
     display_title: with superpowers
