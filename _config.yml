@@ -1,8 +1,8 @@
 # Site settings
 title: Kjuicer
 description: Reading gets super powers
-baseurl: "/website"
-url: "http://kjuicer.gitlab.io"
+baseurl: ""
+url: "https://kjuicer.com"
 markdown: kramdown
 
 plugins:
@@ -41,7 +41,7 @@ medium: kjuicer
 
 # Global
 post_assets: /post_assets/
-assets_base_url: /website
+assets_base_url: ""
 assets_dir: assets
 js_dir: js
 img_dir: img
