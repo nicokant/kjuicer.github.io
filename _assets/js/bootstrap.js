@@ -15,6 +15,7 @@ $(document).ready(function() {
       autoplay: true,
       fade: true,
       dots: true,
+      arrows: false,
       //appendDots: '#carousel-dots',
       //dotsClass: 'dots',
     });
