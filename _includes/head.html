@@ -9,7 +9,7 @@
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
-  <meta content="{{ site.title }}" property="og:site_name">
+  <meta content="{% t site.title %}" property="og:site_name">
 {% if page.title %}
   <meta content="{{ page.title }}" property="og:title">
 {% else %}
@@ -23,7 +23,7 @@
 {% if page.summary %}
   <meta content="{{ page.summary }}" property="og:description">
 {% else %}
-  <meta content="{{ site.description }}" property="og:description">
+  <meta content="{% t site.description %}" property="og:description">
 {% endif %}
 {% if page.url %}
   <meta content="{{ site.url }}{{ page.url }}" property="og:url">
