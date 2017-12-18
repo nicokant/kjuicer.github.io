@@ -84,10 +84,12 @@ footer:
   block_1:
     - Blog
     - Use cases
+    - Legal
 
   block_2:
     - Contact us
     - Pricing
+  vat: VAT ID
 
 pricing:
   plans:

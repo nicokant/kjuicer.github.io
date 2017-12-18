@@ -86,10 +86,12 @@ footer:
   block_1:
     - Blog
     - Casi di utilizzo
+    - Informazioni legali
 
   block_2:
     - Contattaci
     - Costi
+  vat: Codice Fiscale
 
 pricing:
   plans:
