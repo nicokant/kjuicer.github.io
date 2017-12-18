@@ -6,13 +6,13 @@
         <img class="brand-logo" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{% load_img logo-footer.svg %}" alt="Kjuicer logo" />
       </div>
 
-      <div class="w-md-25 mt-2 text-center text-md-left">
+      <div class="w-md-25 mt-2 mt-md-0 text-center text-md-left">
         <a class="text-light d-block my-1" href="{% tl blog %}">{{ site.translations[site.lang].footer.block_1[0] }}</a>
-        <a class="text-light d-block my-1" href="">{{ site.translations[site.lang].footer.block_1[1] }}</a>
+        <a class="text-light d-block my-1" href="{% tl legal %}">{{ site.translations[site.lang].footer.block_1[2] }}</a>
       </div>
 
-      <div class="w-md-25 mb-2 text-center text-md-left">
-        <a class="text-light d-block mb-1" href="">{{ site.translations[site.lang].footer.block_2[0] }}</a>
+      <div class="w-md-25 mb-2 mb-md-0 text-center text-md-left">
+        <a class="text-light d-block mb-1" href="mailto:info@kjuicer.com">{{ site.translations[site.lang].footer.block_2[0] }}</a>
         <a class="text-light d-block my-1" href="{% tl pricing %}">{{ site.translations[site.lang].footer.block_2[1] }}</a>
       </div>
 

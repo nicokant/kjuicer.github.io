@@ -28,7 +28,6 @@ home:
     display_title: con i superpoteri
     display_subtitle: Preparati a una spremuta di conoscenza!
     action: Registrati
-    subtext:
     fallback: Leggi
     display_texts:
       - ""
@@ -143,9 +142,9 @@ pricing:
     pro: Presto disponibile
   actions:
     - label: Registrati
-      href: #
+      href: http://alpha.kjuicer.com/cache/login/
     - label: Rimani aggiornato
-      href: #
+      href: "#"
 
   web_editor:
     - label: Giornaliero

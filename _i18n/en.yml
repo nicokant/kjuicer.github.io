@@ -28,7 +28,6 @@ home:
     display_title: with superpowers
     display_subtitle: Get ready for a knowledge juice!
     action: Sign Up
-    subtext:
     fallback: Read
     display_texts:
       - Read
@@ -141,9 +140,9 @@ pricing:
     pro: Soon Available
   actions:
     - label: Sign Up
-      href: http://localhost:3000/pricing/#
+      href: http://alpha.kjuicer.com/cache/login/
     - label: Receive updates
-      href: #
+      href: "#"
 
   web_editor:
     - label: Daily
