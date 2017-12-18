@@ -220,3 +220,21 @@ footer {
 .container-text {
   max-width: 45rem;
 }
+
+.headroom {
+  transition: transform .25s ease-in-out;
+  will-change: transform;
+  z-index: 99999999;
+}
+
+.headroom--pinned {
+  transform: translateY(0);
+}
+
+.headroom--unpinned {
+  transform: translateY(-100%);
+}
+
+body {
+  padding-top: 4.5rem;
+}
