@@ -166,3 +166,6 @@ pricing:
     - label: Più di 200 000?
       price: Contattaci!
   plugin_action: Scegli il piano
+
+  questions: Hai domande?
+  contact_us: Contattaci
