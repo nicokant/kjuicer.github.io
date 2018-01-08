@@ -83,7 +83,7 @@ gulp.task('clean:images', function(callback) {
 });
 
 gulp.task('build:jekyll', function() {
-    var shellCommand = 'bundle exec jekyll build --config _config.yml';
+    var shellCommand = 'jekyll build --config _config.yml';
 
     return gulp.src('')
         .pipe(run(shellCommand))
@@ -117,7 +117,7 @@ gulp.task('build:local', function(callback) {
 gulp.task('default', ['build']);
 
 gulp.task('build:jekyll:local', function() {
-    var shellCommand = 'bundle exec jekyll build --config _config.yml,_config.dev.yml';
+    var shellCommand = 'jekyll build --config _config.yml,_config.dev.yml';
 
     return gulp.src('')
         .pipe(run(shellCommand))
