@@ -6,6 +6,7 @@ var del          = require('del');
 var gulp         = require('gulp');
 var gutil        = require('gulp-util');
 var imagemin     = require('gulp-imagemin');
+var imageminWebp = require('imagemin-webp');
 var notify       = require('gulp-notify');
 var postcss      = require('gulp-postcss');
 var rename       = require('gulp-rename');
@@ -64,7 +65,13 @@ gulp.task('clean:scripts', function(callback) {
 
 gulp.task('build:images', function() {
     return gulp.src(paths.imageFilesGlob)
-        .pipe(imagemin())
+        .pipe(imagemin([
+            imagemin.gifsicle(),
+            //imagemin.jpegtran(),
+            //imagemin.optipng(),
+            imageminWebp(),
+            imagemin.svgo(),
+        ], { verbose: true }))
         .pipe(gulp.dest(paths.jekyllImageFiles))
         .pipe(gulp.dest(paths.siteImageFiles))
         .pipe(browserSync.stream());
@@ -170,4 +177,13 @@ gulp.task('serve', ['build:local'], function() {
 
     // Watch favicon.png.
     gulp.watch('favicon.png', ['build:jekyll:watch']);
+});
+
+gulp.task('deploy', function() {
+    return gulp.src('')
+    .pipe(run('rsync -vzr -e ssh _site/ giampaolo@ssh-giampaolo.alwaysdata.net:/home/giampaolo/www/website/'))
+});
+
+gulp.task('publish', function(callback) {
+    runSequence('build', 'deploy', callback);
 });
