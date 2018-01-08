@@ -9,7 +9,7 @@
 2. Premi il Bookmarklet
 3. Evidenzia!
 
-![{% t site.title %}]({% load_img use-bookmarklet.gif %}){:.mx-auto.d-block.my-5}
+![{{ site.translations[site.lang]['site'].title }}]({% load_img use-bookmarklet.gif %}){:.mx-auto.d-block.my-5}
 
 {:.mt-5}
 #### Browsers Supportati

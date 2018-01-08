@@ -5,11 +5,11 @@
 
   <link rel='shortcut icon' type='image/x-icon' href="{{ "/favicon.ico" | prepend: site.baseurl }}" />
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.translations[site.lang]['site'].description }}{% endif %}" />
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
-  <meta content="{% t site.title %}" property="og:site_name">
+  <meta content="{{ site.title }}" property="og:site_name">
 {% if page.title %}
   <meta content="{{ page.title }}" property="og:title">
 {% else %}
@@ -23,7 +23,7 @@
 {% if page.summary %}
   <meta content="{{ page.summary }}" property="og:description">
 {% else %}
-  <meta content="{% t site.description %}" property="og:description">
+  <meta content="{{ site.translations[site.lang]['site'].description }}" property="og:description">
 {% endif %}
 {% if page.url %}
   <meta content="{{ site.url }}{{ page.url }}" property="og:url">
