@@ -5,8 +5,8 @@ baseurl: ""
 url: "https://kjuicer.com"
 markdown: kramdown
 
-plugins:
-  - jekyll-multiple-languages-plugin
+#plugins:
+#  - jekyll-multiple-languages-plugin
 
 exclude:
   - _assets
