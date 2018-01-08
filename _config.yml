@@ -5,6 +5,8 @@ baseurl: ""
 url: "https://kjuicer.com"
 markdown: kramdown
 
+signup_page: http://dev2.kjuicer.com/auth/signup/
+login_page: http://dev2.kjuicer.com/auth/login/
 #plugins:
 #  - jekyll-multiple-languages-plugin
 

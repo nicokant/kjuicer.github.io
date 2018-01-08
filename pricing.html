@@ -30,9 +30,8 @@ permalink: /pricing/
     {% assign actions = site.translations[site.lang].pricing.actions %}
     <div class="d-flex justify-content-start align-items-center p-3">
       <div class="col-6"></div>
-      {% for action in actions %}
-        <div class="col-3 text-center"><a href="{{ action.href }}" class="btn btn-primary text-white">{{ action.label }}</a></div>
-      {% endfor %}
+        <div class="col-3 text-center"><a href="{{ site.signup_page }}" class="btn btn-primary text-white">{{ actions[0].label }}</a></div>
+        <div class="col-3 text-center"><button class="btn btn-disabled">{{ actions[1].label }}</button></div>
     </div>
   </div>
 
