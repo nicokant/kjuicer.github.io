@@ -18,6 +18,8 @@ exclude:
   - Gemfile.lock
   - README.md
   - node_modules
+  - gulpfile.js
+  - deploy.sh
 
 # Localization i18n
 languages: ["en", "it"]
