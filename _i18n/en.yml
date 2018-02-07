@@ -1,20 +1,19 @@
 site:
   title: Kjuicer
-  description: Get ready for a knowledge juice!
+  description: Get ready for juiced knowledge!
   published: "Published on "
 
 actions:
   read: Read more
 
 header:
-  - label: Reading juice
+  - label: Juiced Reading
     id: vai-al-succo
     sub:
       - label: Highlights
       - label: Curations
   - label: Pricing
-  - label: Log In
-  - label : Sign Up
+  - label : To Webapp
     active: true
 
 download:
@@ -26,58 +25,59 @@ download:
 home:
   block_landing:
     display_title: with superpowers
-    display_subtitle: Get ready for a knowledge juice!
-    action: Sign Up
+    display_subtitle: Get ready to juice knowledge!
+    action: To Webapp
     fallback: Read
     display_texts:
       - Read
       - Learn
-      - Summarise
+      - Summarize
       - Research
       - Study
-      - Schematise
+      - Schematize
+      - Publish
 
   block_extensions:
     firefox: Get the Firefox Addon
     chrome: Get the Chrome Extension
 
   blocks:
-    - title: Extract knowledge from your text
+    - title: Extract knowledge from your texts
       text: Keep relevant informations, let go of redudancies.
-    - title: Give an order to contents
-      text: Organize various re-reading levels, different in lenght and depth.
+    - title: Give a priority to contents
+      text: Organize it in various re-reading levels, different in lenght and depth.
     - title: Organize what you write
       text: Assign a priority to content while you write it, for you and your readers.
     - title: Share your work
       text: In private with friends and coworkers, on your website or with the rest of the world.
 
   block_call:
-    title: Become a Super Hero of reading!
+    title: Become a reading Superhero!
     cite: Kjuicer is a great contribution to the world
     by: Alex, The Netherlands
-    action: Sign Up
+    action: To Webapp
 
   block_us:
     title: About us
     subtitle: Kjuicer is for everyone who believes that learning should be easier.
-    text: Kjuicer is an innovative startup based in Milan. It was founded by Giampaolo Ferradini and Francesco Frassinelli in 2015, with the mission of improving the way humans learn and handle information. If you want to know more about how to conquer more knowledge like a super hero follow us on our blog (or on Medium) and on our social networks.
+    text: Kjuicer is an innovative startup based in Milan, Italy. It was founded by Giampaolo Ferradini and Francesco Frassinelli in 2015, with the mission of improving the way humans learn, share, and handle information. If you want to know more about how to conquer more knowledge like a superhero follow us on our blog (or on Medium) and on our social networks.
 
   block_slider:
-    title: Change your reading method!
+    title: Supercharge your reading!
     subtitle: "Kjuicer is made for:"
     slides:
-      - title: Who studies, teaches or researches
-        text: Students, teachers and who has never quit learning
-      - title: Who works with complex texts
-        text: Lawyers, programmers, public administration employees
-      - title: Who filters informations for others
+      - title: Whoever studies, teaches or researches
+        text: Students, teachers and those who never stop learning
+      - title: Whoever works with complex texts
+        text: Lawyers, public administration workers, programmers
+      - title: Whoever filters informations for others
         text: Journalists, press officers, news agencies
-      - title: Who wants to encourage the circulation of a text
+      - title: Whoever wants to encourage the circulation of a text
         text: Social media managers, publishers, editors
-      - title: Who creates content
-        text: Bloggers, agreements or divulgation writers
+      - title: Whoever creates content
+        text: Bloggers, authors or writers
       - title: Companies and businesses
-        text: Manuals, projects, information management and sharing
+        text: Marketing, manuals, contracts, knowledge management and training, complex projects
 
 footer:
   block_1:
@@ -139,10 +139,8 @@ pricing:
     base: Free
     pro: Soon Available
   actions:
-    - label: Sign Up
-      href: http://alpha.kjuicer.com/cache/login/
+    - label: Start Now
     - label: Receive updates
-      href: "#"
 
   web_editor:
     - label: Daily
@@ -150,18 +148,18 @@ pricing:
     - label: Weekly
       price: 4.99€
     - label: Monthly
-      price: 9.90€
+      price: starting from<br>9.90€
     - label: Yearly
-      price: 99.00€
+      price: starting from<br>99.00€
   web_editor_action: Choose your plan
 
   plugin:
     - label: 2,000 credits
       price: Free
     - label: 20,000 credits
-      price: 9.90€
+      price: 11.90€
     - label: 200,000 credits
-      price: 44.90€
+      price: 99€
     - label: More than 200,000?
       price: Contact us!
   plugin_action: Choose your plan

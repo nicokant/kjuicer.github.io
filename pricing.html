@@ -22,16 +22,32 @@ permalink: /pricing/
     </div>
     {% endfor %}
     {% assign price = site.translations[site.lang].pricing.price %}
-    <div class="d-flex justify-content-start align-items-center pt-1 pb-2">
+    <div class="d-none d-md-flex justify-content-start align-items-center pt-1 pb-2">
       <div class="col-6 pl-0"><strong>{{ price.label }}</strong></div>
       <div class="col-3 text-center"><h5 class="text-primary">{{ price.base }}</h5></div>
       <div class="col-3 text-center"><h5 class="text-primary">{{ price.pro }}</h5></div>
     </div>
     {% assign actions = site.translations[site.lang].pricing.actions %}
-    <div class="d-flex justify-content-start align-items-center p-3">
+    <div class="d-none d-md-flex justify-content-start align-items-center p-3">
       <div class="col-6"></div>
         <div class="col-3 text-center"><a href="{{ site.signup_page }}" class="btn btn-primary text-white">{{ actions[0].label }}</a></div>
-        <div class="col-3 text-center"><button class="btn btn-disabled">{{ actions[1].label }}</button></div>
+        <div class="col-3 text-center"><a href="{{ site.newsletter }}" class="btn btn-primary text-white">{{ actions[1].label }}</a></div>
+    </div>
+  </div>
+
+  <div class="d-block d-md-none pt-5">
+    <div class="d-flex flex-column flex-sm-row justify-content-start align-items-center p-3">
+      {% assign plans = site.translations[site.lang].pricing.plans %}
+        <div class="col-sm-6 text-center text-uppercase text-dark mb-5 mb-sm-0">
+          <h5>{{ plans[0] }}</h5>
+          <h5 class="text-primary">{{ price.base }}</h5>
+          <a href="{{ site.signup_page }}" class="btn btn-primary text-white">{{ actions[0].label }}</a>
+        </div>
+        <div class="col-sm-6 text-center text-uppercase text-dark">
+          <h5>{{ plans[1] }}</h5>
+          <h5 class="text-primary">{{ price.pro }}</h5>
+          <a href="{{ site.signup_page }}" class="btn btn-primary text-white">{{ actions[1].label }}</a>
+        </div>
     </div>
   </div>
 
@@ -55,6 +71,7 @@ permalink: /pricing/
           <h4 class="font-serif">{{ pricing.label }}</h4>
           <h5 class="text-primary mb-3">{{ pricing.price }}</h5>
         {% endfor %}
+        <div class="py-md-3 mb-md-3 d-none py-sm-2 mb-sm-1 d-sm-block"></div>
         <button class="btn btn-disabled text-white mt-4">{{ site.translations[site.lang].pricing.plugin_action }}</button>
       </div>
     </div>

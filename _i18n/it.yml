@@ -1,6 +1,6 @@
 site:
   title: Kjuicer
-  description: Preparati a una spremuta di conoscenza!
+  description: Preparati a un distillato di conoscenza!
   published: "Pubblicato il "
 
 actions:
@@ -13,8 +13,7 @@ header:
       - label: Super Riassunti
       - label: Raccolte
   - label: Costi
-  - label: Accedi
-  - label: Registrati
+  - label: Vai alla Webapp
     active: true
 
 download:
@@ -26,8 +25,8 @@ download:
 home:
   block_landing:
     display_title: con i superpoteri
-    display_subtitle: Preparati a una spremuta di conoscenza!
-    action: Registrati
+    display_subtitle: Preparati a un distillato di conoscenza!
+    action: Vai alla Webapp
     fallback: Leggi
     display_texts:
       - ""
@@ -37,6 +36,7 @@ home:
       - Ricerca
       - Studia
       - Schematizza
+      - Pubblica
 
   block_extensions:
     firefox: Scarica l'Addon per Firefox
@@ -56,7 +56,7 @@ home:
     title: Diventa anche tu un supereroe della lettura!
     cite: Kjuicer è un grande contributo al mondo
     by: Alex, Olanda
-    action: Registrati
+    action: Vai alla Webapp
 
   block_us:
     title: Chi siamo
@@ -141,10 +141,8 @@ pricing:
     base: Gratis
     pro: Presto disponibile
   actions:
-    - label: Registrati
-      href: http://alpha.kjuicer.com/cache/login/
+    - label: Inizia subito
     - label: Rimani aggiornato
-      href: "#"
 
   web_editor:
     - label: Giornaliero
@@ -152,18 +150,19 @@ pricing:
     - label: Settimanale
       price: 4,99€
     - label: Mensile
-      price: 9,90€
+      price: a partire da<br>9,90€
     - label: Annuale
-      price: 99,00€
+      price: a partire da<br>99,00€
   web_editor_action: Scegli il piano
+  web_editor_disclaimer:
 
   plugin:
     - label: 2 000 crediti
       price: Gratis
     - label: 20 000 crediti
-      price: 9,90€
+      price: 11,90€
     - label: 200 000 crediti
-      price: 44.90€
+      price: 99€
     - label: Più di 200 000?
       price: Contattaci!
   plugin_action: Scegli il piano

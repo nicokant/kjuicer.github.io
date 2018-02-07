@@ -51,9 +51,16 @@
   </div>
 </footer>
 
-  {% if page.kj_viewer %}
-    <script src="https://kjuicer.gitlab.io/static/0.4.1/kjuicer-static.min.js"></script>
+  {% if page.kjuicer_plugin %}
+    <script src="https://static.kjuicer.com/plugin/stable/kjuicer-plugin.min.js"></script>
     <script>
-      new KjuicerStatic('content');
+      new Kjuicer('content', {
+        help: true,
+        highlighters: [
+          { hlColor: 'rgba(50,50,255,.4)' },
+          { hlColor: 'rgba(131,131,255,.4)' },
+          { hlColor: 'rgba(108,255,192,.4)' },
+        ]
+      });
     </script>
   {% endif %}

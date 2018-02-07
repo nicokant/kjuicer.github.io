@@ -28,7 +28,7 @@ Enable the bookmarks bar:
 2. Drag the green bookmarklet in the desired spot on the bar
 3. Confirm you want to add the bookmarklet.
 
-![]({% load_img ie-tutorial.gif %}){:.mx-auto.d-block.my-5}
+![]({% load_img ie-tutorial.gif %}){:.mx-auto.d-block.my-5.mw-100}
 
 {:.mt-5}
 #### Safari
@@ -37,14 +37,14 @@ Enable the bookmarks bar:
 1. Choose `View` > `Show the bookmarks bar`
 2. Drag the green bookmarklet in the desired spot on the bar.
 
-![]({% load_img safari-tutorial.gif %}){:.mx-auto.d-block.my-5}
+![]({% load_img safari-tutorial.gif %}){:.mx-auto.d-block.my-5.mw-100}
 
 {:.mt-5}
 #### Microsoft Edge
 
 1. Right click on any page and choose `Add to reading list`.
 
-![]({% load_img edge.gif %}){:.mx-auto.d-block.my-5}
+![]({% load_img edge.gif %}){:.mx-auto.d-block.my-5.mw-100}
 
 [kj1]: https://addons.mozilla.org/en-US/firefox/addon/kjuicer/
 [kj2]: https://chrome.google.com/webstore/detail/kjuicer/kgjcgankonbfhdgpfdbggfifpcabocno

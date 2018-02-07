@@ -29,7 +29,7 @@ Abilita la barra dei preferiti:
 2. Trascina il bookmarklet nella barra.
 3. Conferma l'aggiunta del bookmarklet.
 
-![]({% load_img ie-tutorial.gif %}){:.mx-auto.d-block.my-5}
+![]({% load_img ie-tutorial.gif %}){:.mx-auto.d-block.my-5.mw-100}
 
 {:.mt-5}
 #### Safari
@@ -38,11 +38,11 @@ Abilita la barra dei preferiti:
 1. Scegli `Vista` > `Mostra barra dei preferiti`.
 2. Trascina il bookmarklet nella barra.
 
-![]({% load_img safari-tutorial.gif %}){:.mx-auto.d-block.my-5}
+![]({% load_img safari-tutorial.gif %}){:.mx-auto.d-block.my-5.mw-100}
 
 {:.mt-5}
 #### Microsoft Edge
 
 1. Fai click con il pulsante destro e premi `aggiungi all'elenco di lettura`.
 
-![]({% load_img edge.gif %}){:.mx-auto.d-block.my-5}
+![]({% load_img edge.gif %}){:.mx-auto.d-block.my-5.mw-100}
