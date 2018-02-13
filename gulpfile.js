@@ -20,6 +20,11 @@ var sourcemaps = require('gulp-sourcemaps');
 var resolve = require('rollup-plugin-node-resolve');
 var commonjs = require('rollup-plugin-commonjs');
 
+var request = require('request');
+var path = require( 'path' );
+var fs = require('fs');
+var criticalcss = require('criticalcss');
+
 var paths = require('./_assets/gulp_config/paths');
 
 gulp.task('build:styles:main', function() {
@@ -67,9 +72,9 @@ gulp.task('build:images', function() {
     return gulp.src(paths.imageFilesGlob)
         .pipe(imagemin([
             imagemin.gifsicle(),
-            //imagemin.jpegtran(),
-            //imagemin.optipng(),
-            imageminWebp(),
+            imagemin.jpegtran(),
+            imagemin.optipng(),
+            //imageminWebp(),
             imagemin.svgo(),
         ], { verbose: true }))
         .pipe(gulp.dest(paths.jekyllImageFiles))
@@ -102,14 +107,16 @@ gulp.task('clean', ['clean:jekyll',
 
 gulp.task('build', function(callback) {
     runSequence('clean',
-        ['build:scripts', 'build:images', 'build:styles'],
+        ['build:scripts', 'build:styles'],
+        'build:images',
         'build:jekyll',
         callback);
 });
 
 gulp.task('build:local', function(callback) {
     runSequence('clean',
-        ['build:scripts', 'build:images', 'build:styles'],
+        ['build:scripts', 'build:styles'],
+        'build:images',
         'build:jekyll:local',
         callback);
 });
@@ -186,4 +193,25 @@ gulp.task('deploy', function() {
 
 gulp.task('publish', function(callback) {
     runSequence('build', 'deploy', callback);
+});
+
+
+gulp.task('critical', function(callback) {
+    var url = 'http://localhost:4000';
+    var cssPath = paths.jekyllCssFiles + 'main.css';
+    var criticalpath = '_includes/critical.css';
+    criticalcss.getRules( cssPath, function(err, rules) {
+        if (err) {
+            throw new Error(err);
+        } else {
+            criticalcss.findCritical(url, { rules }, function(err, output) {
+                if (err) {
+                    throw new Error(err);
+                } else {
+                    fs.writeFileSync( criticalpath, output );
+                    callback();
+                }
+            });
+        }
+    });
 });

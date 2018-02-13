@@ -1,0 +1,57 @@
+---
+layout: default
+namespace: superpowers
+permalink: "/superpowers/"
+---
+<div class="container-flex">
+  {% assign blocklist = site.translations[site.lang]["home"].blocks %}
+
+  <div class="d-flex flex-column flex-sm-row index-row align-items-center pt-5 mt-2 pb-1">
+    <div class="col-md-4 col-sm-6 offset-md-2 order-1">
+      <img class="medium-image" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{% load_img step1.png %}" alt="{{ blocklist[0].title }}" />
+    </div>
+    <div class="col-md-4 col-sm-6 px-5 text-sm-left text-center order-2">
+      <h2 class="mb-3 text-dark">{{ blocklist[0].title}}</h2>
+      <p class="subtitle">{{ blocklist[0].text}}</p>
+    </div>
+  </div>
+
+  <div class="d-flex flex-column flex-sm-row index-row align-items-center pt-1 pb-5 mb-2">
+    <div class="col-md-4 col-sm-6 offset-md-2 px-5 text-sm-right text-center order-2 order-sm-1">
+      <h2 class="text-dark pb-2">{{ blocklist[1].title}}</h2>
+      <p class="subtitle">{{ blocklist[1].text}}</p>
+    </div>
+    <div class="col-md-4 col-sm-6 order-1 order-sm-2">
+      <img class="medium-image" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{% load_img step2.png %}" alt="{{ blocklist[1].title }}" />
+    </div>
+  </div>
+
+  <div class="d-flex flex-column flex-sm-row index-row align-items-center pt-5 mt-2 pb-1">
+    <div class="col-md-4 offset-md-2 col-sm-6 order-1">
+      <img class="medium-image" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{% load_img step3.png %}" alt="{{ blocklist[2].title }}" />
+    </div>
+    <div class="col-md-4 col-sm-6 text-sm-left text-center order-2">
+      <h2 class="text-dark">{{ blocklist[2].title}}</h2>
+      <p class="subtitle">{{ blocklist[2].text}}</p>
+    </div>
+  </div>
+
+  <div class="d-flex flex-column flex-sm-row index-row align-items-center pt-1">
+    <div class="col-md-4 col-sm-6 px-5 text-sm-right text-center order-sm-1 order-2 offset-md-2">
+      <h2 class="text-dark pb-2">{{ blocklist[3].title}}</h2>
+      <p class="subtitle">{{ blocklist[3].text}}</p>
+    </div>
+    <div class="col-md-4 col-sm-6 order-1 order-sm-2">
+      <img class="medium-image" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="  data-src="{% load_img step4.png %}" alt="{{ blocklist[3].title }}" />
+    </div>
+  </div>
+
+  <div class="d-flex flex-column align-items-center py-5 bg-secondary text-center">
+    <h1 class="text-dark">{% t home.block_call.title%}</h1>
+    <div class="font-italic lead my-3">
+      <p class="text-dark"><sup><i class="fa fa-quote-left"></i></sup> {% t home.block_call.cite %} <sup><i class="fa fa-quote-right"></i></sup></p>
+      <p class="text-dark">{% t home.block_call.by %}</p>
+    </div>
+    <p class="mt-3 mb-0 font-weight-bold"><a href='{{ site.signup_page }}' class="btn btn-primary btn-lg text-white">{% t home.block_call.action %}</a></p>
+  </div>
+</div>

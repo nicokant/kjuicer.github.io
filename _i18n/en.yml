@@ -7,12 +7,15 @@ actions:
   read: Read more
 
 header:
-  - label: Juiced Reading
+  - label: Learn to learn
     id: vai-al-succo
     sub:
       - label: Highlights
       - label: Curations
+  - label: Reader Superpowers
+  - label: Study, discover, spread
   - label: Pricing
+  - label: About us
   - label : To Webapp
     active: true
 

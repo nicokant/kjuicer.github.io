@@ -7,12 +7,15 @@ actions:
   read: Leggi
 
 header:
-  - label: Vai al succo
+  - label: Impariamo a imparare
     id: vai-al-succo
     sub:
       - label: Super Riassunti
       - label: Raccolte
+  - label: I superpoteri del lettore
+  - label: Studia, scopri e diffondi
   - label: Costi
+  - label: Chi siamo
   - label: Vai alla Webapp
     active: true
 

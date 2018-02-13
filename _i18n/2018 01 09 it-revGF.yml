@@ -1,0 +1,173 @@
+site:
+  title: Kjuicer
+  description: Preparati al distillato di conoscenza!
+  published: "Pubblicato il "
+
+actions:
+  read: Leggi
+
+header:
+  - label: Vai al succo
+    id: vai-al-succo
+    sub:
+      - label: Super Riassunti
+      - label: Raccolte
+  - label: Costi
+  - label: Accedi
+  - label: Registrati
+    active: true
+
+download:
+  download: Scarica
+  firefox: Kjuicer per Firefox
+  chrome: Kjuicer per Chrome
+  bookmarklet: il Bookmarklet
+
+home:
+  block_landing:
+    display_title: con i superpoteri
+    display_subtitle: Preparati a una spremuta di conoscenza!
+    action: Registrati
+    fallback: Leggi
+    display_texts:
+      - ""
+      - Leggi
+      - Impara
+      - Riassumi
+      - Ricerca
+      - Studia
+      - Schematizza
+      - Pubblica
+
+  block_extensions:
+    firefox: Scarica l'Addon per Firefox
+    chrome: Scarica l'estensione per Chrome
+
+  blocks:
+    - title: Estrai conoscenza dai tuoi testi
+      text: Trattieni le informazioni rilevanti, lascia fuori il superfluo.
+    - title: Metti ordine nei contenuti
+      text: Struttura più livelli di rilettura, diversi per lunghezza e approfondimento.
+    - title: Organizza ciò che scrivi
+      text: Assegna un livello d'importanza ai contenuti mentre li scrivi, per te e per chi ti legge.
+    - title: Condividi il tuo lavoro
+      text: In privato con amici e colleghi, sul tuo sito o con il resto del mondo.
+
+  block_call:
+    title: Diventa anche tu un supereroe della lettura!
+    cite: Kjuicer è un grande contributo al mondo
+    by: Alex, Olanda
+    action: Registrati
+
+  block_us:
+    title: Chi siamo
+    subtitle: Kjuicer è per coloro che credono che imparare dovrebbe essere più semplice.
+    text: Kjuicer è una startup innovativa con sede a Milano. È stata fondata da Giampaolo Ferradini e Francesco Frassinelli nel 2015, con lo scopo di migliorare il modo di apprendere e gestire informazioni degli esseri umani. Se vuoi saperne di più su come conquistare conoscenza come un supereroe seguici sul nostro blog (o su Medium) e sui nostri social.
+
+
+  block_slider:
+    title: Cambia il tuo modo di leggere!
+    subtitle: Kjuicer è pensato per
+    slides:
+      - title: Chi studia, insegna o ricerca
+        text: Studenti, insegnanti e chi non smette mai di imparare
+      - title: Chi lavora con testi complessi
+        text: Avvocati, programmatori, impegati nella pubblica amministrazione
+      - title: Chi filtra informazioni per altri
+        text: Giornalisti, addetti stampa, agenzie giornalistiche
+      - title: Chi vuole favorire la diffusione di un testo
+        text: Social media managers editori, curatori di testi
+      - title: Chi crea contenuti
+        text: Scrittori di blogpost, contratti o divulgazione
+      - title: Aziende e imprese
+        text: Manualistica, progettazione, gestione e condivisione delle informazioni
+
+footer:
+  block_1:
+    - Blog
+    - Casi di utilizzo
+    - Informazioni legali
+
+  block_2:
+    - Contattaci
+    - Costi
+  vat: Codice Fiscale
+
+pricing:
+  plans:
+    - Base
+    - Pro Suite
+  features:
+    - label: Nessuna pubblicità
+      base: true
+      pro: true
+    - label: Salva illimitate pagine Web
+      base: true
+      pro: true
+    - label: Evidenzia e riassumi pagine illimitate
+      base: true
+      pro: true
+    - label: Crea raccolte illimitate
+      base: true
+      pro: true
+    - label: Estensioni per ogni browser
+      base: true
+      pro: true
+    - label: Caricamento file in HTML
+      base: true
+      pro: true
+    - label: Condivisione via link
+      base: true
+      pro: true
+    - label: Supporto clienti
+      base: true
+      pro: true
+    - label: Supporto prioritario
+      base: false
+      pro: true
+    - label: Colori degli evidenziatori personalizzabili
+      base: false
+      pro: true
+    - label: Evidenziazioni e riassunti privati
+      base: false
+      pro: true
+    - label: Crittografia
+      base: false
+      pro: true
+    - label: Caricamento file .docx e documenti Google
+      base: false
+      pro: true
+  price:
+    label: Costo
+    base: Gratis
+    pro: Presto disponibile
+  actions:
+    - label: Registrati
+      href: http://alpha.kjuicer.com/cache/login/
+    - label: Rimani aggiornato
+      href: "#"
+
+  web_editor:
+    - label: Giornaliero
+      price: 1,99€
+    - label: Settimanale
+      price: 4,99€
+    - label: Mensile
+      price: 9,90€
+    - label: Annuale
+      price: 99,00€
+  web_editor_action: Scegli il piano
+
+  plugin:
+    - label: 2 000 crediti
+      price: Gratis
+    - label: 20 000 crediti
+      price: 9,90€
+    - label: 200 000 crediti
+      price: 44.90€
+    - label: Più di 200 000?
+      price: Contattaci!
+  plugin_action: Scegli il piano
+
+  questions: Hai domande?
+  contact_us: Contattaci

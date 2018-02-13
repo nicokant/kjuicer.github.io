@@ -1,0 +1,7 @@
+RewriteEngine On
+
+# Redirect to Italian
+RewriteCond %{HTTP:Accept-Language} ^it [NC]
+RewriteRule ^/$ /it [L,R=301]
+
+RewriteRule ^/$ /en [L,R=301]
